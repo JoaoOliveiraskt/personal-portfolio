@@ -4,7 +4,7 @@ import './globals.css'
 
 import React from 'react'
 import Header from '@/components/main/Header'
-
+import Footer from '@/components/main/Footer'
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${poppins.className} bg-black overflow-y-scroll overflow-x-hidden`} style={{ minHeight: '100vh' }}>      
         <Header />  
         {children} 
-            
+        <Footer />     
       </body>
     </html>
   );
