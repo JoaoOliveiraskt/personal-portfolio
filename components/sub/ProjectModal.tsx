@@ -30,16 +30,21 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   }
 
   return (
-    <div className="fixed left-0 right-0 top-0 bottom-0 bg-[#00000074] flex items-center justify-center">
-      <div className="projectModalBg overflow-hidden z-[101] fixed w-[70rem] h-[50rem] flex flex-col items-center justify-between rounded-xl border border-zinc-700">
-        <Image
+    <div className="z-50 fixed left-0 right-0 top-0 bottom-0 bg-[#00000074] flex items-center justify-center">
+      <div className="z-50 projectModalBg p-1 mx-5 overflow-hidden fixed max-w-[70rem] h-auto  flex flex-col items-center justify-between rounded-xl border border-zinc-700">
+      <div className="border-2 border-zinc-800 rounded-xl overflow-hidden w-full h-full">
+       <div className="w-full h-auto">
+       <Image
           src={selectedCard?.src}
           alt={selectedCard?.title}
           width={500}
           height={300}
           className="w-full object-contain"
         />
-        <div className="flex flex-col p-5 w-full h-full">
+       </div>
+        <div className="flex flex-col px-5 py-8 w-full h-full">
+          <div className="flex items-center justify-between sm:flex-col sm:items-start sm:gap-5">
+
           <h1 className="flex gap-10 tracking-tighter text-2xl font-semibold text-zinc-200">
             {selectedCard?.title}
             <div className="text-white flex items-center gap-4">
@@ -54,11 +59,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               ))}
             </div>
           </h1>
-          <p className="tracking-widest mt-2 text-zinc-400 max-w-[44rem]">
-            {selectedCard?.subDescription}
-          </p>
-        </div>
-        <div className="absolute bottom-28 right-5 text-white flex items-center justify-center gap-5">
+
+          <div className="text-white flex items-center justify-center gap-5">
           <button
             title="Website"
             className="w-9 h-9 text-2xl hover:bg-[#434343b3] rounded-lg p-1 flex items-center justify-center"
@@ -75,6 +77,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             <IoIosCloseCircle />
           </button>
         </div>
+          </div>
+          <p className="tracking-widest mt-5 text-zinc-400 max-w-[35rem]">
+            {selectedCard?.subDescription}
+          </p>
+        </div>
+
+      </div>
       </div>
     </div>
   );

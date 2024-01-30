@@ -25,7 +25,9 @@ const ProjectCard: React.FC<Props> = ({
   tech,
 }: Props) => {
   return (
-    <div className="projectCardBg overflow-hidden rounded-xl shadow-lg border border-zinc-800 h-full w-[28rem] sm:w-full ">
+
+    <div className="bg-black p-1 rounded-xl shadow-lg border-2 border-zinc-800 h-full w-[28rem] sm:w-full ">
+    <div className="projectCardBg border-2 border-zinc-800 rounded-xl overflow-hidden">
       <Image
         src={src}
         alt={title}
@@ -34,7 +36,6 @@ const ProjectCard: React.FC<Props> = ({
         layout="responsive"
         className="w-full object-contain"
       />
-
       <div className=" text-white p-8 w-full h-ful flex flex-col gap-1">
         <div className="flex items-center w-full justify-between">
           <h1 className="tracking-tighter text-3xl font-semibold">{title}</h1>
@@ -55,6 +56,7 @@ const ProjectCard: React.FC<Props> = ({
           />
         ))}
       </div>
+    </div>
     </div>
   );
 };
