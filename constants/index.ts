@@ -72,11 +72,11 @@ export const Frontend_skill = [
 
 export const My_Projects = [
   {
-    title: "Resume AI",
+    title: "Resumi AI",
     description: "Website content summary of a webpage",
     subDescription:"This site was made in Next.js using the Article Extractor and Summarizer API to extract and summarize information from web pages with GPT-4.",
     image: "/project.png",
-    src: "/resumi.png",
+    src: "/Resumi.png",
     tech: [
       {
         name: "React",
