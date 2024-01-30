@@ -4,14 +4,14 @@ import Hero from "@/components/main/Hero";
 import Skills from "@/components/main/Skills";
 import Projects from "@/components/main/Projects";
 import { motion, useScroll, useSpring } from "framer-motion";
+import BentoLayout from "@/components/main/BentoLayout";
 export default function Home() {
-  
   const { scrollYProgress } = useScroll();
 
   const scaleX = useSpring(scrollYProgress);
 
   return (
-    <main className="h-full w-full">
+    <main className="h-full w-full ">
       <motion.div
         style={{
           scaleX,
@@ -24,10 +24,13 @@ export default function Home() {
           zIndex: 100,
         }}
       />
-     <div className="flex flex-col w-full h-full">
+     
+      <div className="flex flex-col w-full h-full">
+        
         <Hero />
         <Skills />
         <Projects />
+
       </div>
     </main>
   );

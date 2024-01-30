@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { SparklesIcon } from "@heroicons/react/24/solid";
 import { Underline } from "./Underline";
@@ -35,7 +34,7 @@ const HeroContent = () => {
       <div className="h-full w-full flex flex-col justify-center items-center gap-6 sm:gap-6 text-center ssm:mt-16">
         <motion.div
           variants={slideInFromLeft(0.3)}
-          className="tracking-tighter text-6xl sm:text-5xl ssm:text-3xl font-bold text-zinc-200 max-w-[740px] w-auto h-auto"
+          className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl font-medium text-zinc-200 max-w-[900px] w-auto h-auto"
         >
           <span>
             <Balancer>
@@ -48,7 +47,7 @@ const HeroContent = () => {
                 >
                   
                   a solid
-                  <span className="absolute bottom-4 left-14 right-0 sm:left-7 ssm:left-0 sm:bottom-3 ssm:bottom-2">
+                  <span className="absolute bottom-5 left-20 right-0 sm:left-8 ssm:left-0 sm:bottom-3 ssm:bottom-2">
                     <Underline />
                   </span> 
                 </span>
@@ -72,7 +71,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromTop}
-          className="flex flex-row justify-between gap-5 sm:gap-0 Welcome-box py-[8px] px-[10px] border border-[#ffffff1c]  sm:w-full"
+          className="flex flex-row justify-between gap-5 sm:gap-0 Welcome-box py-[8px] px-[10px] border border-[#ffffff1c] sm:w-full"
         >
           <div className="flex flex-row items-center justify-center">
             <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5 " />

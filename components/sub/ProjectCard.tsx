@@ -1,29 +1,62 @@
-import Image from 'next/image';
-import React from 'react'
+import Image from "next/image";
+import React from "react";
+import { BiExpand } from "react-icons/bi";
 
-interface Props {
-    src: string;
-    title: string;
-    description: string
+interface Technology {
+  name: string;
+  src: string;
+  width: number;
+  height: number;
 }
 
-const ProjectCard = ({src, title, description}: Props) => {
+interface Props {
+  src: string;
+  title: string;
+  description: string;
+  subDescription: string;
+  tech: Technology[];
+}
+
+const ProjectCard: React.FC<Props> = ({
+  src,
+  title,
+  description,
+  subDescription,
+  tech,
+}: Props) => {
   return (
-    <div className='relative overflow-hidden rounded-lg shadow-lg border border-[#2a0e61]'>
-        <Image 
+    <div className="projectCardBg overflow-hidden rounded-xl shadow-lg border border-zinc-800 h-full w-[28rem] sm:w-full ">
+      <Image
         src={src}
         alt={title}
         width={1000}
         height={1000}
-        className='w-full object-contain'
-        />
+        layout="responsive"
+        className="w-full object-contain"
+      />
 
-        <div className='relative p-4'>
-            <h1 text-2xl font-semibold text-white>{title}</h1>
-            <p className='mt-2 text-gray-300'>{description}</p>
+      <div className=" text-white p-8 w-full h-ful flex flex-col gap-1">
+        <div className="flex items-center w-full justify-between">
+          <h1 className="tracking-tighter text-3xl font-semibold">{title}</h1>
+          <button className="text-xl hover:bg-[#434343b3] w-9 h-9 flex items-center justify-center rounded-lg p-1">
+            <BiExpand />
+          </button>
         </div>
+        <p className="tracking-widest text-sm opacity-70">{description}</p>
+        <p className="hidden">{subDescription}</p>
+        {tech.map((technology, i) => (
+          <Image
+            className="hidden"
+            key={i}
+            alt={technology.name}
+            width={technology.width}
+            height={technology.height}
+            src={technology.src}
+          />
+        ))}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default ProjectCard
+export default ProjectCard;

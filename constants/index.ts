@@ -70,3 +70,182 @@ export const Frontend_skill = [
   },
 ];
 
+export const My_Projects = [
+  {
+    title: "Resume AI",
+    description: "Website content summary of a webpage",
+    subDescription:"This site was made in Next.js using the Article Extractor and Summarizer API to extract and summarize information from web pages with GPT-4.",
+    image: "/project.png",
+    src: "/resumi.png",
+    tech: [
+      {
+        name: "React",
+        src: "/react.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Next js",
+        src: "/nextjs.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Tailwind Css",
+        src: "/tailwindcss.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Open AI API",
+        src: "/openai.svg",
+        width: 30,
+        height: 30,
+      },
+    ]
+  },
+  {
+    title: "Trips",
+    description: "Travel booking website",
+    subDescription:"Developed using React and Next Js.",
+    image: "/project.png",
+    src: "/Trips.png",
+    tech: [
+      {
+        name: "React",
+        src: "/react.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Next js",
+        src: "/nextjs.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Tailwind Css",
+        src: "/tailwindcss.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Prisma",
+        src: "/prisma.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Supabase",
+        src: "/supabase.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Postgresql",
+        src: "/postgresql.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Stripe",
+        src: "/stripe.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Vercel",
+        src: "/vercel.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Node.js",
+        src: "/nodejs.svg",
+        width: 30,
+        height: 30,
+      },
+    ]
+  },
+  {
+    title: "Moto Log",
+    description: "Moto Log app presentation website",
+    subDescription:"Developed using React and Next Js.",
+    image: "/project.png",
+    src: "/MotoLog.png",
+    tech: [
+      {
+        name: "HTML",
+        src: "/html5.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "CSS",
+        src: "/css.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Java Script",
+        src: "/javascript.svg",
+        width: 30,
+        height: 30,
+      },
+    ]
+  },
+  {
+    title: "God of War",
+    description: "God of war landing page",
+    subDescription:"Developed using React and Next Js.",
+    image: "/project.png",
+    src: "/Gow.png",
+    tech: [
+      {
+        name: "HTML",
+        src: "/html5.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "CSS",
+        src: "/css.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Java Script",
+        src: "/javascript.svg",
+        width: 30,
+        height: 30,
+      },
+    ]
+  },
+  {
+    title: "Blizzard",
+    description: "Blizzard landing page",
+    subDescription:"Developed using React and Next Js.",
+    image: "/project.png",
+    src: "/Blizzard.png",
+    tech: [
+      {
+        name: "HTML",
+        src: "/html5.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "CSS",
+        src: "/css.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Java Script",
+        src: "/javascript.svg",
+        width: 30,
+        height: 30,
+      },
+    ]
+  },
+];

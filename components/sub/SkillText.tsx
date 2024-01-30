@@ -3,14 +3,15 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Balancer from "react-wrap-balancer";
-import { slideInFromLeft, slideInFromRight } from "@/utils/motion";
+import { slideInFromRight } from "@/utils/motion";
 
 const SkillText = () => {
   return (
     <div className="flex flex-col items-center justify-center">
       <motion.div
-        variants={slideInFromLeft(0.5)}
-        className="text-6xl med:text-3xl text-white font-medium  text-center max-w-[700px]"
+        initial="hidden" animate="visible"
+        variants={slideInFromRight(0.5)}
+        className="text-7xl med:text-5xl text-zinc-200 font-medium  text-center max-w-[900px]"
       >
         <Balancer>Coding the future with modern technologies</Balancer>
       </motion.div>

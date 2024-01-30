@@ -12,13 +12,36 @@
   font-family: 'Playfair Display', serif;
 }
 
+.body-bg {
+  background: #070707;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
 .skillsIconsBg {
   background: linear-gradient(160deg, rgba(30, 30, 30, 0.9), rgba(15, 15, 15, 0.95));
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
 }
 
-.skillsBg {
-  background: linear-gradient(180deg, #000 30%, #111 50%, #111 100%);
+.projectModalBg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(140deg, #111111 30%, #111 50%, #1b1b1b 100%);
+  backdrop-filter: blur(10px);
+}
+
+.projectCardBg {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(140deg, #111111 30%, #111 50%, #1b1b1b 100%);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease-in-out;
+}
+
+.projectCardBg::before {
+  content: "";
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
+}
+
+.projectCardBg:hover {
+  transform: scale(1.05); 
 }
 
 .Welcome-box {

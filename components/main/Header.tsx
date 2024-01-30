@@ -3,6 +3,8 @@
 import Image from "next/image";
 import React from "react";
 import { Socials } from "@/constants";
+import { MdGrain } from "react-icons/md";
+
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
 
@@ -14,13 +16,9 @@ const Header = () => {
           href="/"
           className="cursor-pointer h-auto w-auto flex flex-row items-center"
         >
-          <Image
-            src="/navLogo.svg"
-            alt="logo"
-            width={40}
-            height={40}
-            className=""
-          />
+          <div className="text-[#315694] text-2xl">
+            <MdGrain />
+          </div>
 
           <span className="font-extralight tracking-widest text-2xl ml-[10px] text-zinc-300 med:hidden">
             Oliveira
