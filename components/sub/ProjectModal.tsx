@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 import ProjectModalFooter from "./ProjectModalFooter";
-import ModalAnimation from "./ModalAnimation";
 
 interface Technology {
   name: string;

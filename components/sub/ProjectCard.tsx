@@ -36,10 +36,10 @@ const ProjectCard: React.FC<Props> = ({
         layout="responsive"
         className="w-full object-contain"
       />
-      <div className=" text-white p-8 w-full h-ful flex flex-col gap-1">
+      <div className=" text-white p-8 w-full h-ful flex flex-col gap-3">
         <div className="flex items-center w-full justify-between">
           <h1 className="tracking-tighter text-3xl font-semibold">{title}</h1>
-          <button className="text-xl hover:bg-[#434343b3] w-9 h-9 flex items-center justify-center rounded-lg p-1">
+          <button className="text-xl hover:bg-[#434343b3] w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-800">
             <BiExpand />
           </button>
         </div>
