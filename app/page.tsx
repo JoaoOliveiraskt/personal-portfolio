@@ -12,6 +12,7 @@ export default function Home() {
 
   return (
     <main className="h-full w-full ">
+      
       <motion.div
         style={{
           scaleX,
@@ -27,6 +28,7 @@ export default function Home() {
      
       <div className="flex flex-col w-full h-full">
         
+      
         <Hero />
         <Skills />
         <Projects />

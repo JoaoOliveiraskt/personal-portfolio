@@ -26,7 +26,7 @@ const ProjectCard: React.FC<Props> = ({
 }: Props) => {
   return (
 
-    <div className="bg-black p-1 rounded-xl shadow-lg border-2 border-zinc-800 h-full w-[28rem] sm:w-full ">
+    <div className="bg-black p-2 rounded-xl shadow-lg border-2 border-zinc-800 h-full w-[28rem] sm:w-full ">
     <div className="projectCardBg border-2 border-zinc-800 rounded-xl overflow-hidden">
       <Image
         src={src}
