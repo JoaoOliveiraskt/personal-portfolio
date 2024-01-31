@@ -16,6 +16,7 @@ interface Card {
   caption: string;
   photo: string;
   description: string;
+
   tech: Technology[];
 }
 
@@ -38,19 +39,21 @@ const Projects: React.FC = () => {
       id="projects"
       className="relative flex flex-col items-center justify-between min-h-screen pb-20 px-5"
     >
+
       <h1 className="text-7xl med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to bg-cyan-500 py-20">
         Projects
       </h1>
-
       <div className="flex items-center">
 
-      <div className="flex flex-row flex-wrap gap-20 items-center justify-center max-w-[70rem]">
+      <div id="cards" className="flex flex-col items-center justify-center max-w-[70rem]">        
         {My_Projects.map((card, i) => (
-          <div key={i}
-          className="cursor-pointer"
+          <div id="card" 
+          key={i}
+          className="cursor-pointer "
           onClick={() => openModal(i)}
           >
             <ProjectCard
+              id={i}
               src={card.photo}
               title={card.title}
               caption={card.caption}
@@ -60,6 +63,7 @@ const Projects: React.FC = () => {
             />
           </div>
         ))}
+       
       </div>
       </div>
 

@@ -113,3 +113,43 @@ html {
 ::-webkit-scrollbar-track {
   background-color: #00000000;
 }
+
+
+:root {
+  --cards:4;
+  --cardHeight: 60vh;
+  --cardTopPadding: 1.5em;
+  --cardMargin: 4vw;
+}
+
+#cards{
+  
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap:var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardMargin));
+  margin-bottom: var(--cardMargin);
+}
+
+#card0 {
+  --index: 1;
+}
+
+#card1 {
+  --index: 2;
+}
+
+#card2 {
+  --index: 3;
+}
+
+#card3 {
+  --index: 4;
+}
+
+#card {
+  position: sticky;
+  top: 200px;
+  padding-top: calc(var(--index) * var(--cardTopPadding))
+}
