@@ -17,7 +17,7 @@ const ProjectModalFooter: React.FC<ProjectModalFooterProps> = ({ closeModal, sel
   
   return (
     <div className="text-white flex items-center gap-5">
-      <button className="hover:bg-[#434343b3] rounded-lg p-2 flex items-center justify-center border border-zinc-800 transition-colors">
+      <button className="hover:bg-[#434343b3] rounded-lg p-2 flex items-center justify-center border border-zinc-800 transition-colors ">
         <a href={websiteUrl} target="_blank"rel="noopener noreferrer" className="flex gap-3 items-center justify-center text-sm">
           Website
           <div className="text-lg">

@@ -42,7 +42,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
             />
           </div>
           <div className="flex flex-col px-5 py-8 w-full h-full gap-5">
-            <div className="flex items-center gap-10 sm:gap-3 w-full tracking-tighter text-2xl font-semibold text-zinc-200">
+            <div className="flex items-center gap-10 sm:gap-3 w-full tracking-tighter text-2xl font-semibold text-zinc-200 sm:flex-wrap">
               {selectedCard.title}
               <div className="text-white flex items-center gap-4 sm:flex-wrap">
                 {selectedCard.tech.map((technology, index) => (

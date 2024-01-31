@@ -22,49 +22,49 @@ export const Socials = [
 export const Frontend_skill = [
   {
     skill_name: "Css",
-    Image: "/css.png",
-    width: 75,
-    height: 75,
+    Image: "/css.svg",
+    width: 45,
+    height: 45,
   },
   {
     skill_name: "Figma",
-    Image: "/figma.png",
+    Image: "/figma.svg",
     width: 35,
     height: 35,
   },
   {
     skill_name: "Framer",
-    Image: "/framer.png",
-    width: 55,
-    height: 55,
+    Image: "/framer.svg",
+    width: 35,
+    height: 35,
   },
   {
     skill_name: "Html 5",
-    Image: "/html.png",
-    width: 65,
-    height: 65,
+    Image: "/html5.svg",
+    width: 45,
+    height: 45,
   },
   {
     skill_name: "Java Script",
-    Image: "/js.png",
-    width: 50,
+    Image: "/javascript.svg",
+    width: 45,
     height: 50,
   },
   {
     skill_name: "Next js 13",
-    Image: "/next.png",
+    Image: "/nextjs.svg",
     width: 60,
     height: 60,
   },
   {
     skill_name: "React",
-    Image: "/react.png",
+    Image: "/react.svg",
     width: 60,
     height: 60,
   },
   {
     skill_name: "Tailwind Css",
-    Image: "/tailwind.png",
+    Image: "/tailwindcss.svg",
     width: 70,
     height: 70,
   },
@@ -74,7 +74,7 @@ export const My_Projects = [
   {
     title: "Resumi AI",
     caption: "Website content summary of a webpage",
-    description:"Made in Next.js using the Article Extractor and Summarizer API to extract and summarize information from web pages with GPT-4.",
+    description:"Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
     photo: "/Resumi.png",
     tech: [
@@ -107,7 +107,7 @@ export const My_Projects = [
   {
     title: "Trips",
     caption: "Travel booking website",
-    description:"Developed using React and Next Js.",
+    description:"This project was a great learning experience into data structures, authentication processes, working with dates, and payment functionality using Stripe.",
     src: "https://long-trips.vercel.app",
     photo: "/Trips.png",
     tech: [
@@ -170,7 +170,7 @@ export const My_Projects = [
   {
     title: "Moto Log",
     caption: "Moto Log app presentation website",
-    description:"Developed using React and Next Js.",
+    description:"Presentation site for the Moto Log application, a mobile delivery application that will be developed as part of a college assignment.",
     src: "https://joaooliveiraskt.github.io/Moto-Log-Website/",
     photo: "/MotoLog.png",
     tech: [
@@ -197,7 +197,7 @@ export const My_Projects = [
   {
     title: "God of War",
     caption: "God of war landing page",
-    description:"Developed using React and Next Js.",
+    description:"A landing page inspired by the game God of War.",
     src: "https://joaooliveiraskt.github.io/gow-page/",
     photo: "/Gow.png",
     tech: [
@@ -224,7 +224,7 @@ export const My_Projects = [
   {
     title: "Blizzard",
     caption: "Blizzard landing page",
-    description:"Developed using React and Next Js.",
+    description:"Landing page inspired by the Blizzard brand.",
     src: "https://joaooliveiraskt.github.io/blizzard-page/",
     photo: "/Blizzard.png",
     tech: [

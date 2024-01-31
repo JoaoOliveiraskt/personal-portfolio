@@ -1,24 +1,22 @@
 import React from "react";
+import { Socials } from "@/constants";
 
 import {
-  RxDiscordLogo,
-  RxGithubLogo,
-  RxInstagramLogo,
   RxLinkedinLogo,
-  RxTwitterLogo,
 } from "react-icons/rx";
-
-import { FaYoutube } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg px-5 pt-32 pb-5">
+    <div className="w-full h-full bg-transparent text-gray-200 shadow-lg px-5">
       <div className="w-full flex flex-col items-center justify-center m-auto">
         <div className="tracking-wider min-w-[200px] h-auto flex flex-col items-center justify-center">
           <div className="font-bold text-[16px]">SocialMedia</div>
           <div className="flex flex-row items-center my-[15px] cursor-pointer">
             <RxLinkedinLogo />
+            <a href={Socials[0].link} >
             <span className="ml-[6px]">Linkedin</span>
+            </a>
+            
           </div>
 
           <div className="font-bold text-[16px]">About</div>

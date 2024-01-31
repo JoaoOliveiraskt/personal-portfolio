@@ -7,6 +7,7 @@ import { MdGrain } from "react-icons/md";
 
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
+import Avatar from "../sub/Avatar";
 
 const Header = () => {
   return (
@@ -17,7 +18,7 @@ const Header = () => {
           className="cursor-pointer h-auto w-auto flex flex-row items-center"
         >
           <div className="text-[#315694] text-2xl">
-            <MdGrain />
+            <Avatar />
           </div>
 
           <span className="font-extralight tracking-widest text-2xl ml-[10px] text-zinc-300 med:hidden">
