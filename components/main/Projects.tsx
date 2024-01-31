@@ -13,9 +13,9 @@ interface Technology {
 interface Card {
   src: string;
   title: string;
+  caption: string;
+  photo: string;
   description: string;
-  image: string;
-  subDescription: string;
   tech: Technology[];
 }
 
@@ -51,11 +51,12 @@ const Projects: React.FC = () => {
           onClick={() => openModal(i)}
           >
             <ProjectCard
-              src={card.src}
+              src={card.photo}
               title={card.title}
+              caption={card.caption}
               description={card.description}
-              subDescription={card.subDescription}
               tech={card.tech}
+              
             />
           </div>
         ))}

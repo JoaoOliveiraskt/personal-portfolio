@@ -12,16 +12,16 @@ interface Technology {
 interface Props {
   src: string;
   title: string;
+  caption: string;
   description: string;
-  subDescription: string;
   tech: Technology[];
 }
 
 const ProjectCard: React.FC<Props> = ({
   src,
   title,
+  caption,
   description,
-  subDescription,
   tech,
 }: Props) => {
   return (
@@ -43,8 +43,8 @@ const ProjectCard: React.FC<Props> = ({
             <BiExpand />
           </button>
         </div>
-        <p className="tracking-widest text-sm opacity-70">{description}</p>
-        <p className="hidden">{subDescription}</p>
+        <p className="tracking-widest text-sm opacity-70">{caption}</p>
+        <p className="hidden">{description}</p>
         {tech.map((technology, i) => (
           <Image
             className="hidden"

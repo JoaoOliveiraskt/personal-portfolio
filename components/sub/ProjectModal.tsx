@@ -9,11 +9,12 @@ interface Technology {
   height: number;
 }
 
-interface ProjectModalProps {
+export interface ProjectModalProps {
   selectedCard: {
     src: string;
+    photo: string;
     title: string;
-    subDescription: string;
+    description: string;
     tech: Technology[];
   } | null;
   closeModal: () => void;
@@ -33,7 +34,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
         <div className="border-2 border-zinc-800 rounded-xl overflow-hidden w-full h-full">
           <div className="w-full h-auto">
             <Image
-              src={selectedCard.src}
+              src={selectedCard.photo}
               alt={selectedCard.title}
               width={500}
               height={300}
@@ -56,9 +57,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               </div>
             </div>
             <p className="tracking-widest text-zinc-400 max-w-[35rem]">
-              {selectedCard.subDescription}
+              {selectedCard.description}
             </p>
-            <ProjectModalFooter closeModal={closeModal}/>
+            <ProjectModalFooter selectedCard={selectedCard} closeModal={closeModal}/>
           </div>
         </div>
       </div>

@@ -73,10 +73,10 @@ export const Frontend_skill = [
 export const My_Projects = [
   {
     title: "Resumi AI",
-    description: "Website content summary of a webpage",
-    subDescription:"This site was made in Next.js using the Article Extractor and Summarizer API to extract and summarize information from web pages with GPT-4.",
-    image: "/project.png",
-    src: "/Resumi.png",
+    caption: "Website content summary of a webpage",
+    description:"Made in Next.js using the Article Extractor and Summarizer API to extract and summarize information from web pages with GPT-4.",
+    src: "https://resumi-ai.vercel.app",
+    photo: "/Resumi.png",
     tech: [
       {
         name: "React",
@@ -106,10 +106,10 @@ export const My_Projects = [
   },
   {
     title: "Trips",
-    description: "Travel booking website",
-    subDescription:"Developed using React and Next Js.",
-    image: "/project.png",
-    src: "/Trips.png",
+    caption: "Travel booking website",
+    description:"Developed using React and Next Js.",
+    src: "https://long-trips.vercel.app",
+    photo: "/Trips.png",
     tech: [
       {
         name: "React",
@@ -169,10 +169,10 @@ export const My_Projects = [
   },
   {
     title: "Moto Log",
-    description: "Moto Log app presentation website",
-    subDescription:"Developed using React and Next Js.",
-    image: "/project.png",
-    src: "/MotoLog.png",
+    caption: "Moto Log app presentation website",
+    description:"Developed using React and Next Js.",
+    src: "https://joaooliveiraskt.github.io/Moto-Log-Website/",
+    photo: "/MotoLog.png",
     tech: [
       {
         name: "HTML",
@@ -196,10 +196,10 @@ export const My_Projects = [
   },
   {
     title: "God of War",
-    description: "God of war landing page",
-    subDescription:"Developed using React and Next Js.",
-    image: "/project.png",
-    src: "/Gow.png",
+    caption: "God of war landing page",
+    description:"Developed using React and Next Js.",
+    src: "https://joaooliveiraskt.github.io/gow-page/",
+    photo: "/Gow.png",
     tech: [
       {
         name: "HTML",
@@ -223,10 +223,10 @@ export const My_Projects = [
   },
   {
     title: "Blizzard",
-    description: "Blizzard landing page",
-    subDescription:"Developed using React and Next Js.",
-    image: "/project.png",
-    src: "/Blizzard.png",
+    caption: "Blizzard landing page",
+    description:"Developed using React and Next Js.",
+    src: "https://joaooliveiraskt.github.io/blizzard-page/",
+    photo: "/Blizzard.png",
     tech: [
       {
         name: "HTML",
