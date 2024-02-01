@@ -3,7 +3,6 @@ import React from "react";
 import SkillsDataProvider from "../sub/SkillsDataProvider";
 import SkillText from "../sub/SkillText";
 import TopBlur from "../sub/TopBlur";
-import BottomBlur from "../sub/BottomBlur";
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -28,7 +27,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      <BottomBlur />
+      
     </motion.section>
   );
 };
