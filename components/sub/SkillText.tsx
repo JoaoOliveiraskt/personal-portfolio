@@ -11,7 +11,7 @@ const SkillText = () => {
       <motion.div
         initial="hidden" animate="visible"
         variants={slideInFromRight(0.5)}
-        className="text-7xl med:text-5xl text-zinc-200 font-medium  text-center max-w-[900px]"
+        className="relative text-7xl med:text-5xl text-zinc-200 font-medium  text-center max-w-[900px]"
       >
         <Balancer>Coding the future with modern technologies</Balancer>
       </motion.div>

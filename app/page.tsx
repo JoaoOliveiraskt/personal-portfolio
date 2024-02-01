@@ -26,10 +26,9 @@ export default function Home() {
         }}
       />
      
-      <div className="flex flex-col w-full h-full">
+      <div className="flex flex-col w-full h-full">      
+        <Hero />  
         
-      
-        <Hero />
         <Skills />
         <Projects />
 

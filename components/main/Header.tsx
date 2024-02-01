@@ -3,7 +3,6 @@
 import Image from "next/image";
 import React from "react";
 import { Socials } from "@/constants";
-import { MdGrain } from "react-icons/md";
 
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
@@ -11,7 +10,7 @@ import Avatar from "../sub/Avatar";
 
 const Header = () => {
   return (
-    <div className="fixed max-w-[900px] h-14 top-4 right-0 left-0 m-auto px-3 med:px-3 z-40 bg-black border border-zinc-800 rounded-full med:mx-5">
+    <div className="fixed max-w-[900px] h-14 top-4 right-0 left-0 m-auto px-3 z-40 bg-black border border-zinc-800 rounded-full med:mx-5">
       <div className=" w-full h-full flex flex-row items-center justify-between">
         <Link
           href="/"

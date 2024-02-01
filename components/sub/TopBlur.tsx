@@ -1,6 +1,6 @@
 import React from "react";
 
-const BlurTop = () => {
+const TopBlur = () => {
   return (
     <div className="absolute rounded-full z-[-1] top-0 right-[30rem]">
       <div className="absolute bg-[#0b355354] w-80 h-80 blur-3xl rounded-full z-[-1] top-20 right-28 "></div>
@@ -9,4 +9,4 @@ const BlurTop = () => {
   );
 };
 
-export default BlurTop;
+export default TopBlur;

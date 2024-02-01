@@ -24,8 +24,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} 
-        overflow-y-scroll overflow-x-hidden bg-black`}
+        className={`${poppins.className} overflow-y-scroll overflow-x-hidden bg-black`}
         style={{ minHeight: "100vh" }}
       >
         <Header />

@@ -2,7 +2,7 @@
 import React from "react";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { IoIosCloseCircle } from "react-icons/io";
-import { ProjectModalProps } from "@/components/sub/ProjectModal";
+import { ProjectModalProps } from "@/components/sub/ModalProject";
 
 
 interface ProjectModalFooterProps {

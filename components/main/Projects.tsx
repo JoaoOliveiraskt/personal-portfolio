@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import ProjectCard from "../sub/ProjectCard";
+import ProjectCard from "../sub/CardProject";
 import { My_Projects } from "@/constants";
-import ProjectModal from "../sub/ProjectModal";
+import ProjectModal from "../sub/ModalProject";
 
 interface Technology {
   name: string;

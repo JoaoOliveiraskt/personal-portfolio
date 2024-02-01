@@ -1,7 +1,7 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
-import BlurBottom from "../sub/BlurBottom";
-import BlurTop from "../sub/BlurTop";
+import BlurBottom from "../sub/BottomBlur";
+import BlurTop from "../sub/TopBlur";
 
 const Hero = () => {
   return (
