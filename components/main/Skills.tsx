@@ -28,7 +28,7 @@ const Skills = () => {
           ))}
         </div>
       </div>
-      
+      <BottomBlur />
     </motion.section>
   );
 };
