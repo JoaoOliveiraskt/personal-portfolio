@@ -2,7 +2,7 @@ import { Frontend_skill } from "@/constants";
 import React from "react";
 import SkillsDataProvider from "../sub/SkillsDataProvider";
 import SkillText from "../sub/SkillText";
-import TopBlur from "../sub/TopBlur";
+
 import { motion } from "framer-motion";
 
 const Skills = () => {
@@ -11,7 +11,7 @@ const Skills = () => {
       id="skills"
       className="relative flex items-center justify-center w-full min-h-screen px-5 py-20"
     >
-      <TopBlur />
+   
       <div className="flex flex-col items-center justify-start gap-32 h-full">
         <SkillText />
 
