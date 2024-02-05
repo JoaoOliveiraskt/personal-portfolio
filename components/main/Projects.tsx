@@ -37,15 +37,14 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="relative flex flex-col items-center justify-between min-h-screen pb-20 px-5"
+      className="relative flex flex-col items-center justify-between min-h-screen pb-20 px-5 w-full"
     >
-
       <h1 className="text-7xl med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to bg-cyan-500 py-20">
         Projects
       </h1>
-      <div className="flex items-center">
-
-      <div id="cards" className="flex flex-col items-center justify-center max-w-[70rem]">        
+      <div className="flex items-center justify-center pb-24 rounded-br-[50px] rounded-bl-[50px] w-[80rem]">
+      <div id="cards" className="flex flex-row flex-wrap items-center justify-center gap-16 max-w-[70rem]"> 
+             
         {My_Projects.map((card, i) => (
           <div id="card" 
           key={i}
