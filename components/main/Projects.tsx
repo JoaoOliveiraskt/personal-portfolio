@@ -42,7 +42,7 @@ const Projects: React.FC = () => {
       <h1 className="text-7xl med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to bg-cyan-500 py-20">
         Projects
       </h1>
-      <div className="flex items-center justify-center pb-24 rounded-br-[50px] rounded-bl-[50px] w-[80rem]">
+      <div className="flex items-center justify-center pb-24 rounded-br-[50px] rounded-bl-[50px]">
       <div id="cards" className="flex flex-row flex-wrap items-center justify-center gap-16 max-w-[70rem]"> 
              
         {My_Projects.map((card, i) => (
