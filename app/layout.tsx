@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   description: "This is my web developer portfolio",
 };
 
+
+
 export default function RootLayout({
   children,
 }: {
@@ -27,9 +29,9 @@ export default function RootLayout({
         className={`${poppins.className} overflow-y-scroll overflow-x-hidden bg-black`}
         style={{ minHeight: "100vh" }}
       >
-        <Header />
+        
         {children}
-        <Footer />
+       <Footer/>
       </body>
     </html>
   );

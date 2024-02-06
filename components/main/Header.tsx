@@ -8,7 +8,7 @@ import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
 import Avatar from "../sub/Avatar";
 
-const Header = () => {
+export default function Header() {
   return (
     <div className="fixed max-w-[900px] h-14 top-4 right-0 left-0 m-auto px-3 z-40 bg-black border border-zinc-800 rounded-full med:mx-5">
       <div className=" w-full h-full flex flex-row items-center justify-between">
@@ -27,12 +27,12 @@ const Header = () => {
 
         <div className="tracking-wider text-sm w-[400px] px-2 h-full flex flex-row items-center justify-center sm:w-64 med:w-96">
           <div className="flex items-center justify-between w-full h-auto px-[6px] text-zinc-400 sm:text-sm transition-colors">
-            <a href="#about-me" className="cursor-pointer hover:text-slate-50 transition-colors">
+            <Link href="/" className="cursor-pointer hover:text-slate-50 transition-colors">
               About
-            </a>
-            <a href="#skills" className="cursor-pointer hover:text-slate-50 transition-colors">
-              Skills
-            </a>
+            </Link>
+          <Link href="/profile" className="cursor-pointer hover:text-slate-50 transition-colors">
+              Profile
+         </Link>
             <a href="#projects" className="cursor-pointer hover:text-slate-50 transition-colors">
               Projects
             </a>
@@ -63,4 +63,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+

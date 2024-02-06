@@ -113,3 +113,33 @@ html {
 ::-webkit-scrollbar-track {
   background-color: #00000000;
 }
+
+.color-text {
+  color: #D9D9D9;
+}
+
+#links-curriculo ul span {
+  color: #0066ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#links-curriculo ul span:hover {
+  color: #72a8ff;
+  
+}
+
+#curriculo h3 {
+  color: #A0E57E;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+#projects ul span {
+  color: #0066ff;
+  transition: 0.3s;
+}
+
+#projects ul span:hover {
+  color: #72a8ff;
+}
