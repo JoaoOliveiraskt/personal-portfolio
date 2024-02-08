@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "aos": "^2.3.4",
     "classnames": "^2.5.1",
     "next": "14.0.4",
     "react": "^18.2.0",
@@ -17,12 +18,15 @@
     "react-favicon": "^2.0.3",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.21.3",
-    "react-wrap-balancer": "^1.1.0"
+    "react-wrap-balancer": "^1.1.0",
+    "smooth-scrollbar": "^8.8.4",
+    "smooth-scrollbar-react": "^2.4.1"
   },
   "devDependencies": {
     "@react-three/drei": "^9.94.1",
     "@react-three/fiber": "^8.15.14",
     "@shrutibalasa/tailwind-grid-auto-fit": "^1.1.0",
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

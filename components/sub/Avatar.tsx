@@ -1,16 +1,18 @@
 import Image from 'next/image'
 import React from 'react'
+interface AvatarProps {
+  className?: string;
+}
 
-const Avatar = () => {
-    
+const Avatar: React.FC<AvatarProps> = ({ className }) => {
   return (
-    <div className='flex items-center justify-center'>
-        <Image src="https://github.com/joaoOliveiraskt.png"  alt="João Oliveira" 
+      <Image
+        src="https://github.com/joaoOliveiraskt.png"
+        alt="João Oliveira"
         width={40}
-        height={30}
-        className='object-contain rounded-full'
-        />
-    </div>
+        height={40}
+        className={`object-contain rounded-full ${className}`}
+      />
   )
 }
 

@@ -1,23 +1,16 @@
 import Link from "next/link";
 import React from "react";
 import Balancer from "react-wrap-balancer";
+import HeaderCv from "@/components/main/HeaderCv";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 
 export default function Curriculo() {
   return (
-    <main className="tracking-wider bg-neutral-950 min-h-screen w-full px-5 pt-10 pb-24 sm:p-0 sm:pt-10 flex flex-col items-center justify-center gap-5">
-      <div className="bg-neutral-950 max-w-[60rem] px-12 sm:px-3 fixed left-0 right-0 top-0 h-14 m-auto flex items-center">
-        <Link
-          href="/profile"
-          className="bg-neutral-900 text-white flex items-center justify-center gap-4 w-28  h-9 hover:bg-[#434343b3] rounded-xl"
-        >
-          <FaLongArrowAltLeft className="text-white" />
-          Return
-        </Link>
-      </div>
+    <main className="tracking-wider bg-neutral-950 min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
+      <HeaderCv/>
       <div
         id="curriculo"
-        className=" rounded-3xl max-w-[60rem] border border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6 mt-6"
+        className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
       >
         <div className="flex med:flex-col-reverse justify-between med:gap-6 items-start">
           <div className="flex flex-col space-y-2">
@@ -27,30 +20,35 @@ export default function Curriculo() {
             <h2 className="text-xl font-semibold text-white ">
               Desenvolvedor Front End
             </h2>
-            <Balancer>
+            
               <p className="max-w-80 text-zinc-400">
+                <Balancer>
                 Com 9 meses de experiência em estágio remoto e mais de 1 ano em
                 projetos independentes resolvendo desafios com Java Script,
                 React.js e CSS.
+                </Balancer>
               </p>
-            </Balancer>
+            
           </div>
           <div id="links-curriculo">
             <ul className="space-y-1 text-white">
-              <li>Squarema/RJ, Brasil</li>
+              <li><p>Squarema/RJ, Brasil</p></li>
               <li>
-                Contato: <span>(24) 99991-4901</span>
+                <p>Contato: <span>(24) 99991-4901</span></p>
               </li>
               <li>
-                Email: <span>joaooliveira@gmail.com</span>
+                <p>Email: <span>joaooliveiram@gmail.com</span></p>
               </li>
               <li>
-                Github:{" "}
+               <p>
+               Github:{" "}
                 <a href="https://github.com/JoaoOliveiraskt" target="_blank">
                   <span>/JoaoOliveiraskt</span>
                 </a>
+               </p>
               </li>
               <li>
+                <p>
                 Linkedin:{" "}
                 <a
                   href="https://www.linkedin.com/in/jo%C3%A3ov-oliveira"
@@ -58,12 +56,15 @@ export default function Curriculo() {
                 >
                   <span>in/joãov-oliveira</span>
                 </a>
+                </p>
               </li>
               <li className="overflow-hidden whitespace-nowrap">
-                Portfolio:{" "}
+              <p>
+              Portfolio:{" "}
                 <Link href="/">
                   <span className="">joaooliveiraweb.vercell.app</span>
                 </Link>
+              </p>
               </li>
             </ul>
           </div>
