@@ -26,23 +26,23 @@ const HeroContent = () => {
           variants={slideInFromLeft(0.3)}
           className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl font-medium text-zinc-200 max-w-[900px] w-auto h-auto"
         >
-          <span>
+          <h1>
             <Balancer>
-              Dedicated to deliver{" "}
+              I want to{" "}
               <div className="relative inline-block">
                 <span
                   id="underline"
                   className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
                 >
-                  a solid
-                  <span className="absolute bottom-5 left-20 right-0 sm:left-8 ssm:left-0 sm:bottom-3 ssm:bottom-2">
+                  make things
+                  <span className="absolute bottom-5 left-12 right-0 sm:left-8 ssm:left-0 sm:bottom-3 ssm:bottom-2">
                     <Underline />
                   </span>
                 </span>
               </div>{" "}
-              project experience
+              that make a difference.
             </Balancer>
-          </span>
+          </h1>
         </motion.div>
 
         <motion.p

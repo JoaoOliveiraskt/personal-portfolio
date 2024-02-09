@@ -9,7 +9,7 @@ const BentoLayout = () => {
     <div className="min-h-screen p-5 sm:p-0 tracking-wider">
       <div className="grid grid-cols-8 max-w-[70rem] m-auto auto-rows-max gap-5">
                
-        <div className="h-max space-y-32 col-span-5 sm:col-span-2 p-10 rounded-2xl overflow-hidden bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-700 via-gray-900 to-black">
+        <div className="h-max space-y-32 col-span-5 sm:col-span-2 p-10 rounded-2xl overflow-hidden ">
           <div className=" h-full space-y-12 ">
             <h1 className=" font-semibold text-4xl text-zinc-100 max-w-[600px]">
               <Balancer>

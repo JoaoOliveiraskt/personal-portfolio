@@ -26,10 +26,7 @@ export default function Header() {
         </Link>
 
         <div className="tracking-wider text-sm w-[400px] px-2 h-full flex flex-row items-center justify-center sm:w-64 med:w-96">
-          <div className="flex items-center justify-between w-full h-auto px-[6px] text-zinc-400 sm:text-sm transition-colors">
-            <Link href="/" className="cursor-pointer hover:text-slate-50 transition-colors">
-              About
-            </Link>
+          <div className="flex items-center justify-around w-full h-auto px-[6px] text-zinc-400 sm:text-sm transition-colors">
           <Link href="/profile" className="cursor-pointer hover:text-slate-50 transition-colors">
               Profile
          </Link>
