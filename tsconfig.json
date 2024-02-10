@@ -22,6 +22,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/sub/StaggeredDropdown.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/sub/StaggeredDropdown.tsx", "components/sub/CustomGlobe.jsx"],
   "exclude": ["node_modules"]
 }

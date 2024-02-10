@@ -14,6 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "João Oliveira",
   description: "This is my web developer portfolio",
+  icons:'/favicon.png',
 };
 
 
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} overflow-y-scroll overflow-x-hidden bg-black`}
+        className={`${poppins.className} overflow-y-scroll overflow-x-hidden bg-gray-950`}
         style={{ minHeight: "100vh" }}
       >
         

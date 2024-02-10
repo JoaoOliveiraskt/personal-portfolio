@@ -7,8 +7,8 @@ import HeroBg from "../sub/HeroBg";
 const Hero = () => {
   return (
     <div
-      id="about-me"
-      className="relative flex flex-col items-center justify-center min-h-screen px-5 sm:py-5"
+      id="hero"
+      className="relative flex flex-col items-center justify-center h-max pt-52 px-5 sm:pt-32 ssm:pt-10"
     >
       <HeroBg/>
       <HeroContent />

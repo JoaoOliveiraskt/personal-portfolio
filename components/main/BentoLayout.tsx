@@ -52,7 +52,7 @@ const BentoLayout = () => {
             </div>
         </div>
 
-        <div className="col-span-3 overflow-hidden rounded-2xl">
+        <div className="relative col-span-3 overflow-hidden rounded-2xl shadow-top">
           <div className="relative w-full h-full">
             <Image
               src="/musicImage2.png"
@@ -62,8 +62,11 @@ const BentoLayout = () => {
               />    
           </div>
         </div>
-
       </div>
+
+      {/* crie aqui outro grid com um card somente */}
+              
+
     </div>
   );
 };

@@ -6,7 +6,7 @@ import { FaLongArrowAltLeft } from "react-icons/fa";
 
 export default function Curriculo() {
   return (
-    <main className="tracking-wider bg-neutral-950 min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
+    <main className="tracking-wider bg-gray-950 min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
       <HeaderCv/>
       <div
         id="curriculo"

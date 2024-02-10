@@ -5,6 +5,7 @@ import Projects from "@/components/main/Projects";
 import BentoLayout from "@/components/main/BentoLayout";
 import Header from "@/components/main/Header";
 import ScrollYProgress from "@/components/sub/ScrollYProgress";
+import Skills from "@/components/main/Skills";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="flex flex-col w-full h-full">
         <Header />
         <Hero />
+        <Skills/>
         <Projects />
       </div>
     </main>
