@@ -7,7 +7,7 @@ export default function DesignSection() {
       <div className="space-y-16 flex flex-col items-center justify-center h-max max-w-[96%]">
 
       <div className="w-full">
-        <h2 className="text-3xl text-center font-semibold tracking-wide text-zinc-50">
+        <h2 className="text-3xl text-center font-semibold tracking-wide text-darkSubTitle">
           <Balancer>Exploring the Art of Web Design</Balancer>
         </h2>
       </div>

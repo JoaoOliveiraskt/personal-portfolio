@@ -14,7 +14,7 @@ function SliderInfinite() {
               height={image.height}
               index={index}
             />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
+            <p className="text-darkTitle ">{image.skill_name}</p>
           </div>
         ))}
         {Frontend_skill.map((image, index) => (
@@ -25,7 +25,7 @@ function SliderInfinite() {
               height={image.height}
               index={index}
             />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
+            <p className="text-darkTitle ">{image.skill_name}</p>
           </div>
         ))}
         {Frontend_skill.map((image, index) => (
@@ -36,117 +36,7 @@ function SliderInfinite() {
               height={image.height}
               index={index}
             />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
-          </div>
-        ))}
-        {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center gap-5">
-            <SkillsDataProvider
-              src={image.Image}
-              width={image.width}
-              height={image.height}
-              index={index}
-            />
-            <p className="text-zinc-200 ">{image.skill_name}</p>
+            <p className="text-darkTitle ">{image.skill_name}</p>
           </div>
         ))}
       </div>

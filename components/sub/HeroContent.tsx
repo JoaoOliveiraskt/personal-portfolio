@@ -7,13 +7,12 @@ import { Underline } from "./Underline";
 import Balancer from "react-wrap-balancer";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import getMonthDifference from "@/utils/developerDate";
+import Avatar from "./Avatar";
 import {
   slideInFromLeft,
   slideInFromRight,
   slideInFromTop,
 } from "@/utils/motion";
-import Avatar from "./Avatar";
-import Image from "next/image";
 
 const HeroContent = () => {
 
@@ -28,7 +27,7 @@ const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0)}
-          className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl font-medium text-zinc-200 max-w-[900px] h-auto"
+          className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl font-medium text-darkTitle max-w-[900px] h-auto"
         >
           <h1>
             <Balancer>
@@ -36,7 +35,7 @@ const HeroContent = () => {
               <div className="relative inline-block">
                 <span
                   id="underline"
-                  className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
+                  className="relative text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500"
                 >
                   make things
                   <span className="absolute bottom-5 left-12 right-0 sm:left-8 ssm:left-0 sm:bottom-3 ssm:bottom-2">
@@ -51,7 +50,7 @@ const HeroContent = () => {
 
         <motion.p
           variants={slideInFromRight(0)}
-          className="tracking-wide text-lg text-gray-400  max-w-[700px] sm:text-sm"
+          className="tracking-wide text-lg text-darkText  max-w-[700px] sm:text-sm"
         >
           
             Hello, I&apos;m João, a front-end developer with{" "}
@@ -76,7 +75,7 @@ const HeroContent = () => {
           </div>
           <motion.button
             variants={slideInFromLeft(0)}
-            className="cursor-pointer py-2 button-primary border border-[#ffffff32] text-center text-white rounded-[32px] w-[200px] sm:w-40 transition-colors"
+            className="cursor-pointer py-2 button-primary hover:bg-linkHover border border-border text-center text-darkTitle rounded-xl w-[200px] sm:w-40 transition-colors duration-300"
           >
             <a
               target="_blank"

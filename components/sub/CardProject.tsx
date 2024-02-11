@@ -28,7 +28,7 @@ const ProjectCard: React.FC<Props> = ({
 }: Props) => {
   return (
 
-    <div id={"card"+id} className="bg-black overflow-hidden p-2 rounded-2xl shadow-lg border border-zinc-900 h-full w-[30rem] sm:w-full ">
+    <div id={"card"+id} className="overflow-hidden p-2 rounded-2xl shadow-lg border border-border h-full w-[30rem] sm:w-full ">
     <div className="projectCardBg  rounded-xl overflow-hidden">
       <Image
         src={src}
@@ -38,14 +38,14 @@ const ProjectCard: React.FC<Props> = ({
         layout="responsive"
         className="w-full object-contain"
       />
-      <div className=" text-white p-8 w-full h-ful flex flex-col gap-3">
+      <div className=" text-darkTitle p-8 w-full h-ful flex flex-col gap-3">
         <div className="flex items-center w-full justify-between">
           <h1 className="tracking-tighter text-3xl font-semibold">{title}</h1>
-          <button className="text-xl hover:bg-[#434343b3] w-9 h-9 flex items-center justify-center rounded-lg border border-zinc-800">
+          <button className="text-xl hover:bg-linkHover w-9 h-9 flex items-center justify-center rounded-lg border border-border">
             <BiExpand />
           </button>
         </div>
-        <p className="tracking-widest text-sm opacity-70">{caption}</p>
+        <p className="tracking-widest text-sm opacity-70 text-darkSubTitle">{caption}</p>
         <p className="hidden">{description}</p>
         {tech.map((technology, i) => (
           <Image

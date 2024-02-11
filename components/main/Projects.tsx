@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
       <div className="flex flex-col items-center justify-center space-y-10">
      
         <div className="w-full">
-          <h1 className="text-5xl text-center med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-purple-900 to bg-cyan-500">
+          <h1 className="text-5xl p-1 text-center med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-darkTitle to-lightBg">
             Projects
           </h1>
         </div>
@@ -74,9 +74,9 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="w-full flex items-center justify-end">
-          <Link href="/profile" className="w-32 hover:bg-[#434343b3] flex items-center justify-center rounded-lg h-8">
+          <Link href="/profile" className="w-32 hover:bg-linkHover flex items-center justify-center rounded-lg h-8 transition-colors duration-300">
             <button             
-              className="flex space-x-3 text-blue-500 items-center"
+              className="flex space-x-3 text-blue-400 items-center "
             >
               <span className="">See more</span>
               <FaLongArrowAltRight />
