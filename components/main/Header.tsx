@@ -3,22 +3,21 @@
 import Image from "next/image";
 import React from "react";
 import { Socials } from "@/constants";
-
+import { motion } from "framer-motion";
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
-import Avatar from "../sub/Avatar";
+import {
+  slideInFromTop,
+} from "@/utils/motion";
 
 export default function Header() {
   return (
-    <div className="fixed max-w-[900px] h-14 top-4 right-0 left-0 m-auto px-3 z-40 header backdrop-blur-3xl border border-zinc-800 rounded-full med:mx-5">
+    <motion.div variants={slideInFromTop} className="fixed max-w-[900px] h-12 top-4 right-0 left-0 m-auto px-3 z-40 header backdrop-blur-3xl border border-zinc-800 rounded-full med:mx-5">
       <div className=" w-full h-full flex flex-row items-center justify-between">
         <a
           href="#hero"
           className="cursor-pointer h-auto w-auto flex flex-row items-center"
         >
-          <div className="text-[#315694] text-2xl">
-            <Avatar width={40} height={40}/>
-          </div>
 
           <span className="font-extralight tracking-widest text-2xl ml-[10px] text-zinc-300 med:hidden">
             Oliveira
@@ -59,7 +58,7 @@ export default function Header() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

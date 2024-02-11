@@ -32,12 +32,13 @@ export const Frontend_skill = [
     width: 35,
     height: 35,
   },
-  {
+  /**{
     skill_name: "Framer",
     Image: "/framer.svg",
     width: 35,
     height: 35,
-  },
+   
+  },**/
   {
     skill_name: "Html 5",
     Image: "/html5.svg",
@@ -51,13 +52,13 @@ export const Frontend_skill = [
     height: 50,
   },
   {
-    skill_name: "Next js 13",
+    skill_name: "Next js",
     Image: "/nextjs.svg",
     width: 60,
     height: 60,
   },
   {
-    skill_name: "React",
+    skill_name: "React.js",
     Image: "/react.svg",
     width: 60,
     height: 60,

@@ -8,10 +8,10 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative flex flex-col items-center justify-center h-max pt-52 px-5 sm:pt-32 ssm:pt-10"
+      className="relative flex flex-col items-center justify-center h-max pt-44 px-5 sm:pt-32 ssm:pt-10"
     >
-      <HeroBg/>
       <HeroContent />
+      <HeroBg/>
     </div>
   );
 };

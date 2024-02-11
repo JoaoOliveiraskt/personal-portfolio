@@ -39,8 +39,9 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full space-y-14"
+      className="relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full "
     >
+      <div className="circle absolute opacity-10 top-60 rounded-full w-[40%] h-[70%]"></div>
       <div className="flex flex-col items-center justify-center space-y-10">
      
         <div className="w-full">
@@ -73,15 +74,14 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="w-full flex items-center justify-end">
-          <div className="w-32 hover:bg-[#434343b3] flex items-center justify-center rounded-lg h-8">
-            <Link
-              href="/profile"
+          <Link href="/profile" className="w-32 hover:bg-[#434343b3] flex items-center justify-center rounded-lg h-8">
+            <button             
               className="flex space-x-3 text-blue-500 items-center"
             >
               <span className="">See more</span>
               <FaLongArrowAltRight />
-            </Link>
-          </div>
+            </button>
+          </Link>
         </div>
       </div>
 

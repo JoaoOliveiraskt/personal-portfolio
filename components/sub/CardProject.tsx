@@ -28,8 +28,8 @@ const ProjectCard: React.FC<Props> = ({
 }: Props) => {
   return (
 
-    <div id={"card"+id} className="bg-black p-2 rounded-xl shadow-lg border-2 border-zinc-800 h-full w-[30rem] sm:w-full ">
-    <div className="projectCardBg border-2 border-zinc-800 rounded-xl overflow-hidden">
+    <div id={"card"+id} className="bg-black overflow-hidden p-2 rounded-2xl shadow-lg border border-zinc-900 h-full w-[30rem] sm:w-full ">
+    <div className="projectCardBg  rounded-xl overflow-hidden">
       <Image
         src={src}
         alt={title}

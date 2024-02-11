@@ -145,8 +145,8 @@ html {
 }
 
 .circle {
-  background: linear-gradient(to bottom, #5335ff 40%, #4800b4 50%);
-  filter: blur(100px);
+  background: linear-gradient(to bottom, #ff7f35 40%, #d6bbff 50%);
+  filter: blur(140px);
   z-index: -1;
 }
 
@@ -159,3 +159,33 @@ html {
     rgba(108, 108, 108, 0);
   box-shadow: inset 0 0 12px #92929233;
 }
+
+
+#logosContainer {
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+#logos-slide:hover {
+  animation-play-state: paused;
+}
+
+#logos-slide {
+  animation: slide 20s linear infinite;
+  display: flex;
+  white-space: nowrap;
+}
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+   }
+   100% {
+     transform: translateX(-100%);
+   }
+ }
+ 
