@@ -5,7 +5,7 @@ import { Frontend_skill } from "@/constants";
 function SliderInfinite() {
   return (
     <div id="logosContainer" className="w-full">
-      <div id="logos-slide" className="items-center justify-center space-x-20">
+      <div id="logos-slide" className="items-center justify-center space-x-32 sm:space-x-16">
         {Frontend_skill.map((image, index) => (
           <div key={index} className="flex items-center justify-center">
             <SkillsDataProvider
