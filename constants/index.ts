@@ -1,21 +1,23 @@
+import { FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
+
 export const Socials = [
   {
     name: "Linkedin",
-    src: "/linkedin.svg",
+    icon: FaLinkedin,
     link: "https://www.linkedin.com/in/jo%C3%A3ov-oliveira/",
     hoverColor: "#2867B2",
   },
   {
     name: "Github",
-    src: "/github.svg",
+    icon: FaGithub,
     link: "https://github.com/JoaoOliveiraskt?tab=repositories",
-    hoverColor: "#4078c0",
+    hoverColor: "#FF6347",
   },
   {
     name: "Discord",
-    src: "/discord.svg",
+    icon: FaDiscord,
     link: "https://discord.gg/5UKyhekA",
-    hoverColor: "#7289DA",
+    hoverColor: "#5865f2",
   },
 ];
 

@@ -1,14 +1,12 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
-import BlurBottom from "../sub/BottomBlur";
-import BlurTop from "../sub/TopBlur";
 import HeroBg from "../sub/HeroBg";
 
 const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative flex flex-col   h-max pt-32 px-5 sm:pt-16 ssm:pt-0"
+      className="relative flex flex-col h-max pt-32 sm:pt-14 ssm:pt-0 px-5"
     >
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
@@ -16,7 +14,7 @@ const Hero = () => {
           aria-hidden="true"
         >
           <div
-            className="relative left-[calc(50%-55rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#8bff80] to-[#9089fc] opacity-15  med:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+            className="relative left-[calc(50%-55rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#8bff80] to-[#9089fc] opacity-40 dark:opacity-15  med:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
             style={{
               clipPath:
                 "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
@@ -33,7 +31,7 @@ const Hero = () => {
         aria-hidden="true"
       >
         <div
-          className="relative left-[calc(50%+46rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#8bff80] to-[#9089fc] opacity-15 sm:left-[calc(50%+36rem)] med:w-[72.1875rem]"
+          className="relative left-[calc(50%+46rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#8bff80] to-[#9089fc] opacity-40 dark:opacity-15 sm:left-[calc(50%+36rem)] med:w-[72.1875rem]"
           style={{
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",

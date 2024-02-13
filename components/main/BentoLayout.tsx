@@ -36,19 +36,7 @@ const BentoLayout = () => {
                 </button>
               </a>
 
-             <div className="flex items-center space-x-6">
-             {Socials.map((social, index) => (
-                <a key={index} href={social.link} >
-                  <Image 
-                  src={social.src}
-                  alt={social.name}
-                  title={social.name}
-                  width={40}
-                  height={40}      
-                  />
-                </a>
-              ))}
-             </div>
+         
             </div>
         </div>
 

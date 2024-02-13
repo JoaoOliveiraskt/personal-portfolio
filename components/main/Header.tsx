@@ -3,62 +3,67 @@
 import Image from "next/image";
 import React from "react";
 import { Socials } from "@/constants";
-import { motion } from "framer-motion";
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
-import {
-  slideInFromTop,
-} from "@/utils/motion";
+import { ModeToggle } from "../sub/theme-switcher";
+import SocialIcon from "../sub/SocialIcon";
+
+const links = [
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+];
 
 export default function Header() {
   return (
-    <motion.div variants={slideInFromTop} className="fixed max-w-[900px] h-12 top-4 right-0 left-0 m-auto px-3 z-40 header backdrop-blur-3xl border border-border rounded-full med:mx-5">
-      <div className=" w-full h-full flex flex-row items-center justify-between">
+    <header className="fixed px-4 inset-x-0 w-[100%] h-16 z-[100] sm:px-2">
+      <nav className="relative flex w-full h-full items-center justify-center space-x-8 sm:space-x-1">
         <a
           href="#hero"
-          className="cursor-pointer h-auto w-auto flex flex-row items-center"
+          className="absolute left-16 cursor-pointer h-auto w-auto flex items-center"
         >
-
-          <span className="font-extralight tracking-widest text-2xl ml-[10px] text-darkText med:hidden">
+          <span className="font-bold tracking-widest text-xl med:hidden">
             Oliveira
           </span>
         </a>
 
-        <div className="tracking-wider text-sm w-[400px] px-2 h-full flex flex-row items-center justify-center sm:w-64 med:w-96">
-          <div className="flex items-center justify-between w-full h-auto px-[6px] text-darkText sm:text-sm transition-colors">
-            <a href="#skills" className="cursor-pointer hover:text-hoverDarkText transition-colors duration-300">
-              Skills
-            </a>
-            <a href="#projects" className="cursor-pointer hover:text-hoverDarkText transition-colors duration-300">
-              Projects
-            </a>
-          <Link href="/profile" className="cursor-pointer hover:text-hoverDarkText transition-colors duration-300">
-              Profile
-         </Link>
-          </div>
-        </div>
-
-        <StaggeredDropDown />
-
-        <div className="cursor-pointer flex flex-row gap-2 med:hidden ">
-          {Socials.map((social) => (
-            <a target="blank" href={social.link} key={social.name}
-            className="w-9 h-9 hover:bg-linkHover flex items-center justify-center rounded-lg transition-colors duration-300"
+        <div className="h-10 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1 backdrop-blur-[250px] border rounded-xl">
+          <div className="flex text-base items-center space-x-5 sm:space-x-0 w-full h-auto text-text">
+            {links.map((link, index) => (
+              <a
+                href={link.href}
+                key={index}
+                className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground transition-colors duration-300"
+              >
+                {link.name}
+              </a>
+            ))}
+            <Link
+              href="/profile"
+              className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground transition-colors duration-300"
             >
-              <Image
-                src={social.src}
-                alt={social.name}
-                key={social.name}
-                title={social.name}
-                width={18}
-                height={18}
-              />
-            </a>
-          ))}
+              <span> Profile</span>
+            </Link>
+          </div>
+
+          <div className="cursor-pointer flex flex-row gap-2 med:hidden transition-colors ">
+            {Socials.map((social, index) => (
+              <a href={social.link} 
+              key={index}
+              target="_blank"
+              >
+                <SocialIcon
+                  Icon={social.icon}
+                  hoverColor={social.hoverColor}
+                  name={social.name}
+                />
+              </a>
+            ))}
+          </div>
+
+          <StaggeredDropDown />
         </div>
-      </div>
-    </motion.div>
+        <ModeToggle />
+      </nav>
+    </header>
   );
-};
-
-
+}

@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
       id="projects"
       className="relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full "
     >
-      <div className="circle absolute opacity-10 top-60 rounded-full w-[40%] h-[70%]"></div>
+      <div className="circleP absolute blur-[180px] dark:blur-[140px] opacity-30 dark:opacity-10 top-60 rounded-full w-[40%] h-[70%]"></div>
       <div className="flex flex-col items-center justify-center space-y-10">
      
         <div className="w-full">
@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="w-full flex items-center justify-end">
-          <Link href="/profile" className="w-32 hover:bg-linkHover flex items-center justify-center rounded-lg h-8 transition-colors duration-300">
+          <Link href="/profile" className="w-32 hover:bg-accent flex items-center justify-center rounded-lg h-8 transition-colors duration-300">
             <button             
               className="flex space-x-3 text-blue-400 items-center "
             >

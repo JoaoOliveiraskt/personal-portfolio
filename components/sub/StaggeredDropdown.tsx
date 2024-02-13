@@ -4,6 +4,7 @@ import { useState } from "react";
 import { Socials } from "@/constants";
 import Image from "next/image";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+import SocialIcon from "./SocialIcon";
 
 const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
@@ -11,12 +12,12 @@ const StaggeredDropDown = () => {
   return (
     <motion.div
       animate={open ? "open" : "closed"}
-      className="relative hidden med:block"
+      className="relative hidden med:block top-0 right-0"
     >
       <button
 
         onClick={() => setOpen((pv) => !pv)}
-        className="flex items-center px-2 py-2 rounded-full text-slate-50 border border-zinc-600 shadow-sm shadow-slate-500"
+        className="flex items-center px-1 py-1 rounded-lg text-primary border shadow-sm shadow-slate-500"
       >
         <motion.span variants={iconVariants}>
           <FiChevronDown />
@@ -28,32 +29,28 @@ const StaggeredDropDown = () => {
         variants={wrapperVariants}
         style={{ originY: "top"}}
 
-        className="absolute flex flex-col gap-2 p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border-zinc-600  bg-[#000000] top-12 right-0 w-48 overflow-hidden"
+        className="absolute flex flex-col gap-2 p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border bg-background top-10 right-0 w-48 overflow-hidden"
       >
         {Socials.map((social) => (
-          <motion.a
-            target="blank"
-            href={social.link}
-            key={social.name}
+         <motion.li key={social.name}>
+           <motion.a
+           href={social.link}
+            target="blank"        
             variants={itemVariants}
             onClick={() => setOpen(false)}
-            className="cursor-default flex flex-row items-center justify-around gap-1 hover:bg-[#434343b3] w-full h-9 py-1 px-2 rounded-md text-sm"
-          >
-            <motion.span
-            variants={actionIconVariants}
+            className="cursor pointer flex flex-row items-center justify-around gap-1 hover:bg-accent w-full h-9 py-1 px-2 rounded-md text-sm"
             >
-            <Image
-              src={social.src}
-              alt={social.name}
-              title={social.name}
-              width={24}
-              height={24}
+           <SocialIcon 
+            Icon={social.icon}
+            hoverColor={social.hoverColor}
+            name={social.name}
             />
-            </motion.span>
 
-            <p className="text-gray-300 hover:text-white transition-colors">{social.name}</p>
-            <HiArrowTopRightOnSquare className="text-white" />
+
+            <p className="text-primary transition-colors">{social.name}</p>
+            <HiArrowTopRightOnSquare className="text-primary" />
           </motion.a>
+         </motion.li>
         ))}
       </motion.ul>
     </motion.div>

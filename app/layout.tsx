@@ -3,8 +3,8 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 
 import React from "react";
-import Header from "@/components/main/Header";
 import Footer from "@/components/main/Footer";
+import { ThemeProvider } from "./theme-provider";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -27,12 +27,19 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} overflow-y-scroll overflow-x-hidden bodyBg`}
-        style={{ minHeight: "100vh" }}
+        className={`${poppins.className} overflow-y-scroll overflow-x-hidden`}
       >
-        
+        <ThemeProvider
+        attribute="class"
+        defaultTheme="system"
+        enableSystem
+        >
+
         {children}
+        
        <Footer/>
+        </ThemeProvider>
+
       </body>
     </html>
   );
