@@ -17,6 +17,28 @@ function SliderInfinite() {
             <p className="text-primary ">{image.skill_name}</p>
           </div>
         ))}
+        {Frontend_skill.map((image, index) => (
+          <div key={index} className="flex items-center justify-center gap-5">
+            <SkillsDataProvider
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+            <p className="text-primary ">{image.skill_name}</p>
+          </div>
+        ))}
+        {Frontend_skill.map((image, index) => (
+          <div key={index} className="flex items-center justify-center gap-5">
+            <SkillsDataProvider
+              src={image.Image}
+              width={image.width}
+              height={image.height}
+              index={index}
+            />
+            <p className="text-primary ">{image.skill_name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
