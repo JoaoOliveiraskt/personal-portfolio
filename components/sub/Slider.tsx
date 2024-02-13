@@ -7,7 +7,7 @@ function SliderInfinite() {
     <div id="logosContainer" className="w-full overflow-x-hidden">
       <div id="logos-slide" className="flex items-center justify-center space-x-32 sm:space-x-16">
         {Frontend_skill.map((image, index) => (
-          <div key={index} className="flex items-center justify-center">
+          <div key={index} className="flex items-center justify-center gap-5">
             <SkillsDataProvider
               src={image.Image}
               width={image.width}
