@@ -25,51 +25,59 @@ export const Frontend_skill = [
   {
     skill_name: "Css",
     Image: "/css.svg",
-    width: 60,
+    width: 28,
     height: 45,
+    backgroundColor: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
-    width: 45,
+    width: 23,
     height: 35,
+    backgroundColor: ' linear-gradient(45deg, #4c5555 0%, #6d5656 100%)',
   },
   /**{
     skill_name: "Framer",
     Image: "/framer.svg",
     width: 35,
     height: 35,
-   
+   backgroundColor: 'linear-gradient(to right, #434343 0%, black 100%)',
   },**/
   {
     skill_name: "Html",
     Image: "/html5.svg",
-    width: 55,
+    width: 28,
     height: 45,
+    backgroundColor: 'linear-gradient(to right, #434141 0%, black 100%)',
   },
   {
     skill_name: "Java Script",
     Image: "/javascript.svg",
-    width: 55,
+    width: 30,
     height: 50,
+    // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor 
+    backgroundColor: ' linear-gradient(to right, #434343 0%, black 100%)',
   },
   {
     skill_name: "Next.js",
     Image: "/nextjs.svg",
-    width: 70,
+    width: 50,
     height: 60,
+    backgroundColor: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
   },
   {
     skill_name: "React.js",
     Image: "/react.svg",
-    width: 70,
+    width: 35,
     height: 60,
+    backgroundColor: ' linear-gradient(to right, #434343 0%, black 100%);',
   },
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
-    width: 80,
+    width: 35,
     height: 70,
+    backgroundColor: 'linear-gradient(to right, #434343 0%, black 100%)',
   },
 ];
 

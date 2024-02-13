@@ -4,7 +4,7 @@ import { My_Projects } from "@/constants";
 import ProjectModal from "../sub/ModalProject";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
-import {slideInFromLeft, slideInFromTop} from "@/utils/motion"
+import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 
 interface Technology {
   name: string;
@@ -42,9 +42,7 @@ const Projects: React.FC = () => {
       id="projects"
       className="relative flex flex-col items-center justify-center min-h-screen py-20 px-5 w-full "
     >
-      <div className="circleP absolute blur-[180px] dark:blur-[140px] opacity-30 dark:opacity-10 top-60 rounded-full w-[40%] h-[70%]"></div>
       <div className="flex flex-col items-center justify-center space-y-16">
-     
         <div className="w-full">
           <h3 className="text-5xl py-2 text-center med:text-3xl font-semibold text-primary">
             Recent Projects
@@ -75,10 +73,11 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="w-full flex items-center justify-end">
-          <Link href="/profile" className="w-32 hover:bg-accent flex items-center justify-center rounded-lg h-8 transition-colors duration-300">
-            <button             
-              className="flex space-x-3 text-blue-500 items-center "
-            >
+          <Link
+            href="/profile"
+            className="w-32 hover:bg-accent flex items-center justify-center rounded-lg h-8 transition-colors duration-300"
+          >
+            <button className="flex space-x-3 text-blue-500 items-center ">
               <span className="">See more</span>
               <FaLongArrowAltRight />
             </button>
