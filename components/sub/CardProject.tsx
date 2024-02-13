@@ -28,17 +28,19 @@ const ProjectCard: React.FC<Props> = ({
 }: Props) => {
   return (
 
-    <div id={"card"+id} className="overflow-hidden rounded-2xl shadow-lg border-2  h-full w-[30rem] sm:w-full ">
+    <div id={"card"+id} className="overflow-hidden rounded-[30px] shadow-xl h-full w-[30rem] sm:w-full border">
     <div className="bg-card projectCardBg rounded overflow-hidden">
-      <Image
+     <div className="m-4">
+     <Image
         src={src}
         alt={title}
         width={1000}
         height={1000}
         
-        className="w-full border-b"
+        className="rounded-3xl"
       />
-      <div className="p-8 w-full h-ful flex flex-col gap-3">
+     </div>
+      <div className="p-6 w-full h-ful flex flex-col gap-3">
         <div className="flex items-center w-full justify-between">
           <h1 className="tracking-tighter text-3xl font-semibold text-primary">{title}</h1>
           <button className="text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border">
