@@ -14,7 +14,7 @@ const SkillText = () => {
         className="relative text-center"
       >
         <div className="space-y-6 tracking-wider">
-          <p className=" text-primary text-xl font-semibold">
+          <p className=" text-primary text-xl sm:text-sm font-semibold">
             <Balancer>Crafting Digital Experiences with...</Balancer>
             </p>
          

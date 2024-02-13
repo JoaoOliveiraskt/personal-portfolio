@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import ProjectCard from "../sub/CardProject";
+import CardProject from "../sub/CardProject";
 import { My_Projects } from "@/constants";
 import ProjectModal from "../sub/ModalProject";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
+import {slideInFromLeft, slideInFromTop} from "@/utils/motion"
 
 interface Technology {
   name: string;
@@ -39,15 +40,15 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full "
+      className="relative flex flex-col items-center justify-center min-h-screen py-20 px-5 w-full "
     >
       <div className="circleP absolute blur-[180px] dark:blur-[140px] opacity-30 dark:opacity-10 top-60 rounded-full w-[40%] h-[70%]"></div>
-      <div className="flex flex-col items-center justify-center space-y-10">
+      <div className="flex flex-col items-center justify-center space-y-16">
      
         <div className="w-full">
-          <h1 className="text-5xl p-1 text-center med:text-6xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-darkTitle to-lightBg">
-            Projects
-          </h1>
+          <h3 className="text-5xl py-2 text-center med:text-3xl font-semibold text-primary">
+            Recent Projects
+          </h3>
         </div>
 
         <div
@@ -61,7 +62,7 @@ const Projects: React.FC = () => {
               className="cursor-pointer "
               onClick={() => openModal(i)}
             >
-              <ProjectCard
+              <CardProject
                 id={i}
                 src={card.photo}
                 title={card.title}
@@ -76,7 +77,7 @@ const Projects: React.FC = () => {
         <div className="w-full flex items-center justify-end">
           <Link href="/profile" className="w-32 hover:bg-accent flex items-center justify-center rounded-lg h-8 transition-colors duration-300">
             <button             
-              className="flex space-x-3 text-blue-400 items-center "
+              className="flex space-x-3 text-blue-500 items-center "
             >
               <span className="">See more</span>
               <FaLongArrowAltRight />

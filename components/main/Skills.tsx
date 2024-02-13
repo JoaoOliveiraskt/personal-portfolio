@@ -8,7 +8,7 @@ const Skills = () => {
   return (
     <motion.section
       id="skills"
-      className="overflow-x-hidden flex space-y-14 flex-col items-center justify-center w-full h-max px-20 med:px-2 py-32"
+      className="overflow-x-hidden flex space-y-14 flex-col items-center justify-center w-full h-max px-20 med:px-2 py-24 med:pb-0"
     >
         <SkillText />
       

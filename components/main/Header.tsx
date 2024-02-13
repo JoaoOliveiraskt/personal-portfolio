@@ -26,26 +26,26 @@ export default function Header() {
           </span>
         </a>
 
-        <div className="h-10 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1 backdrop-blur-[250px] border rounded-xl">
+        <div className="h-10 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1 bg-background border rounded-xl">
           <div className="flex text-base items-center space-x-5 sm:space-x-0 w-full h-auto text-text">
             {links.map((link, index) => (
               <a
                 href={link.href}
                 key={index}
-                className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground transition-colors duration-300"
+                className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
               >
                 {link.name}
               </a>
             ))}
             <Link
               href="/profile"
-              className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground transition-colors duration-300"
+              className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
             >
               <span> Profile</span>
             </Link>
           </div>
 
-          <div className="cursor-pointer flex flex-row gap-2 med:hidden transition-colors ">
+          <div className="cursor-pointer flex flex-row gap-2 med:hidden">
             {Socials.map((social, index) => (
               <a href={social.link} 
               key={index}

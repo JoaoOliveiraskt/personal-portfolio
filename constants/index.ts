@@ -25,13 +25,13 @@ export const Frontend_skill = [
   {
     skill_name: "Css",
     Image: "/css.svg",
-    width: 45,
+    width: 60,
     height: 45,
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
-    width: 35,
+    width: 45,
     height: 35,
   },
   /**{
@@ -42,33 +42,33 @@ export const Frontend_skill = [
    
   },**/
   {
-    skill_name: "Html 5",
+    skill_name: "Html",
     Image: "/html5.svg",
-    width: 45,
+    width: 55,
     height: 45,
   },
   {
     skill_name: "Java Script",
     Image: "/javascript.svg",
-    width: 45,
+    width: 55,
     height: 50,
   },
   {
-    skill_name: "Next js",
+    skill_name: "Next.js",
     Image: "/nextjs.svg",
-    width: 60,
+    width: 70,
     height: 60,
   },
   {
     skill_name: "React.js",
     Image: "/react.svg",
-    width: 60,
+    width: 70,
     height: 60,
   },
   {
-    skill_name: "Tailwind Css",
+    skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
-    width: 70,
+    width: 80,
     height: 70,
   },
 ];
