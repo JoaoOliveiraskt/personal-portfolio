@@ -6,6 +6,7 @@ import Header from "@/components/main/Header";
 import ScrollYProgress from "@/components/sub/ScrollYProgress";
 import Skills from "@/components/main/Skills";
 import DesignSection from "@/components/main/DesignSection";
+import Contact from "@/components/main/Contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <DesignSection />
         <Skills/>
         <Projects />
+
       </div>
     </main>
   );

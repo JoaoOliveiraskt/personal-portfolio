@@ -39,13 +39,13 @@
   }
 
   .dark {
-    --background: 240 10% 7%;
+    --background: 0 0% 5.5%;
     --foreground: 0 0% 98%;
 
     --text: 240 5% 64.9%;
     --text-hover: 0 0% 98%;
 
-    --card: 0 0% 6%;
+    --card: 0 0% 14%;
     --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;
@@ -189,7 +189,7 @@ body {
 }
 
 .circle {
-  background: linear-gradient(to bottom, #ff7f35 40%, #d6bbff 50%);
+  background: linear-gradient(to bottom, #e2490882 40%, #120000 50%);
   z-index: -1;
 }
 

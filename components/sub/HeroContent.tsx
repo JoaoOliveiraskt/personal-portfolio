@@ -18,7 +18,7 @@ const HeroContent = () => {
   return (
     <div className="flex flex-col justify-center items-center w-full h-full z-50">
       <div className="h-full w-full flex flex-col justify-center items-center gap-7 sm:gap-6 text-center ssm:mt-10 pb-16 med:pb-0">
-        <div className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl font-medium text-primary max-w-[900px] h-auto">
+        <div className="tracking-tighter text-7xl ssm:text-3xl sm:text-5xl text-primary max-w-[900px] h-auto">
           <h1>
             <Balancer>
               I want to{" "}

@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
     >
       <div className="flex flex-col items-center justify-center space-y-16">
         <div className="w-full">
-          <h3 className="text-5xl py-2 text-center med:text-3xl font-semibold text-primary">
+          <h3 className="text-2xl py-2 text-center med:text-2xl font-semibold text-primary">
             Recent Projects
           </h3>
         </div>

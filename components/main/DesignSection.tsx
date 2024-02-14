@@ -3,8 +3,8 @@ import Balancer from "react-wrap-balancer";
 export default function DesignSection() {
   return (
     <section className="relative flex flex-col items-center justify-center w-full h-max pb-24 med:pb-0 pt-32 sm:pt-20">
-      <div className="circle absolute blur-[180px] dark:blur-[140px] opacity-100 dark:opacity-70 top-48 rounded-full w-[30%] h-[70%]"></div>
-      <div className="space-y-16 sm:space-y-10 flex flex-col items-center justify-center h-max max-w-[96%]">
+      <div className="circle absolute blur-[200px] dark:blur-[55px] top-28 dark:opacity-80 rounded-[100%] w-[55%] h-[90%]"></div>
+      <div className="space-y-12 flex flex-col items-center justify-center h-max max-w-[96%]">
 
       <div className="w-full">
         <h2 className="text-xl med:text-sm text-center font-semibold tracking-wide text-primary">

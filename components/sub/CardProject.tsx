@@ -29,19 +29,19 @@ const CardProject: React.FC<Props> = ({
   return (
     <div
       id={"card" + id}
-      className="overflow-hidden rounded-[30px] shadow-xl h-full w-[30rem] sm:w-full"
+      className="overflow-hidden dark:border dark:border-zinc-700 rounded-lg shadow-xl h-full w-[32rem] sm:w-full"
     >
       <div className="bg-card projectCardBg overflow-hidden">
-        <div className="m-4">
+        <div className="m-2 flex items-center justify-center">
           <Image
             src={src}
             alt={title}
-            width={1000}
-            height={1000}
-            className="rounded-3xl"
+            width={500}
+            height={100}
+            className="rounded-md object-cover"
           />
         </div>
-        <div className="p-6 w-full h-ful flex flex-col gap-3">
+        <div className="px-6 py-6 w-full h-ful flex flex-col gap-3">
           <div className="flex items-center w-full justify-between">
             <h1 className="tracking-tighter text-3xl font-semibold text-primary">
               {title}
