@@ -1,15 +1,12 @@
-import Link from "next/link";
-import BentoLayout from "@/components/main/BentoLayout";
+import { Button } from "@/components/ui/button";
 
 export default function Profile() {
-    return (
-        <main className="min-h-screen w-full p-10 sm:p-4 space-y-8 sm:pt-10 space-x-4  sm:space-x-0">
-           <header className="z-50 bg-black max-w-[71rem] border-b border-b-blue-900  px-3 sm:px-3 fixed left-0 right-0 top-0 h-16 m-auto flex items-center space-x-5">
-           <Link href="/profile/curriculo" className="text-white text-center">curriculo</Link>
-            <Link href="/" className="text-white text-center">Home</Link>
-           </header>
-
-            <BentoLayout/>
-        </main>
-    )
+  return (
+    <main className="min-h-screen w-full sm:p-4 flex items-center justify-center">
+      <div className="flex flex-col space-y-5">
+        <h1 className="text-xl text-primary font-bold">Coming soon</h1>
+        <a href="/"><Button>Return to Home</Button></a>
+      </div>
+    </main>
+  );
 }
