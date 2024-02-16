@@ -44,14 +44,12 @@ const Projects: React.FC = () => {
     >
       <div className="flex flex-col justify-center space-y-6">
         <div className="w-full">
-          <h3 className="text-2xl py-2  med:text-2xl font-semibold text-primary">
+          <h3 className="text-4xl py-2 med:text-2xl text-primary">
             Recent Projects
           </h3>
         </div>
 
-        <div
-          className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[80rem]"
-        >
+        <div className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[80rem]">
           {My_Projects.slice(0, 2).map((card, i) => (
             <div
               key={i}

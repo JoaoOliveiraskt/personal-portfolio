@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React, { useState } from "react";
 import { BiExpand } from "react-icons/bi";
+import HandleOnMouseMove from "@/utils/hoverEffect";
 
 interface Technology {
   name: string;
@@ -30,21 +31,14 @@ const CardProject: React.FC<Props> = ({
   const flexDirectionClass = isEven ? "flex-row-reverse" : "flex-row";
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
-  const handleOnMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const y = e.clientY - rect.top;
-    setMousePosition({ x, y });
-  };
-
   return (
     <div
-      onMouseMove={handleOnMouseMove}
+      onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative bg-card border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-xl h-full w-full`}
+      className={`relative border bg-card dark:bg-transparent dark:border-none med:border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-xl h-full w-full`}
     >
       <div
-        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex med:flex-col-reverse ${flexDirectionClass}`}
+        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col-reverse ${flexDirectionClass}`}
       >
         <div className="m-2 flex items-center justify-center">
           <Image
@@ -65,7 +59,7 @@ const CardProject: React.FC<Props> = ({
               </h1>
               <p className="tracking-wider opacity-70 text-text">{caption}</p>
             </div>
-            <div className="flex space-x-2 sm:hidden">
+            <div className="flex flex-wrap gap-2 sm:hidden">
               {tech.map((technology, i) => (
                 <Image
                   className=""
@@ -87,15 +81,14 @@ const CardProject: React.FC<Props> = ({
       </div>
       {/* Gradiente com base na posição do mouse */}
       <div
-        className="gradient-effect"
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           width: "100%",
           height: "100%",
-          
-          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.05), transparent)`,
+
+          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.07), transparent)`,
         }}
       ></div>
     </div>
