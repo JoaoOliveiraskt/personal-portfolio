@@ -4,7 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 96%;
+    --background: 210 90% 98%;
     --foreground: 240 10% 3.9%;
 
     --text: 240 3.7% 15.9%;
@@ -39,13 +39,13 @@
   }
 
   .dark {
-    --background: 0 0% 5.5%;
+    --background: 0 0% 0%;
     --foreground: 0 0% 98%;
 
     --text: 240 5% 64.9%;
     --text-hover: 0 0% 98%;
 
-    --card: 0 0% 14%;
+    --card: 0 0% 8%;
     --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;
@@ -89,9 +89,17 @@ body {
   transition: background 0.3s ease, color 0.3s ease;
 }
 
+
+
 .bodyBg {
   background: #070707;
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+.shadow {
+background: #e0e0e0;
+box-shadow:  16px 16px 70px #afafaf,
+             -16px -16px 70px #ffffff;
 }
 
 .projectModalBg {
@@ -113,12 +121,12 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.projectCardBg {
-  transition: transform 0.3s ease-in-out;
+.cardProjectHover {
+  transition: transform 0.2s ease-in-out;
 }
 
-.projectCardBg:hover {
-  transform: scale(1.06);
+.cardProjectHover:hover {
+  transform: scale(1.01);
 }
 
 .Welcome-box {

@@ -19,15 +19,15 @@ export default function Header() {
       <nav className="relative flex w-full h-full items-center justify-center space-x-8 sm:space-x-1">
         <a
           href="#hero"
-          className="absolute left-16 cursor-pointer h-auto w-auto flex items-center"
+          className="absolute left-60 cursor-pointer h-auto w-auto flex items-center"
         >
-          <span className="font-bold tracking-widest text-xl med:hidden">
+          <span className="font-bold tracking-widest text-xl xl:hidden">
             Oliveira
           </span>
         </a>
 
         <div className="h-10 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1 bg-background border rounded-xl">
-          <div className="flex text-base items-center space-x-5 sm:space-x-0 w-full h-auto text-text">
+          <div className="flex text-base items-center space-x-7  sm:space-x-0 w-full h-auto text-text">
             {links.map((link, index) => (
               <a
                 href={link.href}

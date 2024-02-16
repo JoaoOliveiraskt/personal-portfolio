@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 import { BiExpand } from "react-icons/bi";
 
 interface Technology {
@@ -26,44 +26,78 @@ const CardProject: React.FC<Props> = ({
   description,
   tech,
 }: Props) => {
+  const isEven = id % 2 === 0;
+  const flexDirectionClass = isEven ? "flex-row-reverse" : "flex-row";
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleOnMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    setMousePosition({ x, y });
+  };
+
   return (
     <div
+      onMouseMove={handleOnMouseMove}
       id={"card" + id}
-      className="overflow-hidden dark:border dark:border-zinc-700 rounded-lg shadow-xl h-full w-[32rem] sm:w-full"
+      className={`relative bg-card border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-xl h-full w-full`}
     >
-      <div className="bg-card projectCardBg overflow-hidden">
+      <div
+        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex med:flex-col-reverse ${flexDirectionClass}`}
+      >
         <div className="m-2 flex items-center justify-center">
           <Image
             src={src}
             alt={title}
-            width={500}
+            title={title}
+            width={1800}
             height={100}
-            className="rounded-md object-cover"
+            quality={100}
+            className="rounded-xl"
           />
         </div>
-        <div className="px-6 py-6 w-full h-ful flex flex-col gap-3">
-          <div className="flex items-center w-full justify-between">
-            <h1 className="tracking-tighter text-3xl font-semibold text-primary">
-              {title}
-            </h1>
-            <button className="text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border">
-              <BiExpand />
-            </button>
+        <div className="w-full flex flex-col p-6 space-y-10">
+          <div className="flex flex-col space-y-5">
+            <div className="flex flex-col space-y-2">
+              <h1 className="tracking-tighter text-3xl font-semibold text-primary">
+                {title}
+              </h1>
+              <p className="tracking-wider opacity-70 text-text">{caption}</p>
+            </div>
+            <div className="flex space-x-2 sm:hidden">
+              {tech.map((technology, i) => (
+                <Image
+                  className=""
+                  key={i}
+                  alt={technology.name}
+                  width={technology.width}
+                  height={technology.height}
+                  src={technology.src}
+                  title={technology.name}
+                />
+              ))}
+            </div>
           </div>
-          <p className="tracking-wider opacity-70 text-text">{caption}</p>
           <p className="hidden">{description}</p>
-          {tech.map((technology, i) => (
-            <Image
-              className="hidden"
-              key={i}
-              alt={technology.name}
-              width={technology.width}
-              height={technology.height}
-              src={technology.src}
-            />
-          ))}
+          <button className="z-10 text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border">
+            <BiExpand />
+          </button>
         </div>
       </div>
+      {/* Gradiente com base na posição do mouse */}
+      <div
+        className="gradient-effect"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          
+          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.05), transparent)`,
+        }}
+      ></div>
     </div>
   );
 };

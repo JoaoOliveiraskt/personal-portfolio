@@ -40,24 +40,22 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className="relative flex flex-col items-center justify-center min-h-screen py-20 px-5 w-full "
+      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full"
     >
-      <div className="flex flex-col items-center justify-center space-y-16">
+      <div className="flex flex-col justify-center space-y-6">
         <div className="w-full">
-          <h3 className="text-2xl py-2 text-center med:text-2xl font-semibold text-primary">
+          <h3 className="text-2xl py-2  med:text-2xl font-semibold text-primary">
             Recent Projects
           </h3>
         </div>
 
         <div
-          id="cards"
-          className="flex flex-row flex-wrap items-center justify-center gap-16 max-w-[70rem]"
+          className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[80rem]"
         >
           {My_Projects.slice(0, 2).map((card, i) => (
             <div
-              id="card"
               key={i}
-              className="cursor-pointer "
+              className="cursor-pointer"
               onClick={() => openModal(i)}
             >
               <CardProject

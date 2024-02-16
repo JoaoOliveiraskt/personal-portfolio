@@ -84,7 +84,7 @@ export const Frontend_skill = [
 export const My_Projects = [
   {
     title: "Resumi AI",
-    caption: "Website content summary of a webpage",
+    caption: "Content summary of a web page",
     description:"Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
     photo: "/Resumi.png",
@@ -109,7 +109,7 @@ export const My_Projects = [
       },
       {
         name: "Open AI API",
-        src: "/openai.svg",
+        src: "/openai2.svg",
         width: 30,
         height: 30,
       },
@@ -142,7 +142,7 @@ export const My_Projects = [
       },
       {
         name: "Prisma",
-        src: "/prisma.svg",
+        src: "/prisma2.svg",
         width: 30,
         height: 30,
       },
@@ -166,7 +166,7 @@ export const My_Projects = [
       },
       {
         name: "Vercel",
-        src: "/vercel.svg",
+        src: "/vercel2.svg",
         width: 30,
         height: 30,
       },

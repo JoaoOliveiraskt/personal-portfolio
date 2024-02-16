@@ -22,7 +22,7 @@ const config = {
         ssm: { max: "330px" },
         sm: { max: "480px" },
         med: { max: "840px" },
-        xl: { max: "1024px" },
+        xl: { max: "1230px" },
       },
       colors: {
         border: "hsl(var(--border))",
