@@ -12,7 +12,7 @@ export default function ContactCard({ icon, text, description }: Props) {
   return (
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
-      className="relative med:col-span-3 bg-card rounded-xl p-8 border border-zinc-200 dark:border-zinc-700 overflow-x-hidden"
+      className="relative med:col-span-3 bg-card rounded-xl p-8 border border-zinc-200 dark:border-zinc-700 overflow-x-hidden shadow-md"
     >
       <div className="flex flex-col h-full  justify-between">
         <div className="w-12 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">

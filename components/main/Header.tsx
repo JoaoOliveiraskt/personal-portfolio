@@ -15,42 +15,42 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="fixed px-4 inset-x-0 w-[100%] h-16 z-[100] sm:px-2">
-      <nav className="relative flex w-full h-full items-center justify-center space-x-8 sm:space-x-1">
+    <header className="fixed bg-background xl:px-5 px-72 sm:px-4  inset-x-0 w-[100%] h-16  z-[100]">
+      <nav className="relative flex w-full h-full items-center justify-between space-x-8 sm:space-x-1">
         <a
           href="#hero"
-          className="absolute left-60 cursor-pointer h-auto w-auto flex items-center"
+          className="cursor-pointer h-auto w-auto flex items-center"
         >
-          <span className="font-bold tracking-widest text-xl xl:hidden">
+          <span className="font-bold tracking-widest text-xl">
             Oliveira
           </span>
         </a>
 
-        <div className="h-10 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1 bg-background border rounded-xl">
-          <div className="flex text-base items-center space-x-7  sm:space-x-0 w-full h-auto text-text">
+        <div className="h-12 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1">
+          <div className="flex  items-center space-x-20 sm:gap-5 w-full h-auto text-text">
             {links.map((link, index) => (
               <a
                 href={link.href}
                 key={index}
-                className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+                className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer rounded-md hover:text-accent dark:hover:text-foreground"
               >
                 {link.name}
               </a>
             ))}
             <Link
               href="/profile"
-              className="flex items-center justify-center cursor-pointer px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+              className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
             >
               <span> Profile</span>
             </Link>
           </div>
-
+        </div>
+        <div className="flex gap-4 items-center justify-center">
+          <ModeToggle />
+          <StaggeredDropDown />
           <div className="cursor-pointer flex flex-row gap-2 med:hidden">
             {Socials.map((social, index) => (
-              <a href={social.link} 
-              key={index}
-              target="_blank"
-              >
+              <a href={social.link} key={index} target="_blank">
                 <SocialIcon
                   Icon={social.icon}
                   hoverColor={social.hoverColor}
@@ -59,10 +59,7 @@ export default function Header() {
               </a>
             ))}
           </div>
-
-          <StaggeredDropDown />
         </div>
-        <ModeToggle />
       </nav>
     </header>
   );

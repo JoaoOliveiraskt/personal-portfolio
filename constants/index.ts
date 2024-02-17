@@ -21,20 +21,25 @@ export const Socials = [
   },
 ];
 
+export const Links = [
+  { name: "Skills", href: "#skills" },
+  { name: "Projects", href: "#projects" },
+];
+
 export const Frontend_skill = [
   {
     skill_name: "Css",
     Image: "/css.svg",
     width: 28,
     height: 45,
-    backgroundColor: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
     width: 23,
     height: 35,
-    backgroundColor: ' linear-gradient(45deg, #4c5555 0%, #6d5656 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   /**{
     skill_name: "Framer",
@@ -48,7 +53,7 @@ export const Frontend_skill = [
     Image: "/html5.svg",
     width: 28,
     height: 45,
-    backgroundColor: 'linear-gradient(to right, #434141 0%, black 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   {
     skill_name: "Java Script",
@@ -56,28 +61,29 @@ export const Frontend_skill = [
     width: 30,
     height: 50,
     // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor 
-    backgroundColor: ' linear-gradient(to right, #434343 0%, black 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   {
     skill_name: "Next.js",
     Image: "/nextjs.svg",
     width: 50,
     height: 60,
-    backgroundColor: 'linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   {
     skill_name: "React.js",
     Image: "/react.svg",
     width: 35,
     height: 60,
-    backgroundColor: ' linear-gradient(to right, #434343 0%, black 100%);',
+
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
     width: 35,
     height: 70,
-    backgroundColor: 'linear-gradient(to right, #434343 0%, black 100%)',
+    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
   },
 ];
 

@@ -1,10 +1,13 @@
-import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { Socials } from "@/constants";
-import Image from "next/image";
-import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+import { Socials, Links } from "@/constants";
+import { RiMenu3Fill } from "react-icons/ri";
+import { FiArrowDown } from "react-icons/fi";
+import { GoArrowUpRight } from "react-icons/go";
+import { FiArrowRight } from "react-icons/fi";
 import SocialIcon from "./SocialIcon";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
@@ -14,31 +17,53 @@ const StaggeredDropDown = () => {
       animate={open ? "open" : "closed"}
       className="relative hidden med:block top-0 right-0"
     >
-      <button
+      <Button
 
         onClick={() => setOpen((pv) => !pv)}
-        className="flex items-center px-1 py-1 rounded-lg text-primary border shadow-sm shadow-slate-500"
+        className="flex bg-background hover:bg-accent items-center justify-center h-9 w-9 rounded-lg text-primary  shadow-sm shadow-zinc-700"
       >
-        <motion.span variants={iconVariants}>
-          <FiChevronDown />
+        <motion.span variants={iconVariants} className="text-lg">
+          <RiMenu3Fill />
         </motion.span>
-      </button>
+      </Button>
 
       <motion.ul
         initial={wrapperVariants.closed}
         variants={wrapperVariants}
         style={{ originY: "top"}}
 
-        className="absolute flex flex-col gap-2 p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border bg-background top-10 right-0 w-48 overflow-hidden"
+        className="absolute flex flex-col p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border bg-background top-14 right-0 w-48 overflow-hidden"
       >
+        <motion.feSpotLight className="">
+          {Links.map((link) => (
+            <motion.a
+              key={link.name}
+              href={link.href}
+              onClick={() => setOpen(false)}
+              variants={itemVariants}
+              className="cursor-default flex items-center gap-3 hover:bg-accent w-full h-9 py-1 px-4 rounded-md text-base font-medium"
+            >
+              <p className="text-primary">{link.name}</p>
+              <FiArrowRight className="text-text" />
+            </motion.a>
+          ))}
+            <Link
+              href="/profile"
+              className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+            >
+          <motion.div variants={itemVariants} className="flex gap-3">
+              <span> Profile</span>
+              <GoArrowUpRight className="text-text" />
+          </motion.div>
+            </Link>
         {Socials.map((social) => (
-         <motion.li key={social.name}>
            <motion.a
+           key={social.name}
            href={social.link}
             target="blank"        
             variants={itemVariants}
             onClick={() => setOpen(false)}
-            className="cursor pointer flex flex-row items-center justify-around gap-1 hover:bg-accent w-full h-9 py-1 px-2 rounded-md text-sm"
+            className="cursor-default pointer flex flex-row items-center gap-3 hover:bg-accent w-full h-9 py-1 px-3 rounded-md font-medium"
             >
            <SocialIcon 
             Icon={social.icon}
@@ -48,10 +73,10 @@ const StaggeredDropDown = () => {
 
 
             <p className="text-primary transition-colors">{social.name}</p>
-            <HiArrowTopRightOnSquare className="text-primary" />
+            <GoArrowUpRight className="text-text" />
           </motion.a>
-         </motion.li>
         ))}
+        </motion.feSpotLight>
       </motion.ul>
     </motion.div>
   );

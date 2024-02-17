@@ -26,7 +26,7 @@ export default function Contact() {
     <div className="tracking-wider text-primary min-h-screen w-full flex justify-center py-16 med:py-0">
       <div className="w-[64rem] m-5 xl:m-8 med:m-5 h-full flex flex-col space-y-4 py-5">
         <div>
-          <h3 className="text-4xl med:text-2xl text-primary">Contact </h3>
+          <h3 className="text-4xl med:text-2xl text-primary font-medium">Contact </h3>
         </div>
 
         <div className="relative grid grid-cols-3 gap-4 auto-rows-[230px] ">
@@ -41,7 +41,7 @@ export default function Contact() {
 
           <div
             onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
-            className=" relative med:col-span-3 bg-card rounded-xl border border-zinc-200 dark:border-zinc-700"
+            className=" relative med:col-span-3 bg-card rounded-xl border border-zinc-200 dark:border-zinc-700 shadow-md"
           >
             <a
               href="https://www.linkedin.com/in/jo%C3%A3ov-oliveira/"

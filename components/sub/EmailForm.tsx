@@ -4,7 +4,7 @@ import { Button } from "../ui/button";
 export default function EmailForm() {
     return (
         <div className=" grid h-max ">
-        <div className="bg-card row-span-2 rounded-xl border border-zinc-200 dark:border-zinc-800 ">
+        <div className="bg-card row-span-2 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-md">
           <div className="flex flex-col h-full justify-between gap-5">
             <div className="flex flex-col space-y-5 p-8 ">
               <div className="w-12 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
@@ -21,17 +21,17 @@ export default function EmailForm() {
                   <input
                     type="text"
                     placeholder="Name"
-                    className="rounded-2xl p-4 focus:outline-none bg-background"
+                    className="rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                   />
                   <input
                     type="text"
                     placeholder="E-mail"
-                    className="rounded-2xl p-4 focus:outline-none bg-background"
+                    className="rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                   />
                 </div>
                 <textarea
                   placeholder="Message"
-                  className="rounded-2xl p-4 h-60 sm:h-40 focus:outline-none bg-background"
+                  className="rounded-2xl p-4 h-60 sm:h-40 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                 ></textarea>
                 <Button>Send</Button>
               </form>

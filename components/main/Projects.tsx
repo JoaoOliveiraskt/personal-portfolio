@@ -40,11 +40,11 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full"
+      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full pt-52 med:pt-20"
     >
       <div className="flex flex-col justify-center space-y-6">
         <div className="w-full">
-          <h3 className="text-4xl py-2 med:text-2xl text-primary">
+          <h3 className="text-4xl py-2 med:text-2xl text-primary font-medium">
             Recent Projects
           </h3>
         </div>
