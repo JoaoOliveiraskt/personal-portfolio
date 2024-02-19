@@ -15,8 +15,10 @@ const links = [
 
 export default function Header() {
   return (
-    <header className="fixed bg-background xl:px-5 px-72 sm:px-4  inset-x-0 w-[100%] h-16  z-[100]">
+    <header className="fixed h-14 bg-background/70 backdrop-blur border-b border-zinc-200 dark:border-neutral-900 xl:px-5 px-72 sm:px-4  inset-x-0 w-full z-[100]">
       <nav className="relative flex w-full h-full items-center justify-between space-x-8 sm:space-x-1">
+
+        <div className="h-12 flex flex-row items-center space-x-6 sm:space-x-1 max-w-[600px] sm:w-full px-1">
         <a
           href="#hero"
           className="cursor-pointer h-auto w-auto flex items-center"
@@ -25,9 +27,7 @@ export default function Header() {
             Oliveira
           </span>
         </a>
-
-        <div className="h-12 flex flex-row items-center space-x-3 sm:space-x-1 max-w-[600px] sm:w-full px-1">
-          <div className="flex  items-center space-x-20 sm:gap-5 w-full h-auto text-text">
+          <div className="flex  items-center gap-6 sm:gap-5 w-full h-auto text-text">
             {links.map((link, index) => (
               <a
                 href={link.href}
@@ -45,10 +45,10 @@ export default function Header() {
             </Link>
           </div>
         </div>
-        <div className="flex gap-4 items-center justify-center">
+        <div className="flex gap-3 items-center justify-center">
           <ModeToggle />
           <StaggeredDropDown />
-          <div className="cursor-pointer flex flex-row gap-2 med:hidden">
+          <div className="cursor-pointer flex flex-row space-x-3 med:hidden">
             {Socials.map((social, index) => (
               <a href={social.link} key={index} target="_blank">
                 <SocialIcon

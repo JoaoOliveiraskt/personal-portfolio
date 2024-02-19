@@ -40,16 +40,16 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full pt-52 med:pt-20"
+      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full pt-28 med:pt-20"
     >
-      <div className="flex flex-col justify-center space-y-6">
+      <div className="flex flex-col justify-center space-y-32 sm:space-y-6">
         <div className="w-full">
-          <h3 className="text-4xl py-2 med:text-2xl text-primary font-medium">
-            Recent Projects
+          <h3 className="text-4xl text-center py-2 med:text-2xl text-primary font-medium">
+            My recent Projects
           </h3>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[80rem]">
+        <div className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[66rem]">
           {My_Projects.slice(0, 2).map((card, i) => (
             <div
               key={i}

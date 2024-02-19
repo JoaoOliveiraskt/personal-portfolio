@@ -35,7 +35,7 @@ const CardProject: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative border bg-card shadow-md dark:bg-transparent dark:border-none med:border border-zinc-200 dark:border-zinc-800 overflow-hidden rounded-xl h-full w-full`}
+      className={`relative bg-transparent med:border med:border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-3xl h-full w-full`}
     >
       <div
         className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col-reverse ${flexDirectionClass}`}
@@ -45,10 +45,10 @@ const CardProject: React.FC<Props> = ({
             src={src}
             alt={title}
             title={title}
-            width={1800}
+            width={1600}
             height={100}
             quality={100}
-            className="rounded-xl"
+            className="rounded-3xl"
           />
         </div>
         <div className="w-full flex flex-col p-6 space-y-10">

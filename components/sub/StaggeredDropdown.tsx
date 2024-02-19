@@ -20,7 +20,7 @@ const StaggeredDropDown = () => {
       <Button
 
         onClick={() => setOpen((pv) => !pv)}
-        className="flex bg-background hover:bg-accent items-center justify-center h-9 w-9 rounded-lg text-primary  shadow-sm shadow-zinc-700"
+        className="flex bg-background hover:bg-background items-center justify-center h-8 w-8 rounded-lg text-primary"
       >
         <motion.span variants={iconVariants} className="text-lg">
           <RiMenu3Fill />
