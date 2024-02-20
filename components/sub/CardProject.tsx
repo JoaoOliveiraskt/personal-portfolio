@@ -35,10 +35,10 @@ const CardProject: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative bg-transparent med:border med:border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-3xl h-full w-full`}
+      className={`relative sm:bg-card med:border med:border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
     >
       <div
-        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col-reverse ${flexDirectionClass}`}
+        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
       >
         <div className="m-2 flex items-center justify-center">
           <Image
@@ -51,8 +51,8 @@ const CardProject: React.FC<Props> = ({
             className="rounded-3xl"
           />
         </div>
-        <div className="w-full flex flex-col p-6 space-y-10">
-          <div className="flex flex-col space-y-5">
+        <div className="w-full flex flex-col p-6 space-y-4">
+          <div className="flex flex-col">
             <div className="flex flex-col space-y-2">
               <h1 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}
@@ -88,7 +88,7 @@ const CardProject: React.FC<Props> = ({
           width: "100%",
           height: "100%",
 
-          background: `radial-gradient(800px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.07), transparent)`,
+          background: `radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.04), transparent)`,
         }}
       ></div>
     </div>
