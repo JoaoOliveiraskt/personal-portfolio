@@ -18,7 +18,7 @@ const SkillsDataProvider = ({ src, width, height, background }: Props) => {
         backgroundImage: `${background}, url(${src})`,
       }}
     >
-      <Image src={src} width={width} height={height} alt='skill image' />
+      <Image src={src} width={width} height={height} alt='skill image' className='w-8 h-auto' />
     </div>
   );
 };

@@ -104,6 +104,8 @@ export default function EmailForm() {
                   <input
                     type="text"
                     placeholder="Name"
+                    name="username"
+                    autoComplete="name"
                     className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                     ref={nameRef}
                   />
@@ -112,6 +114,8 @@ export default function EmailForm() {
                   <input
                     type="email"
                     placeholder="E-mail"
+                    name="email"
+                    autoComplete="email"
                     className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                     ref={emailRef}
                   />
@@ -119,6 +123,7 @@ export default function EmailForm() {
               </div>
               <textarea
                 placeholder="Message"
+                name="text"
                 className="rounded-2xl p-4 h-60 sm:h-40 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                 ref={messageRef}
               ></textarea>

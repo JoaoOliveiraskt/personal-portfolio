@@ -62,13 +62,13 @@ const CardProject: React.FC<Props> = ({
             <div className="flex flex-wrap gap-2 sm:hidden">
               {tech.map((technology, i) => (
                 <Image
-                  className=""
                   key={i}
                   alt={technology.name}
                   width={technology.width}
                   height={technology.height}
                   src={technology.src}
                   title={technology.name}
+                  className='w-8 h-auto'
                 />
               ))}
             </div>

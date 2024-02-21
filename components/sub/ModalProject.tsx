@@ -51,8 +51,9 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                     key={index}
                     src={technology.src}
                     alt={technology.name}
-                    width={technology.width}
-                    height={technology.height}
+                    width={35}
+                    height={35}
+                    className='w-9 h-auto'
                   />
                 ))}
               </div>
