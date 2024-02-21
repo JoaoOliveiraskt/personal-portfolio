@@ -1,12 +1,11 @@
 import Link from "next/link";
 import React from "react";
 import Balancer from "react-wrap-balancer";
-import HeaderCv from "@/components/main/HeaderCv";
-import { FaLongArrowAltLeft } from "react-icons/fa";
+import HeaderCv from "@/components/main/ResumeHeader";
 
 export default function Curriculo() {
   return (
-    <main className="tracking-wider bg-gray-950 min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
+    <main className="tracking-wider bg-card min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
       <HeaderCv/>
       <div
         id="curriculo"

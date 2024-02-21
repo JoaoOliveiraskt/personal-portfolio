@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { Socials, Links } from "@/constants";
 import { RiMenu3Fill } from "react-icons/ri";
-import { FiArrowDown } from "react-icons/fi";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiArrowRight } from "react-icons/fi";
 import SocialIcon from "./SocialIcon";

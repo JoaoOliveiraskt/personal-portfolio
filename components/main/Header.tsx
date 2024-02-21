@@ -1,34 +1,26 @@
 "use client";
 
-import Image from "next/image";
 import React from "react";
-import { Socials } from "@/constants";
 import StaggeredDropDown from "../sub/StaggeredDropdown";
 import Link from "next/link";
+import { Socials } from "@/constants";
 import { ModeToggle } from "../sub/theme-switcher";
+import { Links } from "@/constants";
 import SocialIcon from "../sub/SocialIcon";
-
-const links = [
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-];
 
 export default function Header() {
   return (
     <header className="fixed h-14 bg-background/70 backdrop-blur border-b border-zinc-200 dark:border-neutral-900 xl:px-5 px-72 sm:px-4  inset-x-0 w-full z-[100]">
       <nav className="relative flex w-full h-full items-center justify-between space-x-8 sm:space-x-1">
-
         <div className="h-12 flex flex-row items-center space-x-6 sm:space-x-1 max-w-[600px] sm:w-full px-1">
-        <a
-          href="#hero"
-          className="cursor-pointer h-auto w-auto flex items-center"
-        >
-          <span className="font-bold tracking-widest text-xl">
-            Oliveira
-          </span>
-        </a>
+          <a
+            href="#hero"
+            className="cursor-pointer h-auto w-auto flex items-center"
+          >
+            <span className="font-bold tracking-widest text-xl">Oliveira</span>
+          </a>
           <div className="flex  items-center gap-6 sm:gap-5 w-full h-auto text-text">
-            {links.map((link, index) => (
+            {Links.map((link, index) => (
               <a
                 href={link.href}
                 key={index}

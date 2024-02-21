@@ -6,7 +6,7 @@ interface IconProps {
 }
 
 const SocialIcon = ({ Icon, hoverColor, name }: IconProps) => (
-  <div className="flex items-center justify-center rounded-md hover:`${hoverColor}` w-8 h-8 hover:bg-accent" title={name}>
+  <div className="flex items-center justify-center rounded-md  w-8 h-8 hover:bg-accent" title={name}>
       <Icon size={20}/>
       <style jsx>{`
       div:hover {

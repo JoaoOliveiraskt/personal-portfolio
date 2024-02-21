@@ -12,13 +12,18 @@ export default function Home() {
   return (
     <main className="h-full w-full ">
       <ScrollYProgress />
-      <div className="flex flex-col w-full h-full ">
+      <div className="relative flex flex-col w-full h-full ">
         <Header />
         <Hero />
         <DesignSection />
         <Skills/>
         <Projects />
         <Contact />
+        {/*   
+        <div className="fixed w-16 h-10 bg-card bottom-5 right-10">
+          <a href="#hero">Back</a>
+        </div>
+        */}
       </div>
     </main>
   );

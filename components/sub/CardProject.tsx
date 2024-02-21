@@ -52,7 +52,7 @@ const CardProject: React.FC<Props> = ({
           />
         </div>
         <div className="w-full flex flex-col p-6 space-y-4">
-          <div className="flex flex-col">
+          <div className="flex flex-col space-y-3">
             <div className="flex flex-col space-y-2">
               <h1 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}

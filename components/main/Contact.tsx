@@ -31,7 +31,7 @@ export default function Contact() {
   ];
 
   return (
-    <div className="tracking-wider text-primary min-h-screen w-full flex justify-center py-16 med:py-0">
+    <div id="contact" className="tracking-wider text-primary min-h-screen w-full flex justify-center py-16 med:py-0">
       <div className="w-[64rem] m-5 xl:m-8 med:m-5 h-full flex flex-col space-y-4 py-5">
         <div>
           <h3 className="text-4xl med:text-2xl text-primary font-medium">

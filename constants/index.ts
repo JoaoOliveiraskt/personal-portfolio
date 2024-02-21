@@ -1,17 +1,17 @@
-import { FaLinkedin, FaGithub, FaDiscord } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 
 export const Socials = [
+  {
+    name: "Github",
+    icon: FaGithub,
+    link: "https://github.com/JoaoOliveiraskt?tab=repositories",
+    hoverColor: "",
+  },
   {
     name: "Linkedin",
     icon: FaLinkedin,
     link: "https://www.linkedin.com/in/jo%C3%A3ov-oliveira/",
     hoverColor: "#2867B2",
-  },
-  {
-    name: "Github",
-    icon: FaGithub,
-    link: "https://github.com/JoaoOliveiraskt?tab=repositories",
-    hoverColor: "#FF6347",
   },
   {
     name: "Discord",
@@ -24,6 +24,7 @@ export const Socials = [
 export const Links = [
   { name: "Skills", href: "#skills" },
   { name: "Projects", href: "#projects" },
+  { name: "Contact", href: "#contact" },
 ];
 
 export const Frontend_skill = [
@@ -32,14 +33,14 @@ export const Frontend_skill = [
     Image: "/css.svg",
     width: 28,
     height: 45,
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
     width: 23,
     height: 35,
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   /**{
     skill_name: "Framer",
@@ -53,22 +54,22 @@ export const Frontend_skill = [
     Image: "/html5.svg",
     width: 28,
     height: 45,
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   {
     skill_name: "Java Script",
     Image: "/javascript.svg",
     width: 30,
     height: 50,
-    // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor 
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   {
     skill_name: "Next.js",
     Image: "/nextjs.svg",
     width: 50,
     height: 60,
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   {
     skill_name: "React.js",
@@ -76,14 +77,14 @@ export const Frontend_skill = [
     width: 35,
     height: 60,
 
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
     width: 35,
     height: 70,
-    backgroundColor: ' linear-gradient(to right, #222222 0%, black 100%)',
+    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
   },
 ];
 
@@ -91,9 +92,11 @@ export const My_Projects = [
   {
     title: "Resumi AI",
     caption: "Content summary of a web page",
-    description:"Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
+    description:
+      "Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
     photo: "/Resumi.png",
+    icon: "/ra-icon.avif",
     tech: [
       {
         name: "React",
@@ -119,14 +122,16 @@ export const My_Projects = [
         width: 30,
         height: 30,
       },
-    ]
+    ],
   },
   {
     title: "Trips",
-    caption: "Travel booking website",
-    description:"This project was a great learning experience into data structures, authentication processes, working with dates, and payment functionality using Stripe.",
+    caption: "Accommodation booking website",
+    description:
+      "This project was a great learning experience into data structures, authentication processes, working with dates, and payment functionality using Stripe.",
     src: "https://long-trips.vercel.app",
     photo: "/Trips.png",
+    icon: "/trips-icon.avif",
     tech: [
       {
         name: "React",
@@ -182,14 +187,16 @@ export const My_Projects = [
         width: 30,
         height: 30,
       },
-    ]
+    ],
   },
   {
     title: "Moto Log",
     caption: "Moto Log app presentation website",
-    description:"Presentation site for the Moto Log application, a mobile delivery application that will be developed as part of a college assignment.",
+    description:
+      "Presentation site for the Moto Log application, a mobile delivery application that will be developed as part of a college assignment.",
     src: "https://joaooliveiraskt.github.io/Moto-Log-Website/",
     photo: "/MotoLog.png",
+    icon: "/motolog-icon.avif",
     tech: [
       {
         name: "HTML",
@@ -209,14 +216,15 @@ export const My_Projects = [
         width: 30,
         height: 30,
       },
-    ]
+    ],
   },
   {
     title: "God of War",
     caption: "God of war landing page",
-    description:"A landing page inspired by the game God of War.",
+    description: "A landing page inspired by the game God of War.",
     src: "https://joaooliveiraskt.github.io/gow-page/",
     photo: "/Gow.png",
+    icon: "/gow-icon.avif",
     tech: [
       {
         name: "HTML",
@@ -236,14 +244,15 @@ export const My_Projects = [
         width: 30,
         height: 30,
       },
-    ]
+    ],
   },
   {
     title: "Blizzard",
     caption: "Blizzard landing page",
-    description:"Landing page inspired by the Blizzard brand.",
+    description: "Landing page inspired by the Blizzard brand.",
     src: "https://joaooliveiraskt.github.io/blizzard-page/",
     photo: "/Blizzard.png",
+    icon: "/blizzard-icon.avif",
     tech: [
       {
         name: "HTML",
@@ -263,6 +272,6 @@ export const My_Projects = [
         width: 30,
         height: 30,
       },
-    ]
+    ],
   },
 ];
