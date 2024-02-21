@@ -4,8 +4,12 @@ import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
 import { BiLoaderAlt } from "react-icons/bi";
 import { MdOutlineDownloadDone } from "react-icons/md";
+import {unstable_noStore as noStore} from "next/cache"
 
 export default function EmailForm() {
+  noStore();
+
+
   useEffect(() => {
     if (process.env.NEXT_PUBLIC_MY_PUBLIC_KEY) {
       emailjs.init(process.env.NEXT_PUBLIC_MY_PUBLIC_KEY);

@@ -14,8 +14,8 @@ const HeroContent = () => {
     <section className="flex flex-col justify-center items-center w-full h-full z-50">
       <div className="h-full w-full flex flex-col justify-center items-center gap-12 text-center ssm:mt-10 pb-16 med:pb-0">
         <div className="flex flex-col items-center justify-center gap-5 h-auto">
-          <Balancer>
-            <h1 className="tracking-tighter font-semibold leading-tight text-6xl sm:text-3xl med:text-3xl text-primary max-w-[900px]">
+          <h1 className="tracking-tighter font-semibold leading-tight text-6xl sm:text-3xl med:text-3xl text-primary max-w-[900px]">
+            <Balancer>
               Creating things that make{" "}
               <span id="underline" className="">
                 <span className="relative inline-flex items-end justify-center">
@@ -23,8 +23,8 @@ const HeroContent = () => {
                   <Underline />
                 </span>
               </span>
-            </h1>
-          </Balancer>
+            </Balancer>
+          </h1>
 
           <Presentaion />
         </div>
