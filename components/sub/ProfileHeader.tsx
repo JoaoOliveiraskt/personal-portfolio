@@ -13,7 +13,7 @@ export default function ProfileHeader() {
           <a href="/">
             <Button variant="ghost" className="space-x-1">
               <FiArrowLeft />
-              <span>Home</span>
+              <span className="text-primary">Home</span>
             </Button>
           </a>
             <Link href="/profile/curriculo"><Button variant="outline" className="bg-card">Resume</Button></Link>
@@ -28,15 +28,15 @@ export default function ProfileHeader() {
               />
             </div>
             <div className="tracking-wide space-y-1 antialiased">
-              <h1 className="text-sm font-semibold">João Oliveira</h1>
-              <p className="text-sm text-zinc-400 font-light">
+              <h1 className="text-primary text-sm font-semibold">João Oliveira</h1>
+              <p className="text-sm text-text font-light">
                 Software Developer
               </p>
             </div>
           </div>
           <div className="flex space-x-2">
             {Socials.map((social, index) => (
-              <a href={social.link} key={index}>
+              <a href={social.link} key={index} target="_blank">
                 <SocialIcon
                   name={social.name}
                   Icon={social.icon}
@@ -46,7 +46,7 @@ export default function ProfileHeader() {
             ))}
           </div>
         </div>
-        <Presentaion className="text-zinc-50  sm:text-sm font-extralight leading-relaxed mx-0 mt-8 med:mt-4" />
+        <Presentaion className="text-primary  sm:text-sm font-extralight leading-relaxed mx-0 mt-8 med:mt-4" />
       </div>
     )
 }

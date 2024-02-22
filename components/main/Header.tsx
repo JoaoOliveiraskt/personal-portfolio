@@ -10,9 +10,9 @@ import SocialIcon from "../sub/SocialIcon";
 
 export default function Header() {
   return (
-    <header className="fixed h-14 bg-background/70 backdrop-blur border-b border-zinc-200 dark:border-neutral-900 xl:px-5 px-72 sm:px-4  inset-x-0 w-full z-[100]">
-      <nav className="relative flex w-full h-full items-center justify-between space-x-8 sm:space-x-1">
-        <div className="h-12 flex flex-row items-center space-x-6 sm:space-x-1 max-w-[600px] sm:w-full px-1">
+    <header className="fixed h-14 bg-background/70 backdrop-blur border-b border-zinc-200 dark:border-neutral-900 xl:px-4 w-full z-[100]">
+      <nav className="relative flex w-full h-full items-center justify-around med:justify-between">
+        <div className="h-12 flex flex-row items-center space-x-5">
           <a
             href="#hero"
             className="cursor-pointer h-auto w-auto flex items-center"

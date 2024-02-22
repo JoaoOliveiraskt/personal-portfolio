@@ -1,4 +1,5 @@
 import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
+import { IoLogoWhatsapp } from "react-icons/io";
 
 export const Socials = [
   {
@@ -18,6 +19,12 @@ export const Socials = [
     icon: FaDiscord,
     link: "https://discord.gg/5UKyhekA",
     hoverColor: "#5865f2",
+  },
+  {
+    name: "Whatsapp",
+    icon: IoLogoWhatsapp,
+    link: "https://api.whatsapp.com/send/?phone=5524999914901&text&type=phone_number&app_absent=0",
+    hoverColor: "#9f6",
   },
 ];
 

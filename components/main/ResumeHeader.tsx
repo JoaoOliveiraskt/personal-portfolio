@@ -9,26 +9,26 @@ export default function HeaderCv() {
       <div className="w-full flex items-center space-x-3 justify-between">
         <Link
           href="/profile"
-          className=" hover:bg-[#434343b3] text-white flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
+          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
         >
-          <FaLongArrowAltLeft className="text-white" />
+          <FaLongArrowAltLeft className="text-primary" />
           <span>Return</span>
         </Link>
         <div className="flex items-center space-x-3">
         <Link
           href="/"
-          className=" hover:bg-[#434343b3] text-white flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
+          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
         >
-          <HiHome className="text-white" />
-          <span>Home</span>
+          <HiHome className="text-primary" />
+          <span className="text-primary">Home</span>
         </Link>
         <a
           href="/CurriculoJoaoVictorOliveira.pdf"
           download={true}
-          className=" hover:bg-[#434343b3] text-white flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
+          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
         >
-          <IoCloudDownloadOutline className="text-white"/>
-          <span>Download </span>
+          <IoCloudDownloadOutline className="text-primary"/>
+          <span className="text-primary">Download </span>
         </a>
         </div>
       </div>

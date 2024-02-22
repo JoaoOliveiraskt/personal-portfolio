@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Socials, Links } from "@/constants";
 import { RiMenu3Fill } from "react-icons/ri";
 import { GoArrowUpRight } from "react-icons/go";
@@ -10,20 +10,30 @@ import Link from "next/link";
 
 const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const closeDropdown = () => {
-    setOpen(false);
-  }
+  const handleDocumentClick = (event: MouseEvent) => {
+    const targetElement = event.target as Node;
 
-  document.addEventListener('mousedown', closeDropdown)
+    if (dropdownRef.current && !dropdownRef.current.contains(targetElement)) {
+      setOpen(false);
+    }
+  };
+  useEffect(() => {
+    document.addEventListener("mousedown", handleDocumentClick);
+
+    return () => {
+      document.removeEventListener("mousedown", handleDocumentClick);
+    };
+  }, []);
 
   return (
     <motion.div
+      ref={dropdownRef}
       animate={open ? "open" : "closed"}
       className="relative hidden med:block top-0 right-0"
     >
       <Button
-
         onClick={() => setOpen((pv) => !pv)}
         className="flex bg-background hover:bg-background items-center justify-center h-8 w-8 rounded-lg text-primary"
       >
@@ -33,10 +43,10 @@ const StaggeredDropDown = () => {
       </Button>
 
       <motion.ul
+      
         initial={wrapperVariants.closed}
         variants={wrapperVariants}
-        style={{ originY: "top"}}
-
+        style={{ originY: "top" }}
         className="absolute flex flex-col p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border bg-background top-14 right-0 w-48 overflow-hidden"
       >
         <motion.feSpotLight className="">
@@ -52,35 +62,34 @@ const StaggeredDropDown = () => {
               <FiArrowRight className="text-text" />
             </motion.a>
           ))}
-            <Link
-              href="/profile"
-              className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
-            >
-          <motion.div variants={itemVariants} className="flex gap-3">
+          <Link
+            href="/profile"
+            className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+          >
+            <motion.div variants={itemVariants} className="flex gap-3">
               <span> Profile</span>
               <GoArrowUpRight className="text-text" />
-          </motion.div>
-            </Link>
-        {Socials.map((social) => (
-           <motion.a
-           key={social.name}
-           href={social.link}
-            target="blank"        
-            variants={itemVariants}
-            onClick={() => setOpen(false)}
-            className="cursor-default pointer flex flex-row items-center gap-3 hover:bg-accent w-full h-9 py-1 px-3 rounded-md font-medium"
+            </motion.div>
+          </Link>
+          {Socials.map((social) => (
+            <motion.a
+              key={social.name}
+              href={social.link}
+              target="blank"
+              variants={itemVariants}
+              onClick={() => setOpen(false)}
+              className="cursor-default pointer flex flex-row items-center gap-3 hover:bg-accent w-full h-9 py-1 px-3 rounded-md font-medium"
             >
-           <SocialIcon 
-            Icon={social.icon}
-            hoverColor={social.hoverColor}
-            name={social.name}
-            />
+              <SocialIcon
+                Icon={social.icon}
+                hoverColor={social.hoverColor}
+                name={social.name}
+              />
 
-
-            <p className="text-primary transition-colors">{social.name}</p>
-            <GoArrowUpRight className="text-text" />
-          </motion.a>
-        ))}
+              <p className="text-primary transition-colors">{social.name}</p>
+              <GoArrowUpRight className="text-text" />
+            </motion.a>
+          ))}
         </motion.feSpotLight>
       </motion.ul>
     </motion.div>

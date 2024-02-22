@@ -9,18 +9,18 @@ export default function Curriculo() {
       <HeaderCv/>
       <div
         id="curriculo"
-        className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
+        className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-200 dark:border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
       >
         <div className="flex med:flex-col-reverse justify-between med:gap-6 items-start">
           <div className="flex flex-col space-y-2">
-            <h1 className="text-2xl font-bold text-white ">
+            <h1 className="text-2xl font-bold text-primary ">
               João Victor Flores
             </h1>
-            <h2 className="text-xl font-semibold text-white ">
+            <h2 className="text-xl font-semibold text-primary ">
               Desenvolvedor Front End
             </h2>
             
-              <p className="max-w-80 text-zinc-400">
+              <p className="max-w-80 text-text">
                 <Balancer>
                 Com 9 meses de experiência em estágio remoto e mais de 1 ano em
                 projetos independentes resolvendo desafios com Java Script,
@@ -30,7 +30,7 @@ export default function Curriculo() {
             
           </div>
           <div id="links-curriculo">
-            <ul className="space-y-1 text-white">
+            <ul className="space-y-1 text-primary">
               <li><p>Squarema/RJ, Brasil</p></li>
               <li>
                 <p>Contato: <span>(24) 99991-4901</span></p>
@@ -71,7 +71,7 @@ export default function Curriculo() {
 
         <section className="space-y-2">
           <h3>Tecnologias</h3>
-          <p className="text-zinc-400">
+          <p className="text-text">
             CSS, Git/Github, HTML, JavaScript, Next.js, PostgreSQL, Python,
             React.js, Styled Components, Tailwind CSS.
           </p>
@@ -79,13 +79,13 @@ export default function Curriculo() {
 
         <section className="space-y-2">
           <h3>Experiência</h3>
-          <div className="flex w-full justify-between items-center text-white med:flex-col med:items-start med:space-y-2">
+          <div className="flex w-full justify-between items-center text-primary med:flex-col med:items-start med:space-y-2">
             <p>Estágio desenvolvedor Front-end</p>
-            <p className="uppercase font-bold text-white">DMS Logistics</p>
+            <p className="uppercase font-bold text-primary">DMS Logistics</p>
             <p>11/2022 - 08/2023</p>
           </div>
           <div>
-            <ul className="space-y-5 text-zinc-400 list-disc ml-6">
+            <ul className="space-y-5 text-text list-disc ml-6">
               <li>
                 <p>
                   Desenvolvimento de aplicações independentes front-end com
@@ -111,7 +111,7 @@ export default function Curriculo() {
 
         <section id="projects" className="space-y-2">
           <h3>Projetos</h3>
-          <ul className="space-y-5 text-zinc-400">
+          <ul className="space-y-5 text-text">
             <li>
               <p>
                 <a href="https://resumi-ai.vercel.app" target="_blank">
@@ -149,19 +149,19 @@ export default function Curriculo() {
 
         <section className="space-y-2">
           <h3>Educação</h3>
-          <ul className="space-y-5 text-zinc-400 ">
+          <ul className="space-y-5 text-text ">
             <li>
-              <h4 className="text-white font-bold text-lg">Inglês</h4>
+              <h4 className="text-primary font-bold text-lg">Inglês</h4>
               <p>Interemdiário</p>
             </li>
             <li>
-              <h4 className="text-white font-bold text-lg">
+              <h4 className="text-primary font-bold text-lg">
                 Universidade de Vassouras
               </h4>
               <p>Graduação em Engenharia de Software, 2022 - 2026</p>
             </li>
             <li>
-              <h4 className="text-white font-bold text-lg">Frontend Masters</h4>
+              <h4 className="text-primary font-bold text-lg">Frontend Masters</h4>
               <p>Complete intro to React, v8.</p>
             </li>
           </ul>

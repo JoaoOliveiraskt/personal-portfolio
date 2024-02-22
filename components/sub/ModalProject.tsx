@@ -42,7 +42,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               className="w-full border-b"
             />
           </div>
-          <div className="flex flex-col px-5 py-8 w-full h-full gap-8">
+          <div className="flex flex-col px-5 py-8 w-full h-full gap-5">
             <div className="flex med:flex-col gap-8 med:gap-2 sm:gap-3 w-full tracking-tighter text-2xl font-semibold sm:flex-wrap">
               <h3 className="text-primary">{selectedCard.title}</h3>
               <div className="text-primary flex items-center gap-4 flex-wrap">
@@ -53,7 +53,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                     alt={technology.name}
                     width={35}
                     height={35}
-                    className='w-9 h-auto'
+                    className='w-8 h-auto'
                   />
                 ))}
               </div>
