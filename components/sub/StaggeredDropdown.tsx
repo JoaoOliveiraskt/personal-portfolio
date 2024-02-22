@@ -11,6 +11,12 @@ import Link from "next/link";
 const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
 
+  const closeDropdown = () => {
+    setOpen(false);
+  }
+
+  document.addEventListener('mousedown', closeDropdown)
+
   return (
     <motion.div
       animate={open ? "open" : "closed"}
