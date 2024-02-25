@@ -102,7 +102,7 @@ export const My_Projects = [
     description:
       "Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
-    photo: "/Resumi.png",
+    photo: "/resumi-ai.png",
     icon: "/ra-icon.avif",
     tech: [
       {
@@ -137,7 +137,7 @@ export const My_Projects = [
     description:
       "This project was a great learning experience into data structures, authentication processes, working with dates, and payment functionality using Stripe.",
     src: "https://long-trips.vercel.app",
-    photo: "/Trips.png",
+    photo: "/trips-mockup.png",
     icon: "/trips-icon.avif",
     tech: [
       {
@@ -191,6 +191,35 @@ export const My_Projects = [
       {
         name: "Node.js",
         src: "/nodejs.svg",
+        width: 30,
+        height: 30,
+      },
+    ],
+  },
+  {
+    title: "Weather App",
+    caption: "Temperature, Conditions, and Beyond",
+    description:
+      "Developed to research the temperature of any city in the world, the project was fundamental in my learning about connections with APIs.",
+    src: "https://joaooliveiraskt.github.io/Weather/",
+    photo: "/weather-app.png",
+    icon: "/ios-weather.svg",
+    tech: [
+      {
+        name: "HTML",
+        src: "/html5.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "CSS",
+        src: "/css.svg",
+        width: 30,
+        height: 30,
+      },
+      {
+        name: "Java Script",
+        src: "/javascript.svg",
         width: 30,
         height: 30,
       },

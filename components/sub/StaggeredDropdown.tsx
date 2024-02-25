@@ -71,6 +71,15 @@ const StaggeredDropDown = () => {
               <GoArrowUpRight className="text-text" />
             </motion.div>
           </Link>
+          <Link
+            href="/profile/curriculo"
+            className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+          >
+            <motion.div variants={itemVariants} className="flex gap-3">
+              <span>Resume</span>
+              <GoArrowUpRight className="text-text" />
+            </motion.div>
+          </Link>
           {Socials.map((social) => (
             <motion.a
               key={social.name}

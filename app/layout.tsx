@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${inter.className} overflow-y-scroll overflow-x-hidden`}
+        className={`${inter.className} overflow-y-scroll overflow-x-hidden dark:bg-gradient-pattern`}
       >
         <ThemeProvider
         attribute="class"

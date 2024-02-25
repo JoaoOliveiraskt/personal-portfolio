@@ -1,12 +1,12 @@
 import Link from "next/link";
 import React from "react";
 import Balancer from "react-wrap-balancer";
-import HeaderCv from "@/components/main/ResumeHeader";
+import ResumeHeader from "@/components/main/ResumeHeader";
 
 export default function Curriculo() {
   return (
-    <main className="tracking-wider bg-card min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
-      <HeaderCv/>
+    <main className="dark:autBg bg-background tracking-wider min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
+      <ResumeHeader/>
       <div
         id="curriculo"
         className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-200 dark:border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"

@@ -1,16 +1,12 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
 import Balancer from "react-wrap-balancer";
-import { slideInFromRight } from "@/utils/motion";
 
 const SkillText = () => {
   return (
     <div className="flex flex-col items-center justify-center">
-      <motion.div
-        initial="hidden" animate="visible"
-        variants={slideInFromRight(0.5)}
+      <div
         className="relative text-center"
       >
         <div className="space-y-6 tracking-wider">
@@ -19,7 +15,7 @@ const SkillText = () => {
             </p>
          
         </div>
-      </motion.div>
+      </div>
     </div>
   );
 };

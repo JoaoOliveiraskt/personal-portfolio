@@ -41,7 +41,7 @@ export default function Profile() {
   };
 
   return (
-    <main className="bg-background pt-5 med:pt-5 min-h-screen w-full flex flex-col items-center">
+    <main className="dark:autBg bg-background pt-5 med:pt-5 min-h-screen w-full flex flex-col items-center">
       <div className="w-[37rem] min-h-screen med:w-full flex flex-col gap-8">
         <ProfileHeader />
 

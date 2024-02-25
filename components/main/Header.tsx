@@ -35,6 +35,12 @@ export default function Header() {
             >
               <span> Profile</span>
             </Link>
+            <Link
+              href="/profile/curriculo"
+              className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
+            >
+              <span> Resume</span>
+            </Link>
           </div>
         </div>
         <div className="flex gap-3 items-center justify-center">

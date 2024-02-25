@@ -50,7 +50,7 @@ const Projects: React.FC = () => {
         </div>
 
         <div className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[66rem]">
-          {My_Projects.slice(0, 2).map((card, i) => (
+          {My_Projects.slice(0, 3).map((card, i) => (
             <div
               key={i}
               className="cursor-pointer"
