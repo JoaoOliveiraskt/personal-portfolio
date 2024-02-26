@@ -3,12 +3,12 @@
 import { My_Projects } from "@/constants";
 import { GoArrowUpRight } from "react-icons/go";
 import { FiArrowRight } from "react-icons/fi";
-import ProfileHeader from "@/components/sub/ProfileHeader";
+import ProfileHeader from "@/components/main/ProfileHeader";
 import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { BiExpand } from "react-icons/bi";
-import ProjectModal from "@/components/sub/ModalProject";
+import ProjectModal from "@/components/sub/ProjectModal";
 
 interface Technology {
   name: string;
@@ -43,18 +43,19 @@ export default function Profile() {
   return (
     <main className="dark:autBg bg-background pt-5 med:pt-5 min-h-screen w-full flex flex-col items-center">
       <div className="w-[37rem] min-h-screen med:w-full flex flex-col gap-8">
+        
         <ProfileHeader />
 
         <div className="flex flex-col gap-5">
           <div>
             <h3 className="font-semibold text-primary tracking-wider antialiased px-4">
-              Featured Projects
+              Projetos Recentes
             </h3>
           </div>
           <div className="flex flex-col gap-2">
             {My_Projects.map((project, index) => (
-              <div 
-                onClick={() => window.open(project.src, '_blank')}
+              <div
+                onClick={() => window.open(project.src, "_blank")}
                 key={index}
                 className=" cursor-pointer relative hover:bg-accent rounded-lg p-4 transition-all duration-300 ease-in-out"
               >
@@ -86,7 +87,7 @@ export default function Profile() {
                     >
                       <BiExpand size={12} />
                     </button>
-                    <GoArrowUpRight className="text-text" title="Website"/>
+                    <GoArrowUpRight className="text-text" title="Website" />
                   </div>
                 </div>
               </div>

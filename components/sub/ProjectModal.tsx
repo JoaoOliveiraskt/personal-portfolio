@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import ProjectModalFooter from "./ModalFooterProject";
+import ProjectModalFooter from "./ProjectModalFooter";
 
 interface Technology {
   name: string;

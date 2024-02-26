@@ -1,5 +1,5 @@
-import React from 'react';
-import Image from 'next/image';
+import React from "react";
+import Image from "next/image";
 
 interface Props {
   src: string;
@@ -10,7 +10,6 @@ interface Props {
 }
 
 const SkillsDataProvider = ({ src, width, height, background }: Props) => {
-
   return (
     <div
       className="w-16 h-16 p-3 rounded-xl flex flex-row items-center justify-center shadow-xl"
@@ -18,7 +17,13 @@ const SkillsDataProvider = ({ src, width, height, background }: Props) => {
         backgroundImage: `${background}, url(${src})`,
       }}
     >
-      <Image src={src} width={width} height={height} alt='skill image' className='w-8 h-auto' />
+      <Image
+        src={src}
+        width={width}
+        height={height}
+        alt="skill image"
+        className="w-8 h-auto"
+      />
     </div>
   );
 };

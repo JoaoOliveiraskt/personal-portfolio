@@ -11,7 +11,7 @@ export default function Contact() {
     {
       icon: <FiPhoneCall />,
       text: "+55 24 99991 4901",
-      description: "Phone Number",
+      description: "Whatsapp",
       src: "https://api.whatsapp.com/send/?phone=5524999914901&text&type=phone_number&app_absent=0",
     },
     {
@@ -33,7 +33,7 @@ export default function Contact() {
       <div className="w-[64rem] m-5 xl:m-8 med:m-5 h-full flex flex-col space-y-4 py-5">
         <div>
           <h3 className="text-4xl med:text-2xl text-primary font-medium">
-            Contact{" "}
+            Contato{" "}
           </h3>
         </div>
 

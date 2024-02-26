@@ -1,6 +1,12 @@
 import { FaLinkedin, FaGithub, FaDiscord } from "react-icons/fa";
 import { IoLogoWhatsapp } from "react-icons/io";
 
+export const Links = [
+  { name: "Tecnologias", href: "#skills" },
+  { name: "Projetos", href: "#projects" },
+  { name: "Contato", href: "#contact" },
+];
+
 export const Socials = [
   {
     name: "Github",
@@ -28,11 +34,6 @@ export const Socials = [
   },
 ];
 
-export const Links = [
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Contact", href: "#contact" },
-];
 
 export const Frontend_skill = [
   {
@@ -98,9 +99,9 @@ export const Frontend_skill = [
 export const My_Projects = [
   {
     title: "Resumi AI",
-    caption: "Content summary of a web page",
+    caption: "Resuma o conteúdo de uma página web",
     description:
-      "Designed to summarize the content of a web page, created with Next.js using the Article Extractor and Summarizer API.",
+      "Projetado para resumir o conteúdo de uma página web, criado com Next.js usando a Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
     photo: "/resumi-ai.png",
     icon: "/ra-icon.avif",
@@ -112,13 +113,13 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Next js",
+        name: "Next.js",
         src: "/nextjs.svg",
         width: 30,
         height: 30,
       },
       {
-        name: "Tailwind Css",
+        name: "Tailwind CSS",
         src: "/tailwindcss.svg",
         width: 30,
         height: 30,
@@ -133,9 +134,9 @@ export const My_Projects = [
   },
   {
     title: "Trips",
-    caption: "Accommodation booking website",
+    caption: "Site de reserva de acomodações",
     description:
-      "This project was a great learning experience into data structures, authentication processes, working with dates, and payment functionality using Stripe.",
+      "Este projeto foi uma ótima experiência de aprendizado em estruturas de dados, processos de autenticação, trabalho com datas e funcionalidade de pagamento usando o Stripe.",
     src: "https://long-trips.vercel.app",
     photo: "/trips-mockup.png",
     icon: "/trips-icon.avif",
@@ -147,13 +148,13 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Next js",
+        name: "Next.js",
         src: "/nextjs.svg",
         width: 30,
         height: 30,
       },
       {
-        name: "Tailwind Css",
+        name: "Tailwind CSS",
         src: "/tailwindcss.svg",
         width: 30,
         height: 30,
@@ -171,7 +172,7 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Postgresql",
+        name: "PostgreSQL",
         src: "/postgresql.svg",
         width: 30,
         height: 30,
@@ -197,10 +198,10 @@ export const My_Projects = [
     ],
   },
   {
-    title: "Weather App",
-    caption: "Temperature, Conditions, and Beyond",
+    title: "Clima",
+    caption: "Temperatura, Condições e Além",
     description:
-      "Developed to research the temperature of any city in the world, the project was fundamental in my learning about connections with APIs.",
+      "Desenvolvido para pesquisar a temperatura de qualquer cidade do mundo, o projeto foi fundamental para o meu aprendizado sobre conexões com APIs.",
     src: "https://joaooliveiraskt.github.io/Weather/",
     photo: "/weather-app.png",
     icon: "/ios-weather.svg",
@@ -218,7 +219,7 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Java Script",
+        name: "JavaScript",
         src: "/javascript.svg",
         width: 30,
         height: 30,
@@ -227,9 +228,9 @@ export const My_Projects = [
   },
   {
     title: "Moto Log",
-    caption: "Moto Log app presentation website",
+    caption: "Site de apresentação do aplicativo Moto Log",
     description:
-      "Presentation site for the Moto Log application, a mobile delivery application that will be developed as part of a college assignment.",
+      "Site de apresentação para o aplicativo Moto Log, um aplicativo de entrega móvel que será desenvolvido como parte de um trabalho universitário.",
     src: "https://joaooliveiraskt.github.io/Moto-Log-Website/",
     photo: "/MotoLog.png",
     icon: "/motolog-icon.avif",
@@ -247,7 +248,7 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Java Script",
+        name: "JavaScript",
         src: "/javascript.svg",
         width: 30,
         height: 30,
@@ -256,8 +257,8 @@ export const My_Projects = [
   },
   {
     title: "God of War",
-    caption: "God of war landing page",
-    description: "A landing page inspired by the game God of War.",
+    caption: "Landing page do God of War",
+    description: "Uma landing page inspirada no jogo God of War.",
     src: "https://joaooliveiraskt.github.io/gow-page/",
     photo: "/Gow.png",
     icon: "/gow-icon.avif",
@@ -275,7 +276,7 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Java Script",
+        name: "JavaScript",
         src: "/javascript.svg",
         width: 30,
         height: 30,
@@ -284,8 +285,8 @@ export const My_Projects = [
   },
   {
     title: "Blizzard",
-    caption: "Blizzard landing page",
-    description: "Landing page inspired by the Blizzard brand.",
+    caption: "Landing page da Blizzard",
+    description: "Uma landing page inspirada na marca Blizzard.",
     src: "https://joaooliveiraskt.github.io/blizzard-page/",
     photo: "/Blizzard.png",
     icon: "/blizzard-icon.avif",
@@ -303,7 +304,7 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Java Script",
+        name: "JavaScript",
         src: "/javascript.svg",
         width: 30,
         height: 30,

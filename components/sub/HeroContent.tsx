@@ -7,7 +7,7 @@ import Balancer from "react-wrap-balancer";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 
 import { Button } from "../ui/button";
-import Presentaion from "./PresentationText";
+import PresentaionText from "./PresentationText";
 
 const HeroContent = () => {
   return (
@@ -16,17 +16,17 @@ const HeroContent = () => {
         <div className="flex flex-col items-center justify-center gap-5 h-auto">
           <h1 className="tracking-tighter font-semibold leading-tight text-6xl sm:text-3xl med:text-3xl text-primary max-w-[900px]">
             <Balancer>
-              Creating things that make{" "}
+              Criando coisas que fazem{" "}
               <span id="underline" className="">
                 <span className="relative inline-flex items-end justify-center">
-                  a difference
+                  a diferença
                   <Underline />
                 </span>
               </span>
             </Balancer>
           </h1>
 
-          <Presentaion />
+          <PresentaionText />
         </div>
 
         {/*<div className="relative m-auto bg-white overflow-hidden p-1 border-2 border-cyan-700 rounded-full w-24 h-24">

@@ -27,8 +27,6 @@ export default function EmailForm() {
   const numberError = "Nome não pode conter números";
   const formError = "Preencha todos os campos.";
   const [error, setError] = useState<string>("");
-  const containsNumbers = (value: string): boolean => /\d/.test(value);
-  const fieldsAreFilled = (...fields: (string | null)[]): boolean => fields.every(field => !!field)
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -38,11 +36,7 @@ export default function EmailForm() {
 
     try {
       setLoading(true);
-
-      const name = nameRef.current?.value;
-      const email = emailRef.current?.value;
-      const message = messageRef.current?.value;
-      
+ 
       if (nameRef.current && emailRef.current && messageRef.current) {
         const containsNumbers = /\d/.test(nameRef.current.value);
 
@@ -96,7 +90,7 @@ export default function EmailForm() {
               <BsSend />
             </div>
             <div>
-              <span>Send an e-mail</span>
+              <span>Envie-me um e-mail</span>
             </div>
           </div>
 
@@ -106,7 +100,7 @@ export default function EmailForm() {
                 <div className="w-full">
                   <input
                     type="text"
-                    placeholder="Name"
+                    placeholder="Nome"
                     name="username"
                     autoComplete="name"
                     className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
@@ -125,7 +119,7 @@ export default function EmailForm() {
                 </div>
               </div>
               <textarea
-                placeholder="Message"
+                placeholder="Mensagem"
                 name="text"
                 className="rounded-2xl p-4 h-60 sm:h-40 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
                 ref={messageRef}
@@ -142,7 +136,7 @@ export default function EmailForm() {
                   {loading ? (
                     <BiLoaderAlt className="animate-spin infinite" />
                   ) : (
-                    "Send"
+                    "Enviar"
                   )}
                 </Button>
               )}

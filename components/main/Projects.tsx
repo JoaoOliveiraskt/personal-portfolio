@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import CardProject from "../sub/CardProject";
+import CardProject from "../sub/ProjectCard";
 import { My_Projects } from "@/constants";
-import ProjectModal from "../sub/ModalProject";
+import ProjectModal from "../sub/ProjectModal";
 import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
@@ -42,10 +42,10 @@ const Projects: React.FC = () => {
       id="projects"
       className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-5 w-full pt-28 med:pt-20"
     >
-      <div className="flex flex-col justify-center space-y-32 sm:space-y-6">
+      <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
         <div className="w-full">
           <h3 className="text-4xl text-center py-2 med:text-2xl text-primary font-medium">
-            My recent Projects
+            Projetos recentes
           </h3>
         </div>
 
@@ -74,7 +74,7 @@ const Projects: React.FC = () => {
             className="w-32 hover:bg-accent flex items-center justify-center rounded-lg h-8 transition-colors duration-300"
           >
             <button className="flex space-x-3 text-blue-500 items-center ">
-              <span className="">See more</span>
+              <span className="">Ver mais</span>
               <FaLongArrowAltRight />
             </button>
           </Link>

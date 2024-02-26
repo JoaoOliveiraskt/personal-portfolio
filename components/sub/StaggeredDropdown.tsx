@@ -67,7 +67,7 @@ const StaggeredDropDown = () => {
             className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
           >
             <motion.div variants={itemVariants} className="flex gap-3">
-              <span> Profile</span>
+              <span> Perfil</span>
               <GoArrowUpRight className="text-text" />
             </motion.div>
           </Link>
@@ -76,7 +76,7 @@ const StaggeredDropDown = () => {
             className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
           >
             <motion.div variants={itemVariants} className="flex gap-3">
-              <span>Resume</span>
+              <span>Currículo</span>
               <GoArrowUpRight className="text-text" />
             </motion.div>
           </Link>

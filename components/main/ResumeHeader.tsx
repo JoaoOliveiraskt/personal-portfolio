@@ -12,24 +12,24 @@ export default function ResumeHeader() {
           className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
         >
           <FaLongArrowAltLeft className="text-primary" />
-          <span>Profile</span>
+          <span>Perfil</span>
         </Link>
         <div className="flex items-center space-x-3">
-        <Link
-          href="/"
-          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
-        >
-          <HiHome className="text-primary" />
-          <span className="text-primary">Home</span>
-        </Link>
-        <a
-          href="/CurriculoJoaoVictorOliveira.pdf"
-          download={true}
-          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4  h-9 rounded-xl"
-        >
-          <IoCloudDownloadOutline className="text-primary"/>
-          <span className="text-primary">Download </span>
-        </a>
+          <Link
+            href="/"
+            className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-1 w-ful px-2 h-9 rounded-xl"
+          >
+            <HiHome className="text-primary" />
+            <span className="text-primary">Início</span>
+          </Link>
+          <a
+            href="/CurriculoJoaoVictorOliveira.pdf"
+            download={true}
+            className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-2 w-ful px-2 h-9 rounded-xl"
+          >
+            <IoCloudDownloadOutline className="text-primary" />
+            <span className="text-primary">Download</span>
+          </a>
         </div>
       </div>
     </header>

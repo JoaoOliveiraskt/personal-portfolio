@@ -11,7 +11,7 @@ const SkillText = () => {
       >
         <div className="space-y-6 tracking-wider">
           <p className=" text-primary text-xl sm:text-base font-medium">
-            <Balancer>Crafting Digital Experiences with...</Balancer>
+            <Balancer>Criando experiências digitais com...</Balancer>
             </p>
          
         </div>

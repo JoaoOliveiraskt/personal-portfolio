@@ -33,13 +33,13 @@ export default function Header() {
               href="/profile"
               className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
             >
-              <span> Profile</span>
+              <span>Perfil</span>
             </Link>
             <Link
               href="/profile/curriculo"
               className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
             >
-              <span> Resume</span>
+              <span>Currículo</span>
             </Link>
           </div>
         </div>
