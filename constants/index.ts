@@ -101,7 +101,7 @@ export const My_Projects = [
     title: "Resumi AI",
     caption: "Resuma o conteúdo de uma página web",
     description:
-      "Projetado para resumir o conteúdo de uma página web, criado com Next.js usando a Article Extractor and Summarizer API.",
+      "Projetado para resumir o conteúdo de uma página web, criado com Vite usando a Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
     photo: "/resumi-ai.png",
     icon: "/ra-icon.avif",
@@ -113,8 +113,8 @@ export const My_Projects = [
         height: 30,
       },
       {
-        name: "Next.js",
-        src: "/nextjs.svg",
+        name: "Vite",
+        src: "/vite-icon.svg",
         width: 30,
         height: 30,
       },
