@@ -59,7 +59,7 @@ export default function ContactCard({ icon, text, description, url, className }:
     </div>
   );
   return (
-    <div className={("relative med:col-span-3 bg-card rounded-xl p-5 border border-zinc-200 dark:border-zinc-700 overflow-x-hidden shadow-md")
+    <div className={("relative med:col-span-3 bg-card rounded-xl p-4 border border-zinc-200 dark:border-zinc-700 overflow-x-hidden shadow-md")
     }>
       {url ? (
         <a href={url} target="_blank">
