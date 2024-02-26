@@ -1,13 +1,11 @@
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
+
 import ContactCard from "../sub/ContactCard";
-import HandleOnMouseMove from "@/utils/hoverEffect";
-import { useState } from "react";
 import EmailForm from "../sub/EmailForm";
 
 export default function Contact() {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   const cardContent = [
     {
@@ -47,6 +45,7 @@ export default function Contact() {
               icon={card.icon}
               text={card.text}
               description={card.description}
+              className=""
             />
           ))}
         </div>
