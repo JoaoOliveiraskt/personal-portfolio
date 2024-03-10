@@ -82,7 +82,7 @@ export default function EmailForm() {
 
   return (
     <div className="grid h-max ">
-      <div className="relative z-[999] bg-card row-span-2 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-md"
+      <div className="relative z-[5] bg-card row-span-2 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-md"
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}>
         <div className="flex flex-col h-full justify-between gap-5">
           <div className="flex flex-col space-y-5 p-8 ">
@@ -95,7 +95,7 @@ export default function EmailForm() {
           </div>
 
           <div className="flex flex-col p-8 med:p-3 ">
-            <form onSubmit={sendEmail} className="flex flex-col gap-8 z-[999]">
+            <form onSubmit={sendEmail} className="flex flex-col gap-8 z-[5]">
               <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
                 <div className="w-full">
                   <input

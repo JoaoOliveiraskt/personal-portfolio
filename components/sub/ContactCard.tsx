@@ -31,7 +31,7 @@ export default function ContactCard({ icon, text, description, url, className }:
       </div>
       <div className="flex flex-col space-y-3">
         <div className="flex flex-wrap gap-2 items-center">
-          <span className="text-xl flex flex-wrap z-50 hover:text-blue-500">
+          <span className="text-xl flex flex-wrap z-20 hover:text-blue-500">
             {text}
           </span>
           {text.includes("joaoliveiraam@gmail.com") && (
@@ -39,7 +39,7 @@ export default function ContactCard({ icon, text, description, url, className }:
               className="flex items-center justify-center p-1 rounded-lg border hover:bg-accent"
               onClick={() => handleCopy(text)}
             >
-              {copied ? <FaCheckCircle /> : <MdContentCopy className="z-50" />}
+              {copied ? <FaCheckCircle /> : <MdContentCopy className="z-20" />}
             </button>
           )}
         </div>
@@ -52,7 +52,6 @@ export default function ContactCard({ icon, text, description, url, className }:
           left: 0,
           width: "100%",
           height: "100%",
-          zIndex: 1,
           background: `radial-gradient(200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.1), transparent)`,
         }}
       ></div>
