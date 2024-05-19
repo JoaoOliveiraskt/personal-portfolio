@@ -28,6 +28,9 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        button: "hsl(var(--button))",
+        buttonHover: "hsl(var(--button-hover))",
+        buttonBorder: "hsl(var(--button-border))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         text: {
