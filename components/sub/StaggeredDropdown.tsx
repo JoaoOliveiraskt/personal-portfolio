@@ -2,8 +2,9 @@ import { motion } from "framer-motion";
 import { useState, useEffect, useRef } from "react";
 import { Socials, Links } from "@/constants";
 import { RiMenu3Fill } from "react-icons/ri";
-import { GoArrowUpRight } from "react-icons/go";
+import { LuArrowUpRight } from "react-icons/lu";
 import { FiArrowRight } from "react-icons/fi";
+import { LuArrowRight } from "react-icons/lu";
 import SocialIcon from "./SocialIcon";
 import { Button } from "../ui/button";
 import Link from "next/link";
@@ -56,28 +57,28 @@ const StaggeredDropDown = () => {
               href={link.href}
               onClick={() => setOpen(false)}
               variants={itemVariants}
-              className="cursor-default flex items-center gap-3 hover:bg-accent w-full h-9 py-1 px-4 rounded-md text-base font-medium"
+              className="cursor-default flex items-center justify-between hover:bg-accent w-full h-9 py-1 px-4 rounded-md text-base font-medium"
             >
               <p className="text-primary">{link.name}</p>
-              <FiArrowRight className="text-text" />
+              <LuArrowRight  className="text-text" />
             </motion.a>
           ))}
           <Link
             href="/profile"
-            className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+            className="flex items-center text-base font-medium cursor-default px-4 h-9 hover:bg-accent rounded-lg hover:text-foreground"
           >
-            <motion.div variants={itemVariants} className="flex gap-3">
-              <span> Perfil</span>
-              <GoArrowUpRight className="text-text" />
+            <motion.div variants={itemVariants} className="flex w-full justify-between items-center">
+              <span className="text-primary"> Perfil</span>
+              <LuArrowRight className="text-text" />
             </motion.div>
           </Link>
           <Link
             href="/profile/curriculo"
-            className="flex items-center text-base font-medium cursor-default px-4 h-8 hover:bg-accent rounded-lg hover:text-foreground"
+            className="flex items-center text-base font-medium cursor-default px-4 h-9 hover:bg-accent rounded-lg hover:text-foreground"
           >
-            <motion.div variants={itemVariants} className="flex gap-3">
-              <span>Currículo</span>
-              <GoArrowUpRight className="text-text" />
+            <motion.div variants={itemVariants} className="flex w-full justify-between items-center">
+              <span className="text-primary">Currículo</span>
+              <LuArrowRight className="text-text" />
             </motion.div>
           </Link>
           {Socials.map((social) => (
@@ -87,7 +88,7 @@ const StaggeredDropDown = () => {
               target="blank"
               variants={itemVariants}
               onClick={() => setOpen(false)}
-              className="cursor-default pointer flex flex-row items-center gap-3 hover:bg-accent w-full h-9 py-1 px-3 rounded-md font-medium"
+              className="cursor-default pointer flex flex-row items-center gap-3 hover:bg-accent w-full h-9 py-1 px-4 rounded-md font-medium"
             >
               <SocialIcon
                 Icon={social.icon}
@@ -95,8 +96,10 @@ const StaggeredDropDown = () => {
                 name={social.name}
               />
 
-              <p className="text-primary transition-colors">{social.name}</p>
-              <GoArrowUpRight className="text-text" />
+             <div className="flex w-full justify-between items-center">
+             <p className="text-primary transition-colors">{social.name}</p>
+              <LuArrowUpRight className="text-text" />
+             </div>
             </motion.a>
           ))}
         </motion.feSpotLight>
