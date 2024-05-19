@@ -7,6 +7,7 @@ import HandleOnMouseMove from "@/utils/hoverEffect";
 import { BsSend } from "react-icons/bs";
 import { BiLoaderAlt } from "react-icons/bi";
 import { MdOutlineDownloadDone } from "react-icons/md";
+import RadialGradient from "../ui/radial-gradient";
 
 export default function EmailForm() {
   noStore();
@@ -143,17 +144,7 @@ export default function EmailForm() {
             </form>
           </div>
         </div>
-        <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-
-          background: `radial-gradient(200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.1), transparent)`,
-        }}
-      ></div>
+        <RadialGradient mousePosition={mousePosition}/>
       </div>
     </div>
   );

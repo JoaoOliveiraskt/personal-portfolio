@@ -2,6 +2,7 @@ import Image from "next/image";
 import React, { useState } from "react";
 import { BiExpand } from "react-icons/bi";
 import HandleOnMouseMove from "@/utils/hoverEffect";
+import RadialGradient from "../ui/radial-gradient";
 
 interface Technology {
   name: string;
@@ -80,17 +81,7 @@ const CardProject: React.FC<Props> = ({
         </div>
       </div>
       {/* Gradiente com base na posição do mouse */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-
-          background: `radial-gradient(300px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(255, 255, 255, 0.04), transparent)`,
-        }}
-      ></div>
+      <RadialGradient mousePosition={mousePosition}/>
     </div>
   );
 };
