@@ -9,7 +9,7 @@ export default function Curriculo() {
       <ResumeHeader />
       <div
         id="curriculo"
-        className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-200 dark:border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
+        className="mt-24 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-200 dark:border-slate-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
       >
         <div className="flex med:flex-col-reverse justify-between med:gap-6 items-start">
          

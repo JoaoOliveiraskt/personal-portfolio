@@ -2,6 +2,7 @@ import Link from "next/link";
 import { FaLongArrowAltLeft } from "react-icons/fa";
 import { HiHome } from "react-icons/hi2";
 import { IoCloudDownloadOutline } from "react-icons/io5";
+import { Button } from "../ui/button";
 
 export default function ResumeHeader() {
   return (
@@ -9,26 +10,30 @@ export default function ResumeHeader() {
       <div className="w-full flex items-center space-x-3 justify-between">
         <Link
           href="/profile"
-          className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-4 w-ful px-4 sm:px-1  h-9 rounded-xl"
+          
         >
-          <FaLongArrowAltLeft className="text-primary" />
+         <Button variant={"ghost"} className="text-primary flex items-center justify-center gap-4 sm:gap-2 px-4 sm:px-1 rounded-xl">
+         <FaLongArrowAltLeft />
           <span>Perfil</span>
+         </Button>
         </Link>
         <div className="flex items-center space-x-3 ">
           <Link
             href="/"
-            className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-1 w-ful px-4 sm:px-1 h-9 rounded-xl"
           >
+            <Button variant={"ghost"} className="text-primary flex items-center justify-center gap-4 sm:gap-2 px-4 sm:px-1 rounded-xl">
             <HiHome className="text-primary" />
             <span className="text-primary">Início</span>
+            </Button>
           </Link>
           <a
             href="/CurriculoJoaoVictorOliveira.pdf"
             download={true}
-            className=" hover:bg-[#434343b3] text-primary flex items-center justify-center gap-2 w-ful px-4 sm:px-1 h-9 rounded-xl"
           >
+            <Button variant={"ghost"} className="text-primary flex items-center justify-center gap-4 sm:gap-2 px-4 sm:px-1 rounded-xl">
             <IoCloudDownloadOutline className="text-primary" />
             <span className="text-primary">Download</span>
+            </Button>
           </a>
         </div>
       </div>

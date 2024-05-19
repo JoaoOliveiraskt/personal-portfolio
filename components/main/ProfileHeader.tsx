@@ -11,14 +11,20 @@ export default function ProfileHeader() {
     <div className=" flex flex-col gap-4 med:gap-4 px-4">
       <div className="flex justify-between">
         <Link href="/">
-          <Button variant="ghost" className="space-x-1">
+          <Button
+            variant={"outline"}
+            className="space-x-1 rounded-lg text-primary bg-transparent"
+          >
             <FiArrowLeft />
-            <span className="text-primary">Início</span>
+            <span>Início</span>
           </Button>
         </Link>
         <Link href="/profile/curriculo">
-          <Button variant="outline" className="bg-card">
-            Currículo
+          <Button
+            variant={"outline"}
+            className="text-primary rounded-lg bg-transparent"
+          >
+            <span>Currículo</span>
           </Button>
         </Link>
       </div>
@@ -35,7 +41,9 @@ export default function ProfileHeader() {
             <h1 className="text-primary text-sm font-semibold">
               João Oliveira
             </h1>
-            <p className="text-sm text-text font-light">Desenvolvedor front-end</p>
+            <p className="text-sm text-text font-light">
+              Desenvolvedor front-end
+            </p>
           </div>
         </div>
         <div className="flex space-x-2">
