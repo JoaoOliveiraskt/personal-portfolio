@@ -41,14 +41,14 @@ export const Frontend_skill = [
     Image: "/css.svg",
     width: 28,
     height: 45,
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
     width: 23,
-    height: 35,
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    height: 20,
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   /**{
     skill_name: "Framer",
@@ -62,7 +62,7 @@ export const Frontend_skill = [
     Image: "/html5.svg",
     width: 28,
     height: 45,
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Java Script",
@@ -70,14 +70,14 @@ export const Frontend_skill = [
     width: 30,
     height: 50,
     // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Next.js",
     Image: "/nextjs.svg",
-    width: 50,
+    width: 60,
     height: 60,
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "React.js",
@@ -85,14 +85,14 @@ export const Frontend_skill = [
     width: 35,
     height: 60,
 
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
-    width: 35,
+    width: 50,
     height: 70,
-    backgroundColor: " linear-gradient(to right, #222222 0%, black 100%)",
+    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
 ];
 
