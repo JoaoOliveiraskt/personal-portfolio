@@ -6,67 +6,83 @@ import ResumeHeader from "@/components/main/ResumeHeader";
 export default function Curriculo() {
   return (
     <main className="dark:autBg bg-background tracking-wider min-h-screen w-full px-5 pb-24 sm:p-3 sm:pt-10 flex flex-col items-center justify-center gap-5">
-      <ResumeHeader/>
+      <ResumeHeader />
       <div
         id="curriculo"
         className="mt-40 sm:mt-24 rounded-3xl max-w-[60rem] border border-zinc-200 dark:border-zinc-800 h-full p-12 sm:px-4 sm:w-full space-y-6"
       >
         <div className="flex med:flex-col-reverse justify-between med:gap-6 items-start">
+         
+
           <div className="flex flex-col space-y-2">
-            <h1 className="text-2xl font-bold text-primary ">
+            <h1 className="med:hidden text-2xl font-bold text-primary ">
               João Victor Flores
             </h1>
-            <h2 className="text-xl font-semibold text-primary ">
-              Desenvolvedor Front End
-            </h2>
-            
+            <div className="flex flex-col space-y-2">
+              <h2 className="text-xl font-semibold text-primary ">
+                Desenvolvedor Front End
+              </h2>
+
               <p className="max-w-80 text-text">
                 <Balancer>
-                Com 9 meses de experiência em estágio remoto e mais de 1 ano em
-                projetos independentes resolvendo desafios com Java Script,
-                React.js e CSS.
+                  Com 9 meses de experiência em estágio remoto e mais de 1 ano
+                  em projetos independentes resolvendo desafios com Java Script,
+                  React.js e CSS.
                 </Balancer>
               </p>
-            
+            </div>
           </div>
+          
+
           <div id="links-curriculo">
             <ul className="space-y-1 text-primary">
-              <li><p>Squarema/RJ, Brasil</p></li>
               <li>
-                <p>Contato: <span>(24) 99991-4901</span></p>
-              </li>
-              <li>
-                <p>Email: <span>joaooliveiram@gmail.com</span></p>
-              </li>
-              <li>
-               <p>
-               Github:{" "}
-                <a href="https://github.com/JoaoOliveiraskt" target="_blank">
-                  <span>/JoaoOliveiraskt</span>
-                </a>
-               </p>
+                <p>Squarema/RJ, Brasil</p>
               </li>
               <li>
                 <p>
-                Linkedin:{" "}
-                <a
-                  href="https://www.linkedin.com/in/jo%C3%A3ov-oliveira"
-                  target="_blank"
-                >
-                  <span>in/joãov-oliveira</span>
-                </a>
+                  Contato: <span>(24) 99991-4901</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Email: <span>joaooliveiram@gmail.com</span>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Github:{" "}
+                  <a href="https://github.com/JoaoOliveiraskt" target="_blank">
+                    <span>/JoaoOliveiraskt</span>
+                  </a>
+                </p>
+              </li>
+              <li>
+                <p>
+                  Linkedin:{" "}
+                  <a
+                    href="https://www.linkedin.com/in/jo%C3%A3ov-oliveira"
+                    target="_blank"
+                  >
+                    <span>in/joãov-oliveira</span>
+                  </a>
                 </p>
               </li>
               <li className="overflow-hidden whitespace-nowrap">
-              <p>
-              Portfolio:{" "}
-                <Link href="/">
-                  <span className="">joaooliveiraweb.vercell.app</span>
-                </Link>
-              </p>
+                <p>
+                  Portfolio:{" "}
+                  <Link href="/">
+                    <span className="">joaooliveiraweb.vercell.app</span>
+                  </Link>
+                </p>
               </li>
             </ul>
+
+            
           </div>
+          <h1 className="med:block hidden text-2xl font-bold text-primary ">
+            João Victor Flores
+          </h1>
         </div>
 
         <section className="space-y-2">
@@ -161,7 +177,9 @@ export default function Curriculo() {
               <p>Graduação em Engenharia de Software, 2022 - 2026</p>
             </li>
             <li>
-              <h4 className="text-primary font-bold text-lg">Frontend Masters</h4>
+              <h4 className="text-primary font-bold text-lg">
+                Frontend Masters
+              </h4>
               <p>Complete intro to React, v8.</p>
             </li>
           </ul>

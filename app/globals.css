@@ -98,7 +98,7 @@
   
   @media screen and (min-width: 320px) {
     .bg-gradient-pattern {
-      background: radial-gradient(circle at 100% 0, #011420 0, #000000 27%, #100e13 100%);
+      background: radial-gradient(circle at 100% 0, #17262f 0, #0c0c0f 27%, #100e13 100%);
     }
   }
 }
