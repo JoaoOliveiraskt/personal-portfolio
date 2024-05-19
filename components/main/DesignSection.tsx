@@ -14,7 +14,7 @@ export default function DesignSection() {
           </h2>
         </div>
 
-        <div className="max-w-[1080px] flex items-center justify-center">
+        <div className="max-w-[1080px] flex items-center justify-center overflow-hidden">
           <video
             id="video"
             width="100%"
@@ -24,7 +24,7 @@ export default function DesignSection() {
             controls
             loop
             muted
-            className="filter blur-[0px] brightness-50 rounded-3xl border-8 border-black "
+            className="filter blur-[0px] brightness-50 rounded-3xl border-2 border-border dark:border-slate-500"
           >
             <source src="/video.mp4" type="video/mp4" />
           </video>
