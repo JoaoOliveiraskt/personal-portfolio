@@ -20,7 +20,7 @@ interface Props {
   tech: Technology[];
 }
 
-const CardProject: React.FC<Props> = ({
+const ProjectCard: React.FC<Props> = ({
   id,
   src,
   title,
@@ -86,4 +86,4 @@ const CardProject: React.FC<Props> = ({
   );
 };
 
-export default CardProject;
+export default ProjectCard;
