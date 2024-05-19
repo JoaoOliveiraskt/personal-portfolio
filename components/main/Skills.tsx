@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import SliderInfinite from "../sub/Slider";
 import Balancer from "react-wrap-balancer";
 
+
 const Skills = () => {
   return (
     <motion.section
@@ -18,7 +19,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
-
+    
       <SliderInfinite />
     </motion.section>
   );
