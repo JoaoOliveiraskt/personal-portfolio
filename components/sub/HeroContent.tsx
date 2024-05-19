@@ -40,8 +40,8 @@ const HeroContent = () => {
               João Oliveira
             </h2>
           </div>
-          <Button className="cursor-pointer h-12 text-center rounded-full w-[160px] 
-          sm:w-36 buttonDarkBg hover:bg-accent hover:text-foreground">
+          <Button variant={"ghost"} className="text-primary cursor-pointer h-12 text-center rounded-full w-[160px] 
+          sm:w-36 bg-button dark:hover:bg-buttonHover border-2 border-buttonBorder">
             <a
               target="_blank"
               href="https://github.com/JoaoOliveiraskt?tab=repositories"
