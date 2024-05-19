@@ -14,11 +14,11 @@ const HeroContent = () => {
     <section className="flex flex-col justify-center items-center w-full h-full z-50">
       <div className="h-full w-full flex flex-col justify-center items-center gap-12 text-center ssm:mt-10 pb-16 med:pb-0">
         <div className="flex flex-col items-center justify-center gap-5 h-auto">
-          <h1 className="tracking-tighter font-semibold leading-tight text-6xl sm:text-3xl med:text-3xl text-primary max-w-[900px]">
+          <h1 className="tracking-wide font-bold leading-tight text-6xl med:text-3xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             <Balancer>
               Criando coisas que fazem{" "}
               <span id="underline" className="">
-                <span className="relative inline-flex items-end justify-center">
+                <span className="relative inline-flex items-end justify-center bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
                   a diferença
                   <Underline />
                 </span>
@@ -40,11 +40,12 @@ const HeroContent = () => {
               João Oliveira
             </h2>
           </div>
-          <Button className="cursor-pointer h-9 text-center rounded-full w-[120px] sm:w-36 buttonDarkBg">
+          <Button className="cursor-pointer h-12 text-center rounded-full w-[160px] 
+          sm:w-36 buttonDarkBg hover:bg-accent hover:text-foreground">
             <a
               target="_blank"
               href="https://github.com/JoaoOliveiraskt?tab=repositories"
-              className="flex tracking-wide flex-row items-center justify-center gap-3 font-semibold"
+              className="flex tracking-wider flex-row items-center justify-center gap-2 font-semibold text-base"
             >
               Github
               <HiArrowTopRightOnSquare />

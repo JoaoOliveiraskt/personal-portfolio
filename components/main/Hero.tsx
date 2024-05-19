@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="relative flex flex-col h-max pt-28 px-2"
+      className="relative flex flex-col h-max pt-48 sm:pt-28 px-2"
       >
       <HeroBg />
       <HeroContent />
