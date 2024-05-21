@@ -1,6 +1,7 @@
 import React from "react";
 import HeroContent from "../sub/HeroContent";
 import HeroBg from "../sub/HeroBg";
+import CardBg from "../ui/card-background";
 
 const Hero = () => {
   return (
