@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsDataProvider from "./SkillsDataProvider";
+import SkillsDataProvider from "./SkillsItems";
 import { Frontend_skill } from "@/constants";
 import Divider from "../ui/divider";
 
