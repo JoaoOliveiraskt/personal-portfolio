@@ -9,7 +9,7 @@ export default function DesignSection() {
       <div className="circle absolute blur-[200px] dark:blur-[45px] top-10 sm: dark:opacity-40 rounded-[100%] w-[55%] h-[90%]"></div>
       <div className="space-y-12 flex flex-col items-center justify-center h-max max-w-[96%]">
         <div className="w-full">
-          <h2 className="text-5xl sm:text-3xl text-center tracking-tight font-medium bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text py-1">
+          <h2 className="text-4xl sm:text-3xl text-center tracking-tighter font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text py-1">
             <Balancer>Explorando a arte do Web Design</Balancer>
           </h2>
         </div>

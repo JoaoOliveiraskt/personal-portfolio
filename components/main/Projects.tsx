@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { slideInFromLeft, slideInFromTop } from "@/utils/motion";
 import ProjectCard from "../sub/ProjectCard";
+import { Button } from "../ui/button";
 
 interface Technology {
   name: string;
@@ -44,7 +45,7 @@ const Projects: React.FC = () => {
     >
       <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
         <div className="w-full">
-          <h3 className="tracking-tight text-5xl sm:text-3xl text-center py-2 font-medium bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+          <h3 className="tracking-tighter text-4xl sm:text-3xl text-center py-2 font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             Projetos recentes
           </h3>
         </div>
@@ -71,12 +72,15 @@ const Projects: React.FC = () => {
         <div className="w-full flex items-center justify-end">
           <Link
             href="/profile"
-            className="w-32 bg-button hover:bg-buttonHover dark:border border-buttonBorder flex items-center justify-center rounded-lg h-10 transition-colors duration-300"
+            className=" flex items-center justify-center"
           >
-            <button className="flex space-x-3 items-center">
+            <Button 
+            size={"sm"}
+            variant={"secondary"}
+            className="flex space-x-3 items-center">
               <span className="">Ver mais</span>
               <FaLongArrowAltRight />
-            </button>
+            </Button>
           </Link>
         </div>
       </div>

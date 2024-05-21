@@ -29,7 +29,7 @@ const HeroContent = () => {
 
             <span className="absolute -bottom-0 left-[1.125rem] h-px w-[calc(100%-2.25rem)] bg-gradient-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover:opacity-40" />
           </button>
-          <h1 className="tracking-tight font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+          <h1 className="tracking-tighter font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             <Balancer>
             Unindo design e código,  sigo criando projetos{" "}
               <span id="underline" className="">

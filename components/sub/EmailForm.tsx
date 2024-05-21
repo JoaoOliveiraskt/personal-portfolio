@@ -137,11 +137,11 @@ export default function EmailForm() {
 
              <div className="flex items-center justify-center mx-auto">
              {emailSent ? (
-                <Button className="bg-green-600 w-32 h-8">
+                <Button variant={"secondary"} size={"sm"} className="bg-green-600">
                   <MdOutlineDownloadDone />
                 </Button>
               ) : (
-                <Button  disabled={loading} className="w-32 h-8">
+                <Button  disabled={loading} variant={"secondary"} size={"sm"}>
                   {loading ? (
                     <BiLoaderAlt className="animate-spin infinite" />
                   ) : (
