@@ -43,7 +43,7 @@ export default function ContactCard({
             </span>
             {text.includes("joaoliveiraam@gmail.com") && (
               <button
-                className="flex items-center justify-center p-1 rounded-lg border hover:bg-accent"
+                className="flex items-center justify-center p-1 rounded-lg border hover:bg-accent hover:text-blue-500"
                 onClick={() => handleCopy(text)}
               >
                 {copied ? (
@@ -67,7 +67,7 @@ export default function ContactCard({
     >
       <div
         className={
-          "relative h-full w-full bg-gradient-to-bl from-card to-background rounded-xl p-4 border border-zinc-200 dark:border-none overflow-x-hidden shadow-md dark:shadow-none"
+          "relative h-[10rem] w-full bg-gradient-to-bl from-card to-background rounded-xl p-4 border border-zinc-200 dark:border-none overflow-x-hidden shadow-md dark:shadow-none"
         }
       >
         {url ? (

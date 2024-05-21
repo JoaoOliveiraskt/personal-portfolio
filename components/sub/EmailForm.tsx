@@ -90,7 +90,7 @@ export default function EmailForm() {
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}>
         <div className="flex flex-col h-full justify-between gap-5 p-4">
           <div className="flex gap-4 items-center">
-            <div className="w-12 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
+            <div className="w-12 z-10 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
               <BsSend />
             </div>
             <div>
