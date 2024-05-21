@@ -4,7 +4,7 @@ export default function DesignSection() {
   return (
     <section
       id="design"
-      className="relative flex flex-col items-center justify-center w-full h-max pt-12 sm:pt-20"
+      className="relative flex flex-col items-center justify-center w-full h-max pt-12 sm:pt-20 px-4"
     >
       <div className="circle absolute blur-[200px] dark:blur-[55px] top-10 dark:opacity-80 rounded-[100%] w-[55%] h-[90%]"></div>
       <div className="space-y-12 flex flex-col items-center justify-center h-max max-w-[96%]">

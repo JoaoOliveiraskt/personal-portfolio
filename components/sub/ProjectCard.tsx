@@ -36,10 +36,10 @@ const ProjectCard: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative sm:bg-card med:border med:border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
+      className={`relative sm:bg-card border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
     >
       <div
-        className={` w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
+        className={`w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
       >
         <div className="m-2 flex items-center justify-center">
           <Image
@@ -52,8 +52,8 @@ const ProjectCard: React.FC<Props> = ({
             className="rounded-3xl"
           />
         </div>
-        <div className="w-full flex flex-col p-6 space-y-4">
-          <div className="flex flex-col space-y-3">
+        <div className="w-full flex flex-col p-6 space-y-6">
+          <div className="flex flex-col space-y-4">
             <div className="flex flex-col space-y-2">
               <h1 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}
@@ -69,19 +69,22 @@ const ProjectCard: React.FC<Props> = ({
                   height={technology.height}
                   src={technology.src}
                   title={technology.name}
-                  className='w-8 h-auto'
+                  className="w-8 h-auto"
                 />
               ))}
             </div>
           </div>
           <p className="hidden">{description}</p>
-          <button className="z-10 text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border">
+          <button
+            className="z-10 text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border"
+            title="Expandir"
+          >
             <BiExpand />
           </button>
         </div>
       </div>
       {/* Gradiente com base na posição do mouse */}
-      <RadialGradient mousePosition={mousePosition}/>
+      <RadialGradient mousePosition={mousePosition} />
     </div>
   );
 };
