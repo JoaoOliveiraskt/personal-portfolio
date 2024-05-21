@@ -133,9 +133,9 @@ export default function EmailForm() {
               {error ? <p className="text-red-500 text-center text-sm">{error}</p> : <></>}
               
 
-             <div className="flex items-center justify-center border mx-auto">
+             <div className="flex items-center justify-center mx-auto">
              {emailSent ? (
-                <Button disabled={true} className="bg-green-600 w-32 h-8">
+                <Button className="bg-green-600 w-32 h-8">
                   <MdOutlineDownloadDone />
                 </Button>
               ) : (
