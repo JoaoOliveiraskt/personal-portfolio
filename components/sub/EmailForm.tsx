@@ -73,7 +73,7 @@ export default function EmailForm() {
       }
       setTimeout(() => {
         setEmailSent(false);
-      }, 3000);
+      }, 5000);
     } catch (error) {
       console.error("Error:", error);
     } finally {
