@@ -19,10 +19,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "João Oliveira",
   description: "This is my web developer portfolio",
-  icons:'/favicon.png',
+  icons: "/favicon.png",
 };
-
-
 
 export default function RootLayout({
   children,
@@ -34,17 +32,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} overflow-y-scroll overflow-x-hidden bg-background`}
       >
-        <ThemeProvider
-        attribute="class"
-        defaultTheme="system"
-        enableSystem
-        >
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
 
-        {children}
-        
-       <Footer/>
+          <Footer />
         </ThemeProvider>
-
       </body>
     </html>
   );

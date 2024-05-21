@@ -19,7 +19,7 @@ const HeroContent = () => {
             </span>
 
             <Link
-              className="relative border border-slate-300 dark:border-none flex space-x-2 items-center z-10 rounded-full dark:bg-zinc-950  bg-slate-200 py-[5px] px-4 ring-1 ring-white/10 "
+              className="relative border border-slate-300 dark:border-none flex space-x-2 items-center z-10 rounded-full dark:bg-zinc-950  bg-slate-200 py-[6px] px-4 ring-1 ring-white/10 "
               href={"https://github.com/JoaoOliveiraskt"}
               target="_blank"
             >
@@ -31,10 +31,10 @@ const HeroContent = () => {
           </button>
           <h1 className="tracking-tight font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             <Balancer>
-              Criando coisas que fazem{" "}
+            Unindo design e código,  sigo criando projetos{" "}
               <span id="underline" className="">
                 <span className="relative inline-flex items-end justify-center bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
-                  a diferença
+                únicos.
                   <Underline />
                 </span>
               </span>

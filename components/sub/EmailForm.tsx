@@ -82,29 +82,31 @@ export default function EmailForm() {
   };
 
   return (
-    <div className="grid h-max ">
-      <div className="relative z-[5] bg-card row-span-2 rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-md"
+    <div className="h-max">
+      <div className="p-[1px] rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5">
+      <div className="relative z-[5] bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-md dark:shadow-none"
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}>
-        <div className="flex flex-col h-full justify-between gap-5">
-          <div className="flex flex-col space-y-5 p-8 ">
+        <div className="flex flex-col h-full justify-between gap-5 p-4">
+          <div className="flex gap-4 items-center">
             <div className="w-12 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
               <BsSend />
             </div>
             <div>
-              <span>Envie-me um e-mail</span>
+              <span className="text-lg font-medium text-primary">Envie-me um e-mail</span>
             </div>
           </div>
 
-          <div className="flex flex-col p-8 med:p-3 ">
-            <form onSubmit={sendEmail} className="flex flex-col gap-8 z-[5]">
-              <div className="grid grid-cols-2 sm:grid-cols-1 gap-4">
+          <div className="flex flex-col">
+            <form onSubmit={sendEmail} className="flex flex-col gap-5 z-[5]">
+
+              <div className="grid grid-cols-2 sm:grid-cols-1 gap-5">
                 <div className="w-full">
                   <input
                     type="text"
                     placeholder="Nome"
                     name="username"
                     autoComplete="name"
-                    className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
+                    className="w-full z-50 rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-700/70"
                     ref={nameRef}
                   />
                 </div>
@@ -114,26 +116,30 @@ export default function EmailForm() {
                     placeholder="E-mail"
                     name="email"
                     autoComplete="email"
-                    className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
+                    className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-700/70"
                     ref={emailRef}
                   />
                 </div>
               </div>
+
               <textarea
                 placeholder="Mensagem"
                 name="text"
-                className="rounded-2xl p-4 h-60 sm:h-40 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-800"
+                className="rounded-2xl p-4 h-36 sm:h-20 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-700/70"
                 ref={messageRef}
               ></textarea>
-              <div className="text-center">
-                {error ? <p className="text-red-500">{error}</p> : <></>}
-              </div>
-              {emailSent ? (
-                <Button disabled={true} className="bg-green-600">
+
+              
+              {error ? <p className="text-red-500 text-center text-sm">{error}</p> : <></>}
+              
+
+             <div className="flex items-center justify-center border mx-auto">
+             {emailSent ? (
+                <Button disabled={true} className="bg-green-600 w-32 h-8">
                   <MdOutlineDownloadDone />
                 </Button>
               ) : (
-                <Button disabled={loading}>
+                <Button  disabled={loading} className="w-32 h-8">
                   {loading ? (
                     <BiLoaderAlt className="animate-spin infinite" />
                   ) : (
@@ -141,10 +147,13 @@ export default function EmailForm() {
                   )}
                 </Button>
               )}
+             </div>
+
             </form>
           </div>
         </div>
         <RadialGradient mousePosition={mousePosition}/>
+      </div>
       </div>
     </div>
   );

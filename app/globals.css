@@ -39,13 +39,13 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
+    --background: 210 22% 7%;
     --foreground: 0 0% 98%;
 
     --text: 240 5% 64.9%;
     --text-hover: 0 0% 98%;
 
-    --card: 0 0% 5.9%;
+    --card: 210 18% 12%;
     --card-foreground: 0 0% 98%;
 
     --popover: 240 10% 3.9%;

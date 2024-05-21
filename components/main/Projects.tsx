@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
     >
       <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
         <div className="w-full">
-          <h3 className="tracking-tight text-5xl text-center py-2 font-medium bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+          <h3 className="tracking-tight text-5xl sm:text-3xl text-center py-2 font-medium bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             Projetos recentes
           </h3>
         </div>

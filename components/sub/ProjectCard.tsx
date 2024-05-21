@@ -36,7 +36,7 @@ const ProjectCard: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative sm:bg-card border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
+      className={`relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
     >
       <div
         className={`w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}

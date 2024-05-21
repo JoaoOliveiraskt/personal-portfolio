@@ -61,9 +61,10 @@ export default function ContactCard({
     </div>
   );
   return (
+    <div className="p-[1px] med:col-span-3 rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5">
     <div
       className={
-        "relative med:col-span-3 bg-card rounded-xl p-4 border border-zinc-200 dark:border-zinc-700 overflow-x-hidden shadow-md"
+        "relative h-full w-full  bg-gradient-to-bl from-card to-background rounded-xl p-4 border border-zinc-200 dark:border-none overflow-x-hidden shadow-md dark:shadow-none"
       }
     >
       {url ? (
@@ -73,6 +74,7 @@ export default function ContactCard({
       ) : (
         <div className="h-full">{cardContent}</div>
       )}
+    </div>
     </div>
   );
 }

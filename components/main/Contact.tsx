@@ -29,15 +29,16 @@ export default function Contact() {
   ];
 
   return (
-    <div id="contact" className="tracking-tight text-primary min-h-screen w-full flex justify-center py-16 med:py-0">
-      <div className="w-[64rem] m-5 xl:m-8 med:m-5 h-full flex flex-col space-y-10 py-5">
+    <div id="contact" className="tracking-tight text-primary min-h-screen w-full flex justify-center px-4 py-16 med:py-0">
+      <div className="w-[64rem] h-full flex flex-col space-y-10">
         <div>
           <h3 className="text-5xl med:text-3xl text-text-gradient font-medium bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             Contato{" "}
           </h3>
         </div>
 
-        <div className="relative grid grid-cols-3 gap-4 auto-rows-[230px] ">
+      <div className="flex flex-col gap-4">
+      <div className="relative grid grid-cols-3 gap-4 auto-rows-[230px] ">
           {cardContent.map((card, index) => (
             <ContactCard
               key={index}
@@ -51,6 +52,7 @@ export default function Contact() {
         </div>
 
         <EmailForm />
+      </div>
       </div>
     </div>
   );
