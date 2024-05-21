@@ -12,7 +12,7 @@ const Skills = () => {
     >
       <div className="flex flex-col max-w-[60rem] gap-12 sm:gap-10">
         <div className="flex flex-col gap-6">
-          <p className="tracking-wider text-center text-5xl sm:text-3xl font-semibold pb-2 bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+          <p className="tracking-tight text-center text-5xl sm:text-3xl font-medium pb-2 bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             <Balancer>Criando experiências digitais com...</Balancer>
           </p>
           <Divider className="hidden sm:block" />

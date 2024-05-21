@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { Socials, Links } from "@/constants";
 import { RiMenu3Fill } from "react-icons/ri";
 import { LuArrowUpRight } from "react-icons/lu";
-import { FiArrowRight } from "react-icons/fi";
 import { LuArrowRight } from "react-icons/lu";
 import SocialIcon from "./SocialIcon";
 import { Button } from "../ui/button";
