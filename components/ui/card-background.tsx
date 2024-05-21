@@ -7,6 +7,6 @@ interface CardBgProps {
 
 export default function CardBg({className}: CardBgProps) {
     return (
-        <Image src={featureCover} alt="feature-cover" layout="fill" objectFit="cover" className={`absolute inset-0 ${className}`}/>
+        <Image src={featureCover} alt="feature-cover" layout="fill" objectFit="cover" className={`absolute inset-0 ${className} hidden dark:block`}/>
     )
 }
