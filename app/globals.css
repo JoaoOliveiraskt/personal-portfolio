@@ -166,7 +166,7 @@ html {
 }
 
 .circle {
-  background: linear-gradient(to bottom, #e2490882 40%, #120000 50%);
+  background: linear-gradient(to bottom, #ffffff3f 40%, #000000 50%);
   z-index: -1;
 }
 
