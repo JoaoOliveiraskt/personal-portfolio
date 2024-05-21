@@ -7,13 +7,15 @@ interface MousePosition {
 
 interface RadialGradientProps {
   mousePosition: MousePosition;
+  className?: string;
 }
 
-const RadialGradient: React.FC<RadialGradientProps> = ({ mousePosition }) => {
+const RadialGradient: React.FC<RadialGradientProps> = ({ mousePosition, className }) => {
   const [isHovered, setIsHovered] = React.useState(false);
 
   return (
     <div
+    className={`${className}`}
       style={{
         position: 'absolute',
         top: 0,
@@ -21,7 +23,7 @@ const RadialGradient: React.FC<RadialGradientProps> = ({ mousePosition }) => {
         width: '100%',
         height: '100%',
         background: isHovered
-          ? `radial-gradient(200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(0, 122, 255, 0.1), transparent)`
+          ? `radial-gradient(200px circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(100, 120, 140, 0.1), transparent)`
           : 'transparent',
       }}
       onMouseEnter={() => setIsHovered(true)}

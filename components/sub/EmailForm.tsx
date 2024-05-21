@@ -8,6 +8,7 @@ import { BsSend } from "react-icons/bs";
 import { BiLoaderAlt } from "react-icons/bi";
 import { MdOutlineDownloadDone } from "react-icons/md";
 import RadialGradient from "../ui/radial-gradient";
+import CardBg from "../ui/card-background";
 
 export default function EmailForm() {
   noStore();
@@ -82,9 +83,10 @@ export default function EmailForm() {
   };
 
   return (
-    <div className="h-max">
+    <div className="h-max relative">
+      <CardBg className="z-[4]"/>
       <div className="p-[1px] rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5">
-      <div className="relative z-[5] bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-md dark:shadow-none"
+      <div className="relative bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-md dark:shadow-none"
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}>
         <div className="flex flex-col h-full justify-between gap-5 p-4">
           <div className="flex gap-4 items-center">
@@ -97,7 +99,7 @@ export default function EmailForm() {
           </div>
 
           <div className="flex flex-col">
-            <form onSubmit={sendEmail} className="flex flex-col gap-5 z-[5]">
+            <form onSubmit={sendEmail} className="flex flex-col gap-5 z-20">
 
               <div className="grid grid-cols-2 sm:grid-cols-1 gap-5">
                 <div className="w-full">
@@ -106,7 +108,7 @@ export default function EmailForm() {
                     placeholder="Nome"
                     name="username"
                     autoComplete="name"
-                    className="w-full z-50 rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-700/70"
+                    className="w-full rounded-2xl p-4 focus:outline-none bg-card border border-zinc-200 dark:border-zinc-700/70"
                     ref={nameRef}
                   />
                 </div>
@@ -152,7 +154,7 @@ export default function EmailForm() {
             </form>
           </div>
         </div>
-        <RadialGradient mousePosition={mousePosition}/>
+        <RadialGradient className="z-10" mousePosition={mousePosition}/>
       </div>
       </div>
     </div>

@@ -38,7 +38,7 @@ export default function Contact() {
         </div>
 
       <div className="flex flex-col gap-4">
-      <div className="relative grid grid-cols-3 gap-4 auto-rows-[230px] ">
+      <div className="relative grid grid-cols-3 gap-4 auto-rows-[230px]">
           {cardContent.map((card, index) => (
             <ContactCard
               key={index}
