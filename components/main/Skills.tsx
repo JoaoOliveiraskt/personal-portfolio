@@ -1,7 +1,6 @@
 import React from "react";
 import SliderInfinite from "../sub/Slider";
 import Balancer from "react-wrap-balancer";
-import Divider from "@/components/ui/divider";
 import CardBg from "../ui/card-background";
 
 const Skills = () => {
@@ -10,7 +9,7 @@ const Skills = () => {
       id="skills"
       className="overflow-x-hidden relative flex flex-col items-center justify-center w-full h-full px-1 med:py-32 py-60 overflow-hidden"
     >
-      <CardBg className="mt-36 "/>
+      <CardBg className="mt-36 ml-36 med:ml-0"/>
       
       <div className="flex flex-col max-w-[60rem] gap-12 sm:gap-10">
         <div className="flex flex-col gap-6 sm:gap-3 z-10">
