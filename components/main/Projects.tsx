@@ -41,7 +41,7 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-3 w-full"
+      className=" relative flex flex-col items-center justify-center min-h-screen pb-4 px-3 w-full"
     >
       <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
         <div className="max-w-[900px] mx-auto flex flex-col space-y-5 text-center">

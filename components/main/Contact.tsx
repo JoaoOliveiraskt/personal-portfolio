@@ -32,8 +32,8 @@ export default function Contact() {
     <div id="contact" className="tracking-tight text-primary min-h-screen w-full flex justify-center px-4 sm:px-3 py-16 med:pb-10">
       <div className="w-[64rem] h-full flex flex-col space-y-10 pt-10">
         <div>
-          <h3 className="text-4xl tracking-tighter med:text-3xl text-text-gradient font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
-            Contato{" "}
+          <h3 className="text-4xl text-center tracking-tighter med:text-3xl text-text-gradient font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+            Entre em contato{" "}
           </h3>
         </div>
 
