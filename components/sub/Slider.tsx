@@ -9,7 +9,7 @@ function SliderInfinite() {
       id="logosContainer"
       className="w-full overflow-x-hidden flex flex-col items-center"
     >
-      <div className="flex items-center justify-around flex-wrap gap-6 sm:gap-2">
+      <div className="flex items-center justify-center flex-wrap gap-6 leading-none">
         {Frontend_skill.map((image, index) => (
           <div
             key={index}

@@ -41,60 +41,87 @@ export const Frontend_skill = [
     Image: "/css.svg",
     width: 28,
     height: 45,
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Figma",
     Image: "/figma.svg",
     width: 23,
     height: 20,
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
-  /**{
-    skill_name: "Framer",
-    Image: "/framer.svg",
+  {
+    skill_name: "Git",
+    Image: "/git-color.svg",
     width: 35,
     height: 35,
-   backgroundColor: 'linear-gradient(to right, #434343 0%, black 100%)',
-  },**/
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
   {
     skill_name: "Html",
     Image: "/html5.svg",
     width: 28,
     height: 45,
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Java Script",
-    Image: "/javascript.svg",
+    Image: "/javascript-color.svg",
     width: 30,
     height: 50,
-    // gere um novo gradiente colorido escuro para o javascript e adicione aqui no backgroundColor
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "Next.js",
     Image: "/nextjs.svg",
     width: 60,
     height: 60,
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
+    skill_name: "PostgreSQL",
+    Image: "/postgresql-color.svg",
+    width: 35,
+    height: 35,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
+    skill_name: "Prisma",
+    Image: "/prisma-color.svg",
+    width: 35,
+    height: 35,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "React.js",
     Image: "/react.svg",
     width: 35,
     height: 60,
-
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
+    skill_name: "shadcn/ui",
+    Image: "/shadcnui-color.svg",
+    width: 35,
+    height: 35,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
     width: 50,
     height: 70,
-    backgroundColor: " linear-gradient(to right, #31363F 0%, #222831 100%)",
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
+    skill_name: "Vercel",
+    Image: "/vercel-color.svg",
+    width: 35,
+    height: 35,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
 ];
+
 
 export const My_Projects = [
   {
