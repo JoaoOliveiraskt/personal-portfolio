@@ -130,7 +130,7 @@ export const My_Projects = [
     description:
       "Projetado para resumir o conteúdo de uma página web, criado com Vite usando a Article Extractor and Summarizer API.",
     src: "https://resumi-ai.vercel.app",
-    photo: "/resumi-ai.png",
+    photo: "/Resumi.png",
     icon: "/ra-icon.avif",
     tech: [
       {
@@ -165,7 +165,7 @@ export const My_Projects = [
     description:
       "Este projeto foi uma ótima experiência de aprendizado em estruturas de dados, processos de autenticação, trabalho com datas e funcionalidade de pagamento usando o Stripe.",
     src: "https://long-trips.vercel.app",
-    photo: "/trips-mockup.png",
+    photo: "/Trips.png",
     icon: "/trips-icon.avif",
     tech: [
       {

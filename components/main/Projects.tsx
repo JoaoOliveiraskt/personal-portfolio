@@ -44,35 +44,39 @@ const Projects: React.FC = () => {
       className=" relative flex flex-col items-center justify-center min-h-screen pb-20 px-3 w-full"
     >
       <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
-      <div className="max-w-[900px] mx-auto flex flex-col space-y-5 text-center">
-  <Balancer>
-    <h3 className="tracking-tighter text-4xl sm:text-3xl py-2 font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
-      Projetos Recentes
-    </h3>
+        <div className="max-w-[900px] mx-auto flex flex-col space-y-5 text-center">
+          <Balancer>
+            <h3 className="tracking-tighter text-4xl sm:text-3xl py-2 font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
+              Projetos Recentes
+            </h3>
 
-    <p className="tracking-wide leading-loose text-text font-medium max-w-[810px] mx-auto">
-      Veja os principais projetos que desenvolvi ao longo da minha jornada como programador. Para ver mais, visite{" "}
-      <Link className="text-blue-600 hover:text-blue-400" href={"/profile"}>
-        meu perfil
-      </Link>{" "}
-      ou confira meu{" "}
-      <Link
-        target="_blank"
-        className="text-blue-600 hover:text-blue-400"
-        href={"https://github.com/joaoOliveiraskt"}
-      >
-        GitHub
-      </Link>.
-    </p>
-  </Balancer>
-</div>
+            <p className="tracking-wide leading-loose text-text font-medium max-w-[810px] mx-auto">
+              Veja os principais projetos que desenvolvi ao longo da minha
+              jornada como programador. Para ver mais, visite{" "}
+              <Link
+                className="text-blue-600 hover:text-blue-400"
+                href={"/profile"}
+              >
+                meu perfil
+              </Link>{" "}
+              ou confira meu{" "}
+              <Link
+                target="_blank"
+                className="text-blue-600 hover:text-blue-400"
+                href={"https://github.com/joaoOliveiraskt"}
+              >
+                GitHub
+              </Link>
+              .
+            </p>
+          </Balancer>
+        </div>
 
-
-        <div className="flex flex-wrap items-center justify-center gap-32 med:gap-10 max-w-[66rem]">
-          {My_Projects.slice(0, 3).map((card, i) => (
+        <div className="flex flex-wrap items-center justify-center gap-16 med:gap-10 max-w-[52rem]">
+          {My_Projects.slice(0, 2).map((card, i) => (
             <div
               key={i}
-              className="cursor-pointer"
+              className="cursor-pointer max-w-[52rem]"
               onClick={() => openModal(i)}
             >
               <ProjectCard

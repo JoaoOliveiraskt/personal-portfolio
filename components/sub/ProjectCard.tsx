@@ -36,23 +36,23 @@ const ProjectCard: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl h-full w-full`}
+      className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl`}
     >
       <div
-        className={`w-full h-full overflow-hidden gap-5 med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
+        className={`w-full h-full overflow-hidden med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
       >
-        <div className="m-2 flex items-center justify-center">
+        <div className=" flex items-center justify-center">
           <Image
             src={src}
             alt={title}
             title={title}
-            width={1600}
-            height={100}
+            width={900}
+            height={900}
             quality={100}
-            className="rounded-3xl"
+            className=""
           />
         </div>
-        <div className="w-full flex flex-col p-6 space-y-6">
+        <div className="w-full flex flex-col px-4 sm:py-4 space-y-6">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col space-y-2">
               <h1 className="tracking-tighter text-3xl font-semibold text-primary">
