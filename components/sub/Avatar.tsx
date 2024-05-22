@@ -9,7 +9,7 @@ interface AvatarProps {
 const Avatar: React.FC<AvatarProps> = ({ className, width, height }: AvatarProps) => {
   return (
       <Image
-        src="/profileimg4.jpg"
+        src="/dropdown-image.jpg"
         alt="João Oliveira"
         width={width}
         height={height}

@@ -7,6 +7,7 @@ import { LuArrowRight } from "react-icons/lu";
 import SocialIcon from "./SocialIcon";
 import { Button } from "../ui/button";
 import Link from "next/link";
+import Avatar from "./Avatar";
 
 const StaggeredDropDown = () => {
   const [open, setOpen] = useState(false);
@@ -31,25 +32,24 @@ const StaggeredDropDown = () => {
     <motion.div
       ref={dropdownRef}
       animate={open ? "open" : "closed"}
-      className="relative hidden med:block top-0 right-0"
+      className=" hidden med:block top-0 right-0"
     >
       <Button
+        variant={"ghost"}
+        size={"icon"}
         onClick={() => setOpen((pv) => !pv)}
-        className="flex bg-background hover:bg-background items-center justify-center h-8 w-8 rounded-lg text-primary"
+        className="w-8 h-8 flex overflow-hidden items-center justify-center  rounded-full text-primary"
       >
-        <motion.span variants={iconVariants} className="text-lg">
-          <RiMenu3Fill />
-        </motion.span>
+        <Avatar width={40} height={40} className="object-cover m-auto" />
       </Button>
 
       <motion.ul
-      
         initial={wrapperVariants.closed}
         variants={wrapperVariants}
         style={{ originY: "top" }}
-        className="absolute flex flex-col p-1 rounded-bl-lg border-l border-b border-r rounded-br-lg border bg-background top-14 right-0 w-48 overflow-hidden"
+        className="absolute w-full mx-auto p-2 rounded-bl-lg border-b border-r rounded-br-lg border bg-background top-14 right-0 overflow-hidden"
       >
-        <motion.feSpotLight className="">
+        <motion.feSpotLight className="flex flex-col gap-1 ">
           {Links.map((link) => (
             <motion.a
               key={link.name}
@@ -59,14 +59,17 @@ const StaggeredDropDown = () => {
               className="cursor-default flex items-center justify-between hover:bg-accent w-full h-9 py-1 px-4 rounded-md text-base font-medium"
             >
               <p className="text-primary">{link.name}</p>
-              <LuArrowRight  className="text-text" />
+              <LuArrowRight className="text-text" />
             </motion.a>
           ))}
           <Link
             href="/profile"
             className="flex items-center text-base font-medium cursor-default px-4 h-9 hover:bg-accent rounded-lg hover:text-foreground"
           >
-            <motion.div variants={itemVariants} className="flex w-full justify-between items-center">
+            <motion.div
+              variants={itemVariants}
+              className="flex w-full justify-between items-center"
+            >
               <span className="text-primary"> Perfil</span>
               <LuArrowRight className="text-text" />
             </motion.div>
@@ -75,7 +78,10 @@ const StaggeredDropDown = () => {
             href="/profile/curriculo"
             className="flex items-center text-base font-medium cursor-default px-4 h-9 hover:bg-accent rounded-lg hover:text-foreground"
           >
-            <motion.div variants={itemVariants} className="flex w-full justify-between items-center">
+            <motion.div
+              variants={itemVariants}
+              className="flex w-full justify-between items-center"
+            >
               <span className="text-primary">Currículo</span>
               <LuArrowRight className="text-text" />
             </motion.div>
@@ -95,10 +101,10 @@ const StaggeredDropDown = () => {
                 name={social.name}
               />
 
-             <div className="flex w-full justify-between items-center">
-             <p className="text-primary transition-colors">{social.name}</p>
-              <LuArrowUpRight className="text-text" />
-             </div>
+              <div className="flex w-full justify-between items-center">
+                <p className="text-primary transition-colors">{social.name}</p>
+                <LuArrowUpRight className="text-text" />
+              </div>
             </motion.a>
           ))}
         </motion.feSpotLight>
