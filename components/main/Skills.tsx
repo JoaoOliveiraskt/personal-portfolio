@@ -7,11 +7,12 @@ import Divider from "@/components/ui/divider";
 const Skills = () => {
   return (
     <div
-      className="overflow-x-hidden relative flex flex-col items-center justify-center w-full h-full px-4 med:py-32 py-60"
+    id="skills"
+      className="overflow-x-hidden relative flex flex-col items-center justify-center w-full h-full px-1 med:py-32 py-60"
     >
-      <div className="absolute w-[30rem] h-[25rem] top-64 -z-10 blur-[120px] rounded-full dark:bg-gradient-to-b from-emerald-800 via-slate-900 to-background"></div>
+      <div className="absolute w-[30rem] h-[25rem] top-64 -z-10 blur-[120px] rounded-full dark:bg-gradient-to-b from-slate-800 via-slate-900 to-background"></div>
       <div className="flex flex-col max-w-[60rem] gap-12 sm:gap-10">
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col gap-6 sm:gap-3">
           <p className="tracking-tighter text-center text-4xl sm:text-3xl font-bold pb-2 bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
             <Balancer>Criando experiências digitais com...</Balancer>
           </p>
@@ -20,7 +21,7 @@ const Skills = () => {
           <SliderInfinite />
         </div>
 
-        <Divider className="sm:hidden" />
+        <Divider className="sm:hidden"/>
       </div>
     </div>
   );

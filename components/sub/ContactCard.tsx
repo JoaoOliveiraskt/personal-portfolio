@@ -37,25 +37,35 @@ export default function ContactCard({
           {icon}
         </div>
         <div className="flex flex-col space-y-3">
-        <span className="font-semibold">{description}</span>
+          <span className="font-semibold">{description}</span>
           <div className="flex flex-wrap gap-2 items-center">
-            <span className="text-xl flex flex-wrap z-20 hover:text-blue-500">
-              {text}
-            </span>
-            {text.includes("joaoliveiraam@gmail.com") && (
-              <button
-                className="flex items-center justify-center p-1 rounded-lg border hover:bg-accent hover:text-blue-500"
-                onClick={() => handleCopy(text)}
-              >
-                {copied ? (
-                  <FaCheckCircle />
-                ) : (
-                  <MdContentCopy className="z-20" />
-                )}
+            {!text.includes("joaoliveiraam@gmail.com") ? (
+              <span
+              title={description}
+              className="text-xl text-muted-foreground z-20 hover:text-blue-500">
+                {text}
+              </span>
+            ) : (
+              <button 
+              title="copiar e-mail"
+              onClick={() => handleCopy(text)}
+              className="flex items-center justify-center gap-1 text-muted-foreground hover:text-blue-500">
+                <span className="text-xl z-20 ">
+                  {text}
+                </span>
+                <div
+                  className="flex items-center justify-center p-1 rounded-lg border hover:bg-accent "
+                  
+                >
+                  {copied ? (
+                    <FaCheckCircle />
+                  ) : (
+                    <MdContentCopy className="z-20" />
+                  )}
+                </div>
               </button>
             )}
           </div>
-          
         </div>
       </div>
     </div>
