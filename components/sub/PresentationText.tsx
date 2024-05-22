@@ -15,7 +15,8 @@ export default function PresentationText({ className }: Props) {
         <a href={universityLink} target="_blank" className="text-blue-600 hover:text-blue-400 inline-flex items-center">
           <h3>UV</h3>
           <GoArrowUpRight />
-        </a>{". "}
+          {"."}
+        </a>{" "}
         Confira minhas habilidades abaixo.
       </Balancer>
     </h3>
