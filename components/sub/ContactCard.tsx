@@ -37,6 +37,7 @@ export default function ContactCard({
           {icon}
         </div>
         <div className="flex flex-col space-y-3">
+        <span className="font-semibold">{description}</span>
           <div className="flex flex-wrap gap-2 items-center">
             <span className="text-xl flex flex-wrap z-20 hover:text-blue-500">
               {text}
@@ -54,7 +55,7 @@ export default function ContactCard({
               </button>
             )}
           </div>
-          <span className="font-semibold">{description}</span>
+          
         </div>
       </div>
     </div>
