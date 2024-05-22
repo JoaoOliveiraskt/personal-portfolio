@@ -16,7 +16,7 @@ export default function DesignSection() {
         </div>
 
         <div className="relative max-w-[1080px] flex items-center justify-center overflow-hidden">
-        <video
+          <video
             id="video"
             width="100%"
             height="100%"

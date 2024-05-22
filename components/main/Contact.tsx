@@ -6,7 +6,6 @@ import ContactCard from "../sub/ContactCard";
 import EmailForm from "../sub/EmailForm";
 
 export default function Contact() {
-
   const cardContent = [
     {
       icon: <FiPhoneCall />,
@@ -29,7 +28,10 @@ export default function Contact() {
   ];
 
   return (
-    <div id="contact" className="tracking-tight text-primary min-h-screen w-full flex justify-center px-4 sm:px-3 py-16 med:pb-10">
+    <div
+      id="contact"
+      className="tracking-tight text-primary min-h-screen w-full flex justify-center px-4 sm:px-3 py-16 med:pb-10"
+    >
       <div className="w-[64rem] h-full flex flex-col space-y-10 pt-10">
         <div>
           <h3 className="text-4xl text-center tracking-tighter med:text-3xl text-text-gradient font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
@@ -37,22 +39,22 @@ export default function Contact() {
           </h3>
         </div>
 
-      <div className="flex flex-col gap-4">
-      <div className="relative grid grid-cols-3 gap-4">
-          {cardContent.map((card, index) => (
-            <ContactCard
-              key={index}
-              url={card.src}
-              icon={card.icon}
-              text={card.text}
-              description={card.description}
-              className=""
-            />
-          ))}
-        </div>
+        <div className="flex flex-col gap-4">
+          <div className="relative grid grid-cols-3 gap-4">
+            {cardContent.map((card, index) => (
+              <ContactCard
+                key={index}
+                url={card.src}
+                icon={card.icon}
+                text={card.text}
+                description={card.description}
+                className=""
+              />
+            ))}
+          </div>
 
-        <EmailForm />
-      </div>
+          <EmailForm />
+        </div>
       </div>
     </div>
   );
