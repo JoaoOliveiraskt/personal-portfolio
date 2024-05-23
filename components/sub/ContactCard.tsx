@@ -3,8 +3,6 @@ import { useState } from "react";
 import { MdContentCopy } from "react-icons/md";
 import { FaCheckCircle } from "react-icons/fa";
 import RadialGradient from "../ui/radial-gradient";
-import featureCover from "@/public/feature-cover.svg";
-import Image from "next/image";
 import CardBg from "../ui/card-background";
 interface Props {
   icon: JSX.Element;
@@ -74,11 +72,11 @@ export default function ContactCard({
   return (
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
-      className="p-[1px] relative flex flex-col h-full justify-between med:col-span-3 rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5"
+      className="p-[1px] relative flex flex-col h-full w-full justify-between med:col-span-3 rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5"
     >
       <div
         className={
-          "relative h-[10rem] w-full bg-gradient-to-bl from-card to-background rounded-xl p-4 border border-zinc-200 dark:border-none overflow-x-hidden shadow-sm dark:shadow-none"
+          "rounded-xl p-4 relative h-[10rem]  bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-none overflow-x-hidden shadow-sm dark:shadow-none"
         }
       >
         {url ? (

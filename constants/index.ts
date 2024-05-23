@@ -79,6 +79,13 @@ export const Frontend_skill = [
     backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
   },
   {
+    skill_name: "Node.js",
+    Image: "/node-color.svg",
+    width: 60,
+    height: 60,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
     skill_name: "PostgreSQL",
     Image: "/postgresql-color.svg",
     width: 35,
@@ -109,6 +116,13 @@ export const Frontend_skill = [
   {
     skill_name: "TailwindCSS",
     Image: "/tailwindcss.svg",
+    width: 50,
+    height: 70,
+    backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",
+  },
+  {
+    skill_name: "TypeScript",
+    Image: "/typescript-color.svg",
     width: 50,
     height: 70,
     backgroundColor: "linear-gradient(to right, #31363F 0%, #222831 100%)",

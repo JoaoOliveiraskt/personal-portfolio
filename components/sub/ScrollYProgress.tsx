@@ -8,12 +8,12 @@ export default function ScrollYProgress() {
     <motion.div
         style={{
           scaleX,
-          background: "linear-gradient(to right, #a855f7, #06b6d4);",
+          background: "linear-gradient(to right, #00f, #6a00ff);",
           transformOrigin: "left",
           position: "sticky",
           top: 0,
           width: "100%",
-          height: "1px",
+          height: "1.2px",
           zIndex: 100,
         }}
       />

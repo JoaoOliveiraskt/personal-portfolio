@@ -17,27 +17,27 @@ export default function Header() {
             href="#hero"
             className="cursor-pointer h-auto w-auto flex items-center"
           >
-            <span className="font-bold tracking-widest text-xl">Oliveira</span>
+            <span className="font-bold tracking-tighter text-xl">Oliveira</span>
           </a>
           <div className="flex  items-center gap-6 sm:gap-5 w-full h-auto text-text">
             {Links.map((link, index) => (
               <a
                 href={link.href}
                 key={index}
-                className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer rounded-md hover:text-accent dark:hover:text-foreground"
+                className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer rounded-md hover:text-accent-foreground "
               >
                 {link.name}
               </a>
             ))}
             <Link
               href="/profile"
-              className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
+              className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent-foreground "
             >
               <span>Perfil</span>
             </Link>
             <Link
               href="/profile/curriculo"
-              className="flex text-zinc-800 dark:text-zinc-400 text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent dark:hover:text-foreground"
+              className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent-foreground "
             >
               <span>Currículo</span>
             </Link>

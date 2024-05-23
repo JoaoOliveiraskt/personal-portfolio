@@ -41,16 +41,18 @@ const Projects: React.FC = () => {
   return (
     <div
       id="projects"
-      className=" relative flex flex-col items-center justify-center min-h-screen pb-4 px-3 w-full"
+      className="flex flex-col items-center justify-center min-h-screen pb-4 px-3 w-full"
     >
-      <div className="flex flex-col justify-center space-y-14 sm:space-y-6">
-        <div className="max-w-[900px] mx-auto flex flex-col space-y-5 text-center">
-          <Balancer>
-            <h3 className="tracking-tighter text-4xl sm:text-3xl py-2 font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
-              Projetos Recentes
-            </h3>
+      <div className="flex flex-col  items-center justify-center space-y-14 sm:space-y-6">
+        <div className="max-w-[800px] mx-auto flex flex-col space-y-5 sm:space-y-3 text-center">
+          {/* Titúlo da sessão */}
+          <h3 className="tracking-tighter text-4xl sm:text-3xl py-2 font-bold bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+            Projetos Recentes
+          </h3>
 
-            <p className="tracking-wide leading-loose text-text font-medium max-w-[810px] mx-auto">
+          {/* Descrição da sessão */}
+          <p className="tracking-wide leading-loose text-muted-foreground font-medium  mx-auto">
+            <Balancer>
               Veja os principais projetos que desenvolvi ao longo da minha
               jornada como programador. Para ver mais, visite{" "}
               <Link
@@ -65,13 +67,14 @@ const Projects: React.FC = () => {
                 className="text-blue-600 hover:text-blue-400"
                 href={"https://github.com/joaoOliveiraskt"}
               >
-                GitHub
+                Github
               </Link>
               .
-            </p>
-          </Balancer>
+            </Balancer>
+          </p>
         </div>
 
+        {/* Cards dos projetos */}
         <div className="flex flex-wrap items-center justify-center gap-16 med:gap-10 max-w-[52rem]">
           {My_Projects.slice(0, 2).map((card, i) => (
             <div
@@ -91,10 +94,11 @@ const Projects: React.FC = () => {
           ))}
         </div>
 
+        {/* Botão para ver mais */}
         <div className="w-full flex items-center justify-end">
           <Link href="/profile" className=" flex items-center justify-center">
             <Button
-              size={"sm"}
+            size={"sm"}
               variant={"secondary"}
               className="flex space-x-3 items-center"
             >
@@ -105,6 +109,7 @@ const Projects: React.FC = () => {
         </div>
       </div>
 
+      {/* Modal dos projetos */}
       {open && selectedCard && (
         <ProjectModal selectedCard={selectedCard} closeModal={closeModal} />
       )}

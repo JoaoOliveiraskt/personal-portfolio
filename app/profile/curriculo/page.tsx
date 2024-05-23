@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Balancer from "react-wrap-balancer";
-import ResumeHeader from "@/components/main/ResumeHeader";
+import ResumeHeader from "@/app/profile/curriculo/ResumeHeader";
 
 export default function Curriculo() {
   return (

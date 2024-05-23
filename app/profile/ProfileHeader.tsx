@@ -1,8 +1,8 @@
 import { Socials } from "@/constants";
-import Avatar from "../sub/Avatar";
-import SocialIcon from "../sub/SocialIcon";
-import Presentaion from "../sub/PresentationText";
-import { Button } from "../ui/button";
+import Avatar from "../../components/sub/Avatar";
+import SocialIcon from "../../components/sub/SocialIcon";
+import Presentaion from "../../components/sub/PresentationText";
+import { Button } from "../../components/ui/button";
 import { FiArrowLeft } from "react-icons/fi";
 import Link from "next/link";
 

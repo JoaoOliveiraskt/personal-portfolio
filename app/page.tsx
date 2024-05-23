@@ -10,13 +10,13 @@ import Contact from "@/components/main/Contact";
 
 export default function Home() {
   return (
-    <main className="h-full w-full ">
+    <main className="h-full w-full">
       <ScrollYProgress />
       <div className="relative flex flex-col w-full h-full">
         <Header />
         <Hero />
         <DesignSection />
-        <Skills/>
+        <Skills />
         <Projects />
         <Contact />
         {/*   

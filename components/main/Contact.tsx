@@ -1,9 +1,11 @@
 import { FiPhoneCall } from "react-icons/fi";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 import ContactCard from "../sub/ContactCard";
 import EmailForm from "../sub/EmailForm";
+import Balancer from "react-wrap-balancer";
 
 export default function Contact() {
   const cardContent = [
@@ -25,22 +27,40 @@ export default function Contact() {
       description: "Linkedin",
       src: "https://www.linkedin.com/in/jo%C3%A3ov-oliveira/",
     },
+    {
+      icon: <FaGithub />,
+      text: "github.com/joaoOliveiraskt",
+      description: "Github",
+      src: "https://github.com/joaoOliveiraskt",
+    },
   ];
 
   return (
     <div
       id="contact"
-      className="tracking-tight text-primary min-h-screen w-full flex justify-center px-4 sm:px-3 py-16 med:pb-10"
+      className="text-primary min-h-screen w-full flex justify-center px-4 sm:px-3 py-24 med:pb-10"
     >
-      <div className="w-[64rem] h-full flex flex-col space-y-10 pt-10">
-        <div>
-          <h3 className="text-4xl text-center tracking-tighter med:text-3xl text-text-gradient font-bold bg-gradient-to-r from-primary via-primary to-text text-transparent bg-clip-text">
-            Entre em contato{" "}
-          </h3>
+      <div className="max-w-[64rem] h-full flex flex-col items-center space-y-10">
+        <div className="text-center space-y-5 sm:space-y-3 flex flex-col items-center">
+          {/* Titúlo da sessão */}
+          <h2 className="text-4xl tracking-tighter med:text-3xl font-bold bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+            <Balancer>Entre em contato </Balancer>
+          </h2>
+
+          {/* Descrição da sessão */}
+          <p className="tracking-wide leading-loose text-muted-foreground font-medium">
+            <Balancer>
+              Tem alguma dúvida ou gostaria de trabalhar juntos? Entre em
+              contato comigo através de um dos canais abaixo. Ou se preferir,
+              preencha o formulário de contato e retornarei o mais breve
+              possível.
+            </Balancer>
+          </p>
         </div>
 
-        <div className="flex flex-col gap-4">
-          <div className="relative grid grid-cols-3 gap-4">
+        <div className="w-full flex flex-col gap-4">
+          {/* Cards de contato */}
+          <div className="w-full relative grid grid-cols-2 gap-4">
             {cardContent.map((card, index) => (
               <ContactCard
                 key={index}
@@ -53,6 +73,7 @@ export default function Contact() {
             ))}
           </div>
 
+          {/* Formulário de contato */}
           <EmailForm />
         </div>
       </div>
