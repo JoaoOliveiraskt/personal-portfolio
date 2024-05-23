@@ -13,7 +13,6 @@ const Avatar: React.FC<AvatarProps> = ({ className, width, height }: AvatarProps
         alt="João Oliveira"
         width={width}
         height={height}
-        objectFit='cover'
         className={`object-cover  ${className}`}
       />
   )
