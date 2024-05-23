@@ -39,7 +39,7 @@ const ProjectCard: React.FC<Props> = ({
       className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl`}
     >
       <div
-        className={`w-full h-full overflow-hidden med:gap-0 flex items-center med:flex-col ${flexDirectionClass}`}
+        className={`w-full h-full overflow-hidden med:gap-0 flex  med:flex-col ${flexDirectionClass}`}
       >
         <div className=" flex items-center justify-center">
           <Image
@@ -52,7 +52,7 @@ const ProjectCard: React.FC<Props> = ({
             className=""
           />
         </div>
-        <div className="w-full flex flex-col px-4 sm:py-4 space-y-6">
+        <div className="w-full flex flex-col p-4 space-y-6">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col space-y-2">
               <h1 className="tracking-tighter text-3xl font-semibold text-primary">
@@ -60,7 +60,7 @@ const ProjectCard: React.FC<Props> = ({
               </h1>
               <p className="tracking-wider opacity-70 text-text">{caption}</p>
             </div>
-            <div className="flex flex-wrap gap-2 sm:hidden">
+            <div className="flex flex-wrap gap-2">
               {tech.map((technology, i) => (
                 <Image
                   key={i}
@@ -69,7 +69,7 @@ const ProjectCard: React.FC<Props> = ({
                   height={technology.height}
                   src={technology.src}
                   title={technology.name}
-                  className="w-8 h-auto"
+                  className="w-7 sm:w-5"
                 />
               ))}
             </div>
