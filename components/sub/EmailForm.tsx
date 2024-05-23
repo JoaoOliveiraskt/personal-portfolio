@@ -1,14 +1,18 @@
+"use client";
+
 import React, { useRef, useState, useEffect } from "react";
 import { Button } from "../ui/button";
 import { unstable_noStore as noStore } from "next/cache";
 import emailjs from "@emailjs/browser";
 import HandleOnMouseMove from "@/utils/hoverEffect";
 
+import { ToastAction } from "@/components/ui/toast";
+import { useToast } from "@/components/ui/use-toast";
+
 import { BsSend } from "react-icons/bs";
 import { BiLoaderAlt } from "react-icons/bi";
 import { MdOutlineDownloadDone } from "react-icons/md";
 import RadialGradient from "../ui/radial-gradient";
-import CardBg from "../ui/card-background";
 import { Input } from "../ui/input";
 import { Textarea } from "../ui/textarea";
 
@@ -32,6 +36,7 @@ export default function EmailForm() {
   const formError = "Preencha todos os campos.";
   const [error, setError] = useState<string>("");
 
+  const toast = useToast();
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -64,6 +69,12 @@ export default function EmailForm() {
               messageRef.current.value = "";
               setError("");
               setEmailSent(true);
+              toast.toast({
+                title: "E-mail enviado com sucesso!",
+                description: "Obrigado por entrar em contato.",
+                action: <ToastAction altText="OK">OK</ToastAction>,
+                className: "bg-green-600",
+              });
             } else {
               console.log("Service ID ou Template ID não encontradas.");
             }
@@ -91,7 +102,7 @@ export default function EmailForm() {
           className="h-[23rem] relative bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-sm dark:shadow-none"
           onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
         >
-          <div className="flex flex-col h-full justify-between gap-5 p-4">
+          <div className="flex flex-col h-full  gap-5 p-4">
             <div className="flex gap-4 items-center">
               <div className="w-12 z-10 h-12 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
                 <BsSend />
@@ -103,9 +114,13 @@ export default function EmailForm() {
               </div>
             </div>
 
-            <div className="flex flex-col">
-              <form onSubmit={sendEmail} className="flex flex-col gap-5 z-20">
-                <div className="grid grid-cols-1 gap-5">
+            {/* Formulário de contato */}
+            <form
+              onSubmit={sendEmail}
+              className="h-full flex flex-col gap-4 justify-between z-20"
+            >
+              <div className="flex flex-col gap-4">
+                <div className="grid grid-cols-1 gap-4">
                   <div className="w-full">
                     <Input
                       type="text"
@@ -134,36 +149,38 @@ export default function EmailForm() {
                   className="bg-muted"
                   ref={messageRef}
                 ></Textarea>
+              </div>
 
-                {error ? (
-                  <p className="text-red-500 text-center text-sm">{error}</p>
+              {error ? (
+                <span className={`text-red-500 text-center text-sm`}>
+                  {error}
+                </span>
+              ) : (
+                <></>
+              )}
+
+              <div className="flex items-center">
+                {emailSent ? (
+                  <Button size={"sm"} className="bg-green-600 w-full">
+                    <MdOutlineDownloadDone />
+                  </Button>
                 ) : (
-                  <></>
+                  <Button
+                    disabled={loading}
+                    variant={"secondary"}
+                    size={"sm"}
+                    className="w-full"
+                    type="submit"
+                  >
+                    {loading ? (
+                      <BiLoaderAlt className="animate-spin infinite" />
+                    ) : (
+                      "Enviar"
+                    )}
+                  </Button>
                 )}
-
-                <div className="flex items-center justify-center">
-                  {emailSent ? (
-                    <Button size={"sm"} className="bg-green-600 w-full">
-                      <MdOutlineDownloadDone />
-                    </Button>
-                  ) : (
-                    <Button
-                      disabled={loading}
-                      variant={"secondary"}
-                      size={"sm"}
-                      className="w-full"
-                      type="submit"
-                    >
-                      {loading ? (
-                        <BiLoaderAlt className="animate-spin infinite" />
-                      ) : (
-                        "Enviar"
-                      )}
-                    </Button>
-                  )}
-                </div>
-              </form>
-            </div>
+              </div>
+            </form>
           </div>
           <RadialGradient className="z-10" mousePosition={mousePosition} />
         </div>

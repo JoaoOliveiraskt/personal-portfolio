@@ -51,7 +51,7 @@ const Projects: React.FC = () => {
           </h3>
 
           {/* Descrição da sessão */}
-          <p className="tracking-wide leading-loose text-muted-foreground font-medium  mx-auto">
+          <p className="tracking-wide leading-loose text-muted-foreground font-medium mx-auto">
             <Balancer>
               Veja os principais projetos que desenvolvi ao longo da minha
               jornada como programador. Para ver mais, visite{" "}

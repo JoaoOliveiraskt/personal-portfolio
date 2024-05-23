@@ -5,6 +5,7 @@ import "./globals.css";
 import React from "react";
 import Footer from "@/components/main/Footer";
 import { ThemeProvider } from "./theme-provider";
+import { Toaster } from "@/components/ui/toaster";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -37,6 +38,7 @@ export default function RootLayout({
 
           <Footer />
         </ThemeProvider>
+        <Toaster />
       </body>
     </html>
   );

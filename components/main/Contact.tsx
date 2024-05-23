@@ -38,7 +38,7 @@ export default function Contact() {
   return (
     <div
       id="contact"
-      className="text-primary  w-full flex justify-center px-4 sm:px-3 py-24 med:pb-10"
+      className="text-primary w-full flex flex-col justify-center items-center px-4 sm:px-3 py-24 med:pb-10"
     >
       <div className="max-w-[62rem] h-full flex flex-col items-center space-y-10">
         <div className="text-center space-y-2 flex flex-col items-center">
