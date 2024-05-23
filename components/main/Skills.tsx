@@ -12,8 +12,8 @@ const Skills = () => {
       {/* Background */}
       <CardBg className="mt-36 ml-36 med:ml-0" />
 
-      <div className="flex flex-col max-w-[60rem] gap-12 sm:gap-10">
-        <div className="flex flex-col items-center justify-center space-y-5 sm:space-y-3 z-10">
+      <div className="flex flex-col max-w-[60rem]">
+        <div className="flex flex-col items-center justify-center space-y-2 z-10">
           {/* Titúlo da sessão */}
           <p className="tracking-tighter max-w-[40rem] text-center text-4xl sm:text-3xl font-bold pb-2 bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
             <Balancer>Transformando Ideias em Realidade Digital</Balancer>

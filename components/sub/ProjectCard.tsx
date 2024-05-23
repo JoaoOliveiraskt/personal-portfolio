@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { BiExpand } from "react-icons/bi";
 import HandleOnMouseMove from "@/utils/hoverEffect";
 import RadialGradient from "../ui/radial-gradient";
+import { Button } from "../ui/button";
 
 interface Technology {
   name: string;
@@ -36,7 +37,7 @@ const ProjectCard: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800 overflow-hidden  rounded-xl`}
+      className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800/80 overflow-hidden  rounded-xl`}
     >
       <div
         className={`w-full h-full overflow-hidden med:gap-0 flex  med:flex-col ${flexDirectionClass}`}
@@ -45,19 +46,18 @@ const ProjectCard: React.FC<Props> = ({
           <Image
             src={src}
             alt={title}
-            title={title}
             width={900}
             height={900}
             quality={100}
             className=""
           />
         </div>
-        <div className="w-full flex flex-col p-4 space-y-6">
+        <div className="w-full flex flex-col justify-end p-4 space-y-6">
           <div className="flex flex-col space-y-4">
             <div className="flex flex-col space-y-2">
-              <h1 className="tracking-tighter text-3xl font-semibold text-primary">
+              <h2 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}
-              </h1>
+              </h2>
               <p className="tracking-wider opacity-70 text-text">{caption}</p>
             </div>
             <div className="flex flex-wrap gap-2">
@@ -75,12 +75,14 @@ const ProjectCard: React.FC<Props> = ({
             </div>
           </div>
           <p className="hidden">{description}</p>
-          <button
-            className="z-10 text-xl hover:bg-accent w-9 h-9 flex items-center justify-center rounded-lg border"
+          <Button
+            variant="ghost"
+            size={"icon"}
+            className="z-10 text-xl flex items-center justify-center border"
             title="Expandir"
           >
             <BiExpand />
-          </button>
+          </Button>
         </div>
       </div>
       {/* Gradiente com base na posição do mouse */}

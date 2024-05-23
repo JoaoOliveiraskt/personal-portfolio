@@ -21,6 +21,7 @@ const config = {
       screens: {
         ssm: { max: "330px" },
         sm: { max: "480px" },
+        md: { max: "649px" },
         med: { max: "840px" },
         xl: { max: "1230px" },
       },

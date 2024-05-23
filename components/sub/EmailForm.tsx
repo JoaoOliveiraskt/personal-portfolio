@@ -85,10 +85,10 @@ export default function EmailForm() {
   };
 
   return (
-    <div className="h-max relative">
+    <div className="h-fit min-w-[19rem] relative">
       
       <div className="p-[1px] rounded-xl dark:bg-gradient-to-bl from-zinc-100/20 to-zinc-300/5">
-      <div className="relative bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-sm dark:shadow-none"
+      <div className="h-[23rem] relative bg-gradient-to-bl from-card to-background row-span-2 rounded-xl border border-zinc-200 dark:border-none shadow-sm dark:shadow-none"
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}>
         <div className="flex flex-col h-full justify-between gap-5 p-4">
           <div className="flex gap-4 items-center">
@@ -103,14 +103,14 @@ export default function EmailForm() {
           <div className="flex flex-col">
             <form onSubmit={sendEmail} className="flex flex-col gap-5 z-20">
 
-              <div className="grid grid-cols-2 sm:grid-cols-1 gap-5">
+              <div className="grid grid-cols-1 gap-5">
                 <div className="w-full">
                   <Input
                     type="text"
                     placeholder="Nome"
                     name="username"
                     autoComplete="name"
-                    className="py-5"
+                    className="py-5 bg-muted"
                     ref={nameRef}
                   />
                 </div>
@@ -120,7 +120,7 @@ export default function EmailForm() {
                     placeholder="E-mail"
                     name="email"
                     autoComplete="email"
-                    className="py-5"
+                    className="py-5 bg-muted"
                     ref={emailRef}
                   />
                 </div>
@@ -129,7 +129,7 @@ export default function EmailForm() {
               <Textarea
                 placeholder="Mensagem"
                 name="text"
-                
+                className="bg-muted"
                 ref={messageRef}
               ></Textarea>
 
@@ -143,7 +143,7 @@ export default function EmailForm() {
                   <MdOutlineDownloadDone />
                 </Button>
               ) : (
-                <Button  disabled={loading} variant={"secondary"} size={"sm"} className="w-[50%] sm:w-full">
+                <Button  disabled={loading} variant={"secondary"} size={"sm"} className="w-full">
                   {loading ? (
                     <BiLoaderAlt className="animate-spin infinite" />
                   ) : (

@@ -13,10 +13,10 @@ const Hero = () => {
       <HeroBg />
 
       <section className="w-full h-full z-50">
-        <div className="h-full w-full flex flex-col justify-center items-center gap-12 text-center ssm:mt-10 pb-16 med:pb-0">
+        <div className="h-full w-full flex flex-col justify-center items-center gap-5 text-center ssm:mt-10 pb-16 med:pb-0">
           
           {/* Titúlo da sessão */}
-          <div className="flex flex-col items-center justify-center gap-5 h-auto">
+          <div className="flex flex-col items-center justify-center gap-2 h-auto">
             <GithubBtn />
             <h1 className="tracking-tighter font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
               <Balancer>

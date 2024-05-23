@@ -44,7 +44,7 @@ const Projects: React.FC = () => {
       className="flex flex-col items-center justify-center min-h-screen pb-4 px-3 w-full"
     >
       <div className="flex flex-col  items-center justify-center space-y-14 sm:space-y-6">
-        <div className="max-w-[800px] mx-auto flex flex-col space-y-5 sm:space-y-3 text-center">
+        <div className="max-w-[800px] mx-auto flex flex-col space-y-2 text-center">
           {/* Titúlo da sessão */}
           <h3 className="tracking-tighter text-4xl sm:text-3xl py-2 font-bold bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
             Projetos Recentes
