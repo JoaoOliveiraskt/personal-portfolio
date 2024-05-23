@@ -24,7 +24,7 @@ export default function EmailForm() {
     if (process.env.NEXT_PUBLIC_MY_PUBLIC_KEY) {
       emailjs.init(process.env.NEXT_PUBLIC_MY_PUBLIC_KEY);
     }
-  });
+  }, []);
 
   const nameRef = useRef<HTMLInputElement>(null);
   const emailRef = useRef<HTMLInputElement>(null);
