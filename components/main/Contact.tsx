@@ -43,7 +43,7 @@ export default function Contact() {
       <div className="max-w-[62rem] h-full flex flex-col items-center space-y-10">
         <div className="text-center space-y-2 flex flex-col items-center">
           {/* Titúlo da sessão */}
-          <h2 className="text-4xl tracking-tighter med:text-3xl font-bold bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+          <h2 className="text-4xl tracking-tighter med:text-3xl font-bold bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text">
             <Balancer>Entre em contato </Balancer>
           </h2>
 

@@ -18,11 +18,11 @@ const Hero = () => {
           {/* Titúlo da sessão */}
           <div className="flex flex-col items-center justify-center gap-2 h-auto">
             <GithubBtn />
-            <h1 className="tracking-tighter font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+            <h1 className="tracking-tighter font-bold leading-tight text-6xl med:text-4xl  max-w-[900px] bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text">
               <Balancer>
                 Unindo design e código, sigo criando projetos{" "}
                 <span id="underline" className="">
-                  <span className="relative inline-flex items-end justify-center bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+                  <span className="relative inline-flex items-end justify-center bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text">
                     únicos.
                     <Underline />
                   </span>

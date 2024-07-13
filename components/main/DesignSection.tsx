@@ -13,7 +13,7 @@ export default function DesignSection() {
       <div className="space-y-8 sm:space-y-5 flex flex-col items-center justify-center h-max w-full">
         {/* Titúlo da sessão */}
         <div className="w-full flex justify-center text-center">
-          <h2 className="max-w-[40rem] text-4xl sm:text-3xl text-center tracking-tighter font-bold bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text py-1">
+          <h2 className="max-w-[40rem] text-4xl sm:text-3xl text-center tracking-tighter font-bold bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text py-1">
             <Balancer>Explorando a arte do Web Design</Balancer>
           </h2>
         </div>
@@ -33,13 +33,6 @@ export default function DesignSection() {
           >
             <source src="/video.mp4" type="video/mp4" />
           </video>
-          {/*<Image
-            src="/safari.svg"
-            alt="safari"
-            className="w-full h-auto"
-            width="1920"
-            height="1080"
-          />*/}
         </div>
       </div>
     </section>

@@ -24,20 +24,20 @@ export default function Header() {
               <a
                 href={link.href}
                 key={index}
-                className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer rounded-md hover:text-accent-foreground "
+                className="flex tracking-wide text-text font-medium text-sm med:hidden items-center justify-center cursor-pointer rounded-md hover:text-muted-foreground "
               >
                 {link.name}
               </a>
             ))}
             <Link
               href="/profile"
-              className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent-foreground "
+              className="flex tracking-wide text-text font-medium text-sm med:hidden items-center justify-center cursor-pointer  hover:text-muted-foreground "
             >
               <span>Perfil</span>
             </Link>
             <Link
               href="/profile/curriculo"
-              className="flex text-muted-foreground  text-sm med:hidden items-center justify-center cursor-pointer  hover:text-accent-foreground "
+              className="flex tracking-wide text-text font-medium text-sm med:hidden items-center justify-center cursor-pointer  hover:text-muted-foreground"
             >
               <span>Currículo</span>
             </Link>

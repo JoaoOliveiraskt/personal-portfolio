@@ -58,7 +58,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
                 ))}
               </div>
             </div>
-            <p className="tracking-widest text-text max-w-[35rem]">
+            <p className="tracking-wide text-muted-foreground font-medium max-w-[35rem]">
               {selectedCard.description}
             </p>
             <ProjectModalFooter selectedCard={selectedCard} closeModal={closeModal}/>

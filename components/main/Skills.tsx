@@ -15,7 +15,7 @@ const Skills = () => {
       <div className="flex flex-col max-w-[60rem]">
         <div className="flex flex-col items-center justify-center space-y-2 z-10">
           {/* Titúlo da sessão */}
-          <p className="tracking-tighter max-w-[40rem] text-center text-4xl sm:text-3xl font-bold pb-2 bg-gradient-to-r from-primary via-primary to-secondary text-transparent bg-clip-text">
+          <p className="tracking-tighter max-w-[40rem] text-center text-4xl sm:text-3xl font-bold pb-2 bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text">
             <Balancer>Transformando Ideias em Realidade Digital</Balancer>
           </p>
 

@@ -58,7 +58,7 @@ const ProjectCard: React.FC<Props> = ({
               <h2 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}
               </h2>
-              <p className="tracking-wider opacity-70 text-text">{caption}</p>
+              <p className="tracking-wide text-muted-foreground font-medium">{caption}</p>
             </div>
             <div className="flex flex-wrap gap-2">
               {tech.map((technology, i) => (
