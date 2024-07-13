@@ -76,7 +76,7 @@ const Projects: React.FC = () => {
 
         {/* Cards dos projetos */}
         <div className="flex flex-wrap items-center justify-center gap-16 med:gap-10 max-w-[52rem]">
-          {My_Projects.slice(0, 2).map((card, i) => (
+          {My_Projects.slice(0, 3).map((card, i) => (
             <div
               key={i}
               className="cursor-pointer max-w-[52rem]"

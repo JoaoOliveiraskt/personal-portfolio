@@ -37,12 +37,12 @@ const ProjectCard: React.FC<Props> = ({
     <div
       onMouseMove={(e) => HandleOnMouseMove(e, setMousePosition)}
       id={"card" + id}
-      className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-200 dark:border-zinc-800/80 overflow-hidden  rounded-xl`}
+      className={`h-full w-full relative bg-gradient-to-bl from-card to-background border border-zinc-400/80 hover:border-zinc-500 dark:border-zinc-800/80 dark:hover:border-zinc-600 overflow-hidden  rounded-xl`}
     >
       <div
         className={`w-full h-full overflow-hidden med:gap-0 flex  med:flex-col ${flexDirectionClass}`}
       >
-        <div className=" flex items-center justify-center">
+        <div className="flex justify-center items-center">
           <Image
             src={src}
             alt={title}
@@ -69,7 +69,7 @@ const ProjectCard: React.FC<Props> = ({
                   height={technology.height}
                   src={technology.src}
                   title={technology.name}
-                  className="w-7 sm:w-5"
+                  className="w-6 sm:w-5"
                 />
               ))}
             </div>
@@ -77,8 +77,8 @@ const ProjectCard: React.FC<Props> = ({
           <p className="hidden">{description}</p>
           <Button
             variant="ghost"
-            size={"icon"}
-            className="z-10 text-xl flex items-center justify-center border"
+            
+            className="z-10 text-xl flex items-center justify-center border w-fit h-fit p-1"
             title="Expandir"
           >
             <BiExpand />

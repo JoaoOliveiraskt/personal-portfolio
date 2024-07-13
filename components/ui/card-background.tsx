@@ -1,5 +1,5 @@
 import Image from "next/image";
-import featureCover from "@/public/feature-cover.svg";
+import featureCover from "@/public/icons/feature-cover.svg";
 
 interface CardBgProps {
   className?: string;

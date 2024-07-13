@@ -2,9 +2,7 @@
 
 import { My_Projects } from "@/constants";
 import { GoArrowUpRight } from "react-icons/go";
-import { FiArrowRight } from "react-icons/fi";
 import ProfileHeader from "@/app/profile/ProfileHeader";
-import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { BiExpand } from "react-icons/bi";
