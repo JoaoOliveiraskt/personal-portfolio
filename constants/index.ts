@@ -255,7 +255,7 @@ export const My_Projects = [
     description:
       "Este projeto foi uma ótima experiência de aprendizado em estruturas de dados, processos de autenticação, trabalho com datas e funcionalidade de pagamento usando o Stripe.",
     src: "https://long-trips.vercel.app",
-    photo: "/trips.png",
+    photo: "/Trips.png",
     icon: "/trips-icon.avif",
     tech: [
       {
@@ -326,7 +326,7 @@ export const My_Projects = [
     description:
       "Desenvolvido para pesquisar a temperatura de qualquer cidade do mundo, o projeto foi fundamental para o meu aprendizado sobre conexões com APIs.",
     src: "https://joaooliveiraskt.github.io/Weather/",
-    photo: "/weather.png",
+    photo: "/Weather.png",
     icon: "/ios-weather.svg",
     tech: [
       {
@@ -383,7 +383,7 @@ export const My_Projects = [
     caption: "Landing page do God of War",
     description: "Uma landing page inspirada no jogo God of War.",
     src: "https://joaooliveiraskt.github.io/gow-page/",
-    photo: "/gow.png",
+    photo: "/Gow.png",
     icon: "/gow-icon.avif",
     tech: [
       {
@@ -411,7 +411,7 @@ export const My_Projects = [
     caption: "Landing page da Blizzard",
     description: "Uma landing page inspirada na marca Blizzard.",
     src: "https://joaooliveiraskt.github.io/blizzard-page/",
-    photo: "/blizzard.png",
+    photo: "/Blizzard.png",
     icon: "/blizzard-icon.avif",
     tech: [
       {
