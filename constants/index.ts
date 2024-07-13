@@ -326,7 +326,7 @@ export const My_Projects = [
     description:
       "Desenvolvido para pesquisar a temperatura de qualquer cidade do mundo, o projeto foi fundamental para o meu aprendizado sobre conexões com APIs.",
     src: "https://joaooliveiraskt.github.io/Weather/",
-    photo: "/Weather.png",
+    photo: "/Weather-app.png",
     icon: "/ios-weather.svg",
     tech: [
       {
