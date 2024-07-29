@@ -141,7 +141,7 @@ export const My_Projects = [
     caption:
       "E-commerce para lojas locais que não possuem um site de vendas online.",
     description:
-      "Este projeto foi desenvolvido para ajudar pequenas empresas a vender seus produtos online e oferecer uma experiência de compra fácil e segura para seus clientes.",
+      "Este projeto foi desenvolvido como parte de um trabalho universitário para ajudar pequenas empresas locais a vender seus produtos online e oferecer uma experiência de compra fácil e segura para seus clientes.",
     src: "https://moto-log-app.vercel.app",
     photo: "/moto-log-ec.png",
     icon: "/motolog-icon.avif",
