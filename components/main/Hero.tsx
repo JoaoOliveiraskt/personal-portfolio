@@ -23,7 +23,7 @@ const Hero = () => {
                 Unindo arte e lógica para desenvolver projetos{" "}
                 <span id="underline" className="">
                   <span className="relative inline-flex items-end justify-center bg-gradient-to-r from-primary via-primary to-muted-foreground text-transparent bg-clip-text">
-                  inovadores.
+                    únicos.
                     <Underline />
                   </span>
                 </span>
