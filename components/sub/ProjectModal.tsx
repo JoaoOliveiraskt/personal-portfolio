@@ -38,30 +38,36 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
               alt={selectedCard.title}
               width={1000}
               height={300}
-              
               className="w-full border-b"
             />
           </div>
           <div className="flex flex-col px-5 py-8 w-full h-full gap-5">
             <div className="flex med:flex-col gap-8 med:gap-2 sm:gap-3 w-full tracking-tighter text-2xl font-semibold sm:flex-wrap">
               <h3 className="text-primary">{selectedCard.title}</h3>
-              <div className="text-primary flex items-center gap-4 flex-wrap">
+              <div className="text-primary flex items-center -space-x-2 flex-wrap">
                 {selectedCard.tech.map((technology, index) => (
-                  <Image
+                  <div
                     key={index}
-                    src={technology.src}
-                    alt={technology.name}
-                    width={35}
-                    height={35}
-                    className='w-7 sm:w-5'
-                  />
+                    className="h-9 w-9 border border-border rounded-full bg-zinc-900 p-1.5 flex justify-center items-center"
+                  >
+                    <Image
+                      src={technology.src}
+                      alt={technology.name}
+                      width={35}
+                      height={35}
+                      className="w-5 sm:w-5"
+                    />
+                  </div>
                 ))}
               </div>
             </div>
             <p className="tracking-wide text-muted-foreground font-medium max-w-[35rem]">
               {selectedCard.description}
             </p>
-            <ProjectModalFooter selectedCard={selectedCard} closeModal={closeModal}/>
+            <ProjectModalFooter
+              selectedCard={selectedCard}
+              closeModal={closeModal}
+            />
           </div>
         </div>
       </div>

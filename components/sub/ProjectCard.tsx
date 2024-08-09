@@ -58,26 +58,31 @@ const ProjectCard: React.FC<Props> = ({
               <h2 className="tracking-tighter text-3xl font-semibold text-primary">
                 {title}
               </h2>
-              <p className="tracking-wide text-muted-foreground font-medium">{caption}</p>
+              <p className="tracking-wide text-muted-foreground font-medium">
+                {caption}
+              </p>
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap -space-x-2">
               {tech.map((technology, i) => (
-                <Image
+                <div
                   key={i}
-                  alt={technology.name}
-                  width={technology.width}
-                  height={technology.height}
-                  src={technology.src}
-                  title={technology.name}
-                  className="w-6 sm:w-5"
-                />
+                  className="h-9 w-9 border border-border rounded-full bg-zinc-900 flex justify-center items-center"
+                  >
+                  <Image
+                    alt={technology.name}
+                    width={technology.width}
+                    height={technology.height}
+                    src={technology.src}
+                    title={technology.name}
+                    className="w-5 sm:w-5"
+                  />
+                </div>
               ))}
             </div>
           </div>
           <p className="hidden">{description}</p>
           <Button
             variant="ghost"
-            
             className="z-10 text-xl flex items-center justify-center border w-fit h-fit p-1"
             title="Expandir"
           >

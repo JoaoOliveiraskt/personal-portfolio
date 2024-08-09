@@ -31,7 +31,7 @@ export default function ContactCard({
   const cardContent = (
     <div className={`flex flex-col h-full justify-between ${className}`}>
       <div className="flex flex-col h-full justify-between">
-        <div className="w-12 h-12 z-10 rounded-full dark:bg-zinc-800 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
+        <div className="w-12 h-12 z-10 rounded-full dark:bg-zinc-900 flex items-center justify-center border border-zinc-200 dark:border-zinc-700">
           {icon}
         </div>
         <div className="flex flex-col space-y-3">
